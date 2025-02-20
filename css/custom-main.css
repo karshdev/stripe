@@ -6340,3 +6340,45 @@
   left: 150%;
   transition: left 0.8s ease;
 }
+/* Define the color animation keyframes */
+@keyframes textColorChange {
+  0% {
+    color: #a960ee; /* Purple */
+  }
+  25% {
+    color: #ff333d; /* Red */
+  }
+  50% {
+    color: #90e0ff; /* Blue */
+  }
+  75% {
+    color: #ffcb57; /* Yellow */
+  }
+  100% {
+    color: #a960ee; /* Back to purple */
+  }
+}
+
+/* Animated contact button styles */
+.animated-contact-text {
+  animation: textColorChange 12s linear infinite;
+  text-decoration: none;
+}
+
+.contact-button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-button:has(.animated-contact-text) .icon-swap-hover svg {
+  animation: textColorChange 12s linear infinite;
+}
+
+.contact-button:has(.animated-contact-text) .icon-swap-hover .hover-icon {
+  animation-delay: -3s;
+}
+
+
+
