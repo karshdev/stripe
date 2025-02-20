@@ -1,0 +1,1657 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="#2196F3">
+   <title>Stripe</title>
+   <meta name="description" content="">
+   <meta name="template" content="ethos-page-content">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   <link href="css/slick.css" rel="stylesheet" />
+   <link href="css/custom-main.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+</head>
+
+
+<body>
+   <!-- Header -->
+
+   <header class="header-wrapper payment-header">
+      
+      <div class="main-header">
+         <div class="container-fluid custom-spacer-col">
+            <nav class="navbar navbar-expand-md navbar-light">
+               <a class="navbar-brand" href="index.html">
+                  <img class="logo" src="images/logo.png" alt="Stripe">
+               </a>
+               <!-- menu start here -->
+               <div class="header-main-nav">
+                  <!-- mobile menu trigger -->
+                  <div class="mobile-menu-trigger" id="mobile-nav-toggle" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    <div class="mobile-inner">
+                        <svg width="16" height="10" viewBox="0 0 16 10">
+                            <title>Open mobile navigation</title>
+                            <g fill="var(--knockoutColor)" fill-rule="evenodd">
+                              <rect y="8" width="16" height="2" rx="1"></rect>
+                              <rect y="4" width="16" height="2" rx="1"></rect>
+                              <rect width="16" height="2" rx="1"></rect>
+                            </g>
+                          </svg>
+                    </div>
+
+                  </div>
+                  <nav class="menu">
+                     <div class="mobile-menu-head">
+                        <div class="go-back">back</div>
+                        <div class="mobile-menu-close">
+                           <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <title>Close mobile navigation</title>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00061 6.58508L12.5926 1.99312C12.9835 1.60223 13.6172 1.60223 14.0081 1.99312C14.399 2.384 14.399 3.01775 14.0081 3.40864L9.41678 7.99995L14.0081 12.5913C14.399 12.9822 14.399 13.6159 14.0081 14.0068C13.6172 14.3977 12.9835 14.3977 12.5926 14.0068L8.00061 9.41482L3.40864 14.0068C3.01775 14.3977 2.384 14.3977 1.99312 14.0068C1.60223 13.6159 1.60223 12.9822 1.99312 12.5913L6.58443 7.99995L1.99312 3.40864C1.60223 3.01775 1.60223 2.384 1.99312 1.99312C2.384 1.60223 3.01775 1.60223 3.40864 1.99312L8.00061 6.58508Z" fill="#4F5B76"></path>
+                           </svg>
+                        </div>
+                     </div>
+                     <ul class="menu-main">
+                        <li class="menu-item-has-children">
+                           <a href="#">product
+                              <span class="nav-arrow-link">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path>
+                                 </svg>
+                              </span>
+                           </a>
+                           <div class="sub-menu mega-menu">
+
+                              <ul class="menu-main">
+                                 <li class="nav-item">
+                                    <a href="#">Nav 1</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 2</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 3</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 4</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 5</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 6</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#">Developers</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#">Pricing</a>
+                        </li>
+                        
+                     </ul>
+                  </nav>
+               </div>
+
+               <div class="sign-in-group">
+                  <a href="#" class="sign-button hover-swap-link">
+                    <span>Sign in</span>
+                    <div class="icon-swap-hover">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/>
+                      </svg>
+                      <svg class="hover-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                      </svg>
+                    </div>
+                  </a>
+                  <a href="#" class="contact-button hover-swap-link">
+                     <span>Contact sales</span>
+                     <div class="icon-swap-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/>
+                        </svg>
+                        <svg class="hover-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                        </svg>
+                      </div>
+  
+                  </a>
+               </div>
+
+               <!-- menu end here -->
+            </nav>
+            <div class="bg-offcanvas offcanvas offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                    <svg viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg" width="60" height="25" class="UserLogo variant-- "><title>Stripe logo</title><path fill="var(--userLogoColor, #0A2540)" d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v3.32a8.33 8.33 0 0 1-4.56 1.1c-4.01 0-6.83-2.5-6.83-7.48 0-4.19 2.39-7.52 6.3-7.52 3.92 0 5.96 3.28 5.96 7.5 0 .4-.04 1.26-.06 1.48zm-5.92-5.62c-1.03 0-2.17.73-2.17 2.58h4.25c0-1.85-1.07-2.58-2.08-2.58zM40.95 20.3c-1.44 0-2.32-.6-2.9-1.04l-.02 4.63-4.12.87V5.57h3.76l.08 1.02a4.7 4.7 0 0 1 3.23-1.29c2.9 0 5.62 2.6 5.62 7.4 0 5.23-2.7 7.6-5.65 7.6zM40 8.95c-.95 0-1.54.34-1.97.81l.02 6.12c.4.44.98.78 1.95.78 1.52 0 2.54-1.65 2.54-3.87 0-2.15-1.04-3.84-2.54-3.84zM28.24 5.57h4.13v14.44h-4.13V5.57zm0-4.7L32.37 0v3.36l-4.13.88V.88zm-4.32 9.35v9.79H19.8V5.57h3.7l.12 1.22c1-1.77 3.07-1.41 3.62-1.22v3.79c-.52-.17-2.29-.43-3.32.86zm-8.55 4.72c0 2.43 2.6 1.68 3.12 1.46v3.36c-.55.3-1.54.54-2.89.54a4.15 4.15 0 0 1-4.27-4.24l.01-13.17 4.02-.86v3.54h3.14V9.1h-3.13v5.85zm-4.91.7c0 2.97-2.31 4.66-5.73 4.66a11.2 11.2 0 0 1-4.46-.93v-3.93c1.38.75 3.1 1.31 4.46 1.31.92 0 1.53-.24 1.53-1C6.26 13.77 0 14.51 0 9.95 0 7.04 2.28 5.3 5.62 5.3c1.36 0 2.72.2 4.09.75v3.88a9.23 9.23 0 0 0-4.1-1.06c-.86 0-1.44.25-1.44.9 0 1.85 6.29.97 6.29 5.88z" fill-rule="evenodd"></path></svg>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>Close mobile navigation</title>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00061 6.58508L12.5926 1.99312C12.9835 1.60223 13.6172 1.60223 14.0081 1.99312C14.399 2.384 14.399 3.01775 14.0081 3.40864L9.41678 7.99995L14.0081 12.5913C14.399 12.9822 14.399 13.6159 14.0081 14.0068C13.6172 14.3977 12.9835 14.3977 12.5926 14.0068L8.00061 9.41482L3.40864 14.0068C3.01775 14.3977 2.384 14.3977 1.99312 14.0068C1.60223 13.6159 1.60223 12.9822 1.99312 12.5913L6.58443 7.99995L1.99312 3.40864C1.60223 3.01775 1.60223 2.384 1.99312 1.99312C2.384 1.60223 3.01775 1.60223 3.40864 1.99312L8.00061 6.58508Z" fill="#4F5B76" style="
+                        fill: #3F4B66;
+                        
+                    "></path>
+                          </svg>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                  
+                    <ul class="inner-list">
+                        <li>
+                            <a href="#">
+                               <span> Products</span>
+                                <svg class="SiteMobileMenuNavItem__chevron" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#3F4B66"></path>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <span> Solutions</span>
+                                <svg class="SiteMobileMenuNavItem__chevron" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#3F4B66"></path>
+                                  </svg>
+ 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <span> Developers</span>
+                                <svg class="SiteMobileMenuNavItem__chevron" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#3F4B66"></path>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Resources</span>
+                                <svg class="SiteMobileMenuNavItem__chevron" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#3F4B66"></path>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Contact sales</span>
+                            </a>
+ 
+                        </li>
+                    </ul>
+                    
+                  <div class="sign-in-btn">
+                    <a href="#" class="btn-dark">
+                        <span> Sign In</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                            </path>
+                        </svg>
+                    </a>
+                  </di>
+                </div>
+            </div>
+            </div>
+         </div>
+      </div>
+
+</header>
+
+
+<div class="bg-line">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+ </div>
+
+
+   <main>
+      
+    <!-- ========== Start banner section compontant ========== -->
+<div class="promobanner">
+    <div class="banner-section payment-section-componant ">
+        <div class="container-fluid custom-spacer-col">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="banner-left">
+                        <div class="banner-top">
+                            <div class="hero-caption">
+                                <div class="herocaption-content">
+                                    <span>Preview</span>
+                                </div>
+                            </div>
+                            <div class="banner-title">
+                                <h2>Unified, global payments to grow your revenue</h2>
+                                <div class="banner-overlay">
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="banner-description">
+                            <p> Accept payments online, in person, and around the world with a payments solution built for any business – from scaling startups to global enterprises.</p>
+                        </div>
+                        <a href="#" class="btn-dark hover-swap-link">
+                            <span>Request an invite</span>
+                            <div class="icon-swap-hover">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                  <path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/>
+                                </svg>
+                                <svg class="hover-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                  <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                                </svg>
+                              </div>
+                        </a>
+    
+                        
+                    </div>
+                </div>
+    
+                <div class="col-lg-6">
+                    <div class="payment-image">
+                        <img src="images/stripe-checkout-lg.gif" alt="image">
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    
+        <div class="banner-right">
+            <img src="images/banner-right.png">
+        </div>
+        <div class="HeroSection__gradient Gradient">
+        <canvas id="gradient-canvas-payment" class="Gradient__canvas" style="width:100vw;height:100vh"></canvas>
+        </div>
+    </div>
+</div>
+
+    <!-- ========== End banner section compontant ========== -->
+
+    <!-- ========== Start payment-service  componant ========== -->
+      
+    <div class="build-growth-component design-developer-compontant payment-service-componant ">
+        <div class="container-fluid custom-spacer-col ">
+            <div class="build-growth-grid">
+                <div class="launch-header">
+                    <h2>Designed for developers</h2>
+                    <h1>Ship more quickly with powerful and easy-to-use APIs</h1>
+                    <p>
+                        Save engineering time with unified payments functionality. We obsess over the maze of gateways,
+                        payments rails, and financial institutions that make up the global economic landscape so that your
+                        teams can build what you need on one platform.
+                    </p>
+                    <a href="#" class="learn-btn">
+                        <span>Read the docs</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="build-image">
+                    <img src="images/code-image.png" alt="image">
+                </div>
+            </div>
+    
+            <div class="global-bottom-section">
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <img src="images/customericon1.png">
+                            <!-- <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="PersonWithCheckmarkIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 8C25.8366 8 33 15.1634 33 24C33 29.087 30.626 33.6195 26.9256 36.5501C26.0383 33.2393 21.9317 30.7368 17 30.7368C12.0683 30.7368 7.96174 33.2392 7.07298 36.5493C3.37396 33.6195 1 29.087 1 24C1 15.1634 8.16344 8 17 8ZM17 18C14.2386 18 12 20.2386 12 23C12 25.7614 14.2386 28 17 28C19.7614 28 22 25.7614 22 23C22 20.2386 19.7614 18 17 18Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M17 8C25.8366 8 33 15.1634 33 24C33 29.087 30.626 33.6195 26.9256 36.5501C26.0383 33.2393 21.9317 30.7368 17 30.7368C12.0683 30.7368 7.96174 33.2392 7.07298 36.5493C3.37396 33.6195 1 29.087 1 24C1 15.1634 8.16344 8 17 8ZM17 18C14.2386 18 12 20.2386 12 23C12 25.7614 14.2386 28 17 28C19.7614 28 22 25.7614 22 23C22 20.2386 19.7614 18 17 18Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M30 3C34.9706 3 39 7.02944 39 12C39 16.9706 34.9706 21 30 21C25.0294 21 21 16.9706 21 12C21 7.02944 25.0294 3 30 3ZM33.94 7.73L28 13.78L26.43 12C26.1336 11.7182 25.6762 11.6943 25.352 11.9436C25.0279 12.193 24.9337 12.6413 25.13 13L27 16.2C27.1823 16.4942 27.5039 16.6732 27.85 16.6732C28.1961 16.6732 28.5177 16.4942 28.7 16.2C29 15.79 34.7 8.63 34.7 8.63C35.45 7.83 34.54 7.12 33.94 7.73Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#PersonWithCheckmarkIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M30 3C34.9706 3 39 7.02944 39 12C39 16.9706 34.9706 21 30 21C25.0294 21 21 16.9706 21 12C21 7.02944 25.0294 3 30 3ZM33.94 7.73L28 13.78L26.43 12C26.1336 11.7182 25.6762 11.6943 25.352 11.9436C25.0279 12.193 24.9337 12.6413 25.13 13L27 16.2C27.1823 16.4942 27.5039 16.6732 27.85 16.6732C28.1961 16.6732 28.5177 16.4942 28.7 16.2C29 15.79 34.7 8.63 34.7 8.63C35.45 7.83 34.54 7.12 33.94 7.73Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg> -->
+                        </div>
+                        <h4 class="copy_title">
+                            Convert more customers
+                        </h4>
+                        <p>Increase conversion with built-in optimisations, access to 100+ payment methods, and one-click checkout. Unify online and in-person payments to provide a seamless customer experience.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <img src="images/global-icon1.png">
+                            <!-- <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="GlobeWithPersonIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.1733 24.7498C14.304 25.0734 17.4598 25.0732 20.5904 24.7491C20.7185 24.7368 20.8447 24.7868 20.9296 24.8836C21.0144 24.9804 21.0474 25.1121 21.0184 25.2375C19.9907 29.7781 18.1429 32.8461 16.0269 33H15.8769V32.99H15.7169C13.6005 32.8457 11.7617 29.777 10.7347 25.235C10.7087 25.1085 10.7445 24.9771 10.8311 24.8813C10.9177 24.7855 11.0448 24.7366 11.1733 24.7498ZM30.3419 21.975C30.4884 21.8904 30.6724 21.9079 30.8002 22.0187C30.928 22.1295 30.9716 22.3091 30.9086 22.4661C29.2795 26.9034 25.7829 30.4007 21.3459 32.0307C21.1888 32.0937 21.0091 32.0501 20.8983 31.9221C20.7875 31.7942 20.7701 31.61 20.855 31.4636C22.0154 29.3363 22.8076 27.028 23.1979 24.6364C23.2286 24.4766 23.3535 24.3516 23.5133 24.3209C25.9051 23.9282 28.2137 23.1351 30.3419 21.975ZM1.65831 21.975C3.78653 23.1351 6.09507 23.9282 8.48691 24.3209C8.64671 24.3516 8.77166 24.4766 8.80231 24.6364C9.19264 27.028 9.98479 29.3363 11.1452 31.4636C11.2301 31.61 11.2127 31.7942 11.1019 31.9221C10.9911 32.0501 10.8114 32.0937 10.6543 32.0307C6.21731 30.4007 2.72068 26.9034 1.09161 22.4661C1.02866 22.3091 1.07219 22.1295 1.20002 22.0187C1.32785 21.9079 1.51186 21.8904 1.65831 21.975ZM15.8769 11C17.6537 10.9952 19.4289 11.108 21.1908 11.3377C21.3731 11.3633 21.5158 11.5077 21.5391 11.6903C22.0046 15.2144 22.0046 18.7845 21.5391 22.3086C21.5139 22.4925 21.3693 22.6371 21.1854 22.6623C17.661 23.1278 14.0906 23.1278 10.5662 22.6623C10.3844 22.6399 10.2403 22.4982 10.2149 22.3168C9.7734 18.7875 9.77407 15.217 10.2169 11.6879C10.2379 11.507 10.3789 11.3634 10.5594 11.3392C12.3236 11.1207 14.0992 11.0074 15.8769 11ZM7.98097 11.9508C8.07887 12.0356 8.12998 12.1624 8.11831 12.2914C7.79929 15.4215 7.79929 18.5758 8.11831 21.7059C8.13073 21.8344 8.08141 21.9611 7.98541 22.0474C7.88941 22.1337 7.75815 22.1693 7.63171 22.1433C-2.37949 19.9022 -2.70449 14.2755 7.62431 11.8633C7.75035 11.8334 7.88308 11.866 7.98097 11.9508ZM24.2998 11.8528L24.3759 11.8633C34.7047 14.2755 34.3797 19.9022 24.3685 22.1433C24.2421 22.1693 24.1108 22.1337 24.0148 22.0474C23.9188 21.9611 23.8695 21.8344 23.8819 21.7059C24.2009 18.5758 24.2009 15.4215 23.8819 12.2914C23.8702 12.1624 23.9213 12.0356 24.0192 11.9508C24.1171 11.866 24.2499 11.8334 24.3759 11.8633L24.2998 11.8528ZM21.333 1.9683C25.7713 3.59773 29.2692 7.09557 30.8986 11.5339C30.9616 11.6909 30.918 11.8705 30.7902 11.9813C30.6624 12.0921 30.4784 12.1096 30.3319 12.025C28.2036 10.8649 25.895 10.0718 23.5031 9.6791C23.3434 9.64847 23.2184 9.52354 23.1878 9.3638C22.7951 6.9719 22.002 4.6633 20.8419 2.535C20.7573 2.38855 20.7748 2.20454 20.8856 2.07671C20.9964 1.94888 21.176 1.90535 21.333 1.9683ZM10.6672 1.9683C10.8242 1.90535 11.0039 1.94888 11.1146 2.07671C11.2254 2.20454 11.2429 2.38855 11.1583 2.535C9.99822 4.6633 9.20515 6.9719 8.81241 9.3638C8.78178 9.52354 8.65685 9.64847 8.49711 9.6791C6.10521 10.0718 3.7966 10.8649 1.66831 12.025L1.59239 12.0588C1.46208 12.1012 1.31654 12.0736 1.21002 11.9813C1.08219 11.8705 1.03866 11.6909 1.10161 11.5339C2.73104 7.09557 6.22888 3.59773 10.6672 1.9683ZM16.0269 1C18.1428 1.1443 19.9904 4.2207 21.0182 8.7526C21.0469 8.87818 21.0135 9.00989 20.9286 9.10674C20.8437 9.20359 20.7175 9.25382 20.5892 9.2418C17.4585 8.92265 14.3035 8.92265 11.1728 9.2418C11.0443 9.2546 10.9173 9.20546 10.8308 9.10944C10.7444 9.01343 10.7088 8.88201 10.735 8.7555C11.762 4.2218 13.6007 1.1443 15.7169 1H16.0269Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M11.1733 24.7498C14.304 25.0734 17.4598 25.0732 20.5904 24.7491C20.7185 24.7368 20.8447 24.7868 20.9296 24.8836C21.0144 24.9804 21.0474 25.1121 21.0184 25.2375C19.9907 29.7781 18.1429 32.8461 16.0269 33H15.8769V32.99H15.7169C13.6005 32.8457 11.7617 29.777 10.7347 25.235C10.7087 25.1085 10.7445 24.9771 10.8311 24.8813C10.9177 24.7855 11.0448 24.7366 11.1733 24.7498ZM30.3419 21.975C30.4884 21.8904 30.6724 21.9079 30.8002 22.0187C30.928 22.1295 30.9716 22.3091 30.9086 22.4661C29.2795 26.9034 25.7829 30.4007 21.3459 32.0307C21.1888 32.0937 21.0091 32.0501 20.8983 31.9221C20.7875 31.7942 20.7701 31.61 20.855 31.4636C22.0154 29.3363 22.8076 27.028 23.1979 24.6364C23.2286 24.4766 23.3535 24.3516 23.5133 24.3209C25.9051 23.9282 28.2137 23.1351 30.3419 21.975ZM1.65831 21.975C3.78653 23.1351 6.09507 23.9282 8.48691 24.3209C8.64671 24.3516 8.77166 24.4766 8.80231 24.6364C9.19264 27.028 9.98479 29.3363 11.1452 31.4636C11.2301 31.61 11.2127 31.7942 11.1019 31.9221C10.9911 32.0501 10.8114 32.0937 10.6543 32.0307C6.21731 30.4007 2.72068 26.9034 1.09161 22.4661C1.02866 22.3091 1.07219 22.1295 1.20002 22.0187C1.32785 21.9079 1.51186 21.8904 1.65831 21.975ZM15.8769 11C17.6537 10.9952 19.4289 11.108 21.1908 11.3377C21.3731 11.3633 21.5158 11.5077 21.5391 11.6903C22.0046 15.2144 22.0046 18.7845 21.5391 22.3086C21.5139 22.4925 21.3693 22.6371 21.1854 22.6623C17.661 23.1278 14.0906 23.1278 10.5662 22.6623C10.3844 22.6399 10.2403 22.4982 10.2149 22.3168C9.7734 18.7875 9.77407 15.217 10.2169 11.6879C10.2379 11.507 10.3789 11.3634 10.5594 11.3392C12.3236 11.1207 14.0992 11.0074 15.8769 11ZM7.98097 11.9508C8.07887 12.0356 8.12998 12.1624 8.11831 12.2914C7.79929 15.4215 7.79929 18.5758 8.11831 21.7059C8.13073 21.8344 8.08141 21.9611 7.98541 22.0474C7.88941 22.1337 7.75815 22.1693 7.63171 22.1433C-2.37949 19.9022 -2.70449 14.2755 7.62431 11.8633C7.75035 11.8334 7.88308 11.866 7.98097 11.9508ZM24.2998 11.8528L24.3759 11.8633C34.7047 14.2755 34.3797 19.9022 24.3685 22.1433C24.2421 22.1693 24.1108 22.1337 24.0148 22.0474C23.9188 21.9611 23.8695 21.8344 23.8819 21.7059C24.2009 18.5758 24.2009 15.4215 23.8819 12.2914C23.8702 12.1624 23.9213 12.0356 24.0192 11.9508C24.1171 11.866 24.2499 11.8334 24.3759 11.8633L24.2998 11.8528ZM21.333 1.9683C25.7713 3.59773 29.2692 7.09557 30.8986 11.5339C30.9616 11.6909 30.918 11.8705 30.7902 11.9813C30.6624 12.0921 30.4784 12.1096 30.3319 12.025C28.2036 10.8649 25.895 10.0718 23.5031 9.6791C23.3434 9.64847 23.2184 9.52354 23.1878 9.3638C22.7951 6.9719 22.002 4.6633 20.8419 2.535C20.7573 2.38855 20.7748 2.20454 20.8856 2.07671C20.9964 1.94888 21.176 1.90535 21.333 1.9683ZM10.6672 1.9683C10.8242 1.90535 11.0039 1.94888 11.1146 2.07671C11.2254 2.20454 11.2429 2.38855 11.1583 2.535C9.99822 4.6633 9.20515 6.9719 8.81241 9.3638C8.78178 9.52354 8.65685 9.64847 8.49711 9.6791C6.10521 10.0718 3.7966 10.8649 1.66831 12.025L1.59239 12.0588C1.46208 12.1012 1.31654 12.0736 1.21002 11.9813C1.08219 11.8705 1.03866 11.6909 1.10161 11.5339C2.73104 7.09557 6.22888 3.59773 10.6672 1.9683ZM16.0269 1C18.1428 1.1443 19.9904 4.2207 21.0182 8.7526C21.0469 8.87818 21.0135 9.00989 20.9286 9.10674C20.8437 9.20359 20.7175 9.25382 20.5892 9.2418C17.4585 8.92265 14.3035 8.92265 11.1728 9.2418C11.0443 9.2546 10.9173 9.20546 10.8308 9.10944C10.7444 9.01343 10.7088 8.88201 10.735 8.7555C11.762 4.2218 13.6007 1.1443 15.7169 1H16.0269Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0328 38.5127C21.3758 35.9799 24.3642 34 28 34C31.6358 34 34.6242 35.9799 34.9672 38.5127C37.4291 36.4954 39 33.4311 39 30C39 23.9249 34.0751 19 28 19C21.9249 19 17 23.9249 17 30C17 33.4311 18.5709 36.4954 21.0328 38.5127ZM31 29C31 30.6569 29.6569 32 28 32C26.3431 32 25 30.6569 25 29C25 27.3431 26.3431 26 28 26C29.6569 26 31 27.3431 31 29Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#GlobeWithPersonIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0328 38.5127C21.3758 35.9799 24.3642 34 28 34C31.6358 34 34.6242 35.9799 34.9672 38.5127C37.4291 36.4954 39 33.4311 39 30C39 23.9249 34.0751 19 28 19C21.9249 19 17 23.9249 17 30C17 33.4311 18.5709 36.4954 21.0328 38.5127ZM31 29C31 30.6569 29.6569 32 28 32C26.3431 32 25 30.6569 25 29C25 27.3431 26.3431 26 28 26C29.6569 26 31 27.3431 31 29Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg> -->
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Global reach, local experience
+                        </h4>
+                        <p>Expand to new markets faster by launching payment methods and presenting in local currencies. Sell cross-border to 195+ countries and lower the costs of multi-currency management.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <img src="images/revenueicon1.png">
+                            <!-- <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="CardWithMagnifyingGlassIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#CardWithMagnifyingGlassIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg> -->
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Less fraud, more revenue
+                        </h4>
+                        <p>Automatically decrease fraud and improve authorisation rates with Stripe’s machine learning–powered optimisations, which are trained on billions of data points.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <img src="images/cos-1.png">
+                            <!-- <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="CardWithMagnifyingGlassIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#CardWithMagnifyingGlassIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg> -->
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Move faster and lower costs
+                        </h4>
+                        <p>Save time and engineering resources through increased developer productivity. Avoid downtime with leading reliability and reduce costs through alternative payment methods and rails.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+               
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- ========== End payment-service componant ========== -->
+
+        <!-- ========== Start session componant section ========== -->
+
+        <div class="about-component-block py-80 right-image early-bird-component">
+            <div class="about-component">
+               <div class="container-fluid custom-spacer-col">
+                  <div class="tech-title">
+                     <h2>Additional solutions that support your success</h2>
+                  </div>
+                  <div class="row align-items-center">
+                     <div class="col-md-12 col-lg-6 col-sm-12 col-12">
+                       
+                        <img src="./images/sessions2024OnDemand.webp" alt="about" class="img-fluid w-100 r-12 border-1 session-image">
+                     </div>
+                     <div class="col-md-12 col-lg-6 col-sm-12 col-12">
+                        <div class="about-block-details">
+                           <h2>Join us at session</h2>
+                           <span>Who we are</span>
+                           <h3 class="m-0">early-bird passes now available</h3>
+                           <p class="medium-text">Registration is open for Stripe Sessions, the global Internet economy conference. Join us to make new connections, learn about trends and technology, and hear from some of the biggest names in business.</p>
+                           <a href="#" class="links learn-btn btn-primary hover-swap-link">
+                             <span>Register now</span>
+                             <div class="icon-swap-hover">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                  <path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/>
+                                </svg>
+                                <svg class="hover-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                  <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                                </svg>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        <!-- ========== End session componant section ========== -->
+
+
+    <!-- ========== Start multiple-way-componant ========== -->
+
+            <div class="build-growth-component multiple-way-component">
+                <div class="container-fluid custom-spacer-col px-md-3 px-lg-5">
+                    <div class="launch-header">
+            
+                        <h1>Multiple ways to accept payments online</h1>
+            
+                        <div class="arrows-append"></div>
+                    </div>
+                </div>
+                <div class="build-grid-section">
+                    <div class="build-left-box multiple-way-slider">
+                        <div class="build-card">
+                            <div class="build-card-image">
+                                <img src="images/growth-image.webp">
+                                <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="ProductFeatureCard__gradientSvg">
+                                    <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189"
+                                        rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)"
+                                        fill="url(#product-card-paint-one-atlas"></ellipse>
+                                    <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229"
+                                        rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)"
+                                        fill="url(#product-card-paint-two-atlas)"></ellipse>
+                                    <defs>
+                                        <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                                            <stop offset="0.25" stop-color="#FFA500"></stop>
+                                            <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                        <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                                            <stop stop-color="#FFD848"></stop>
+                                            <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="build-card-information">
+                                <div class="build-flex">
+                                    <svg class="ProductIcon ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+                                        <title>Elements</title>
+            
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2 10.02c0-.95.5-1.83 1.33-2.3L16.08.36a2.66 2.66 0 0 1 2.66 0l12.75 7.36a2.66 2.66 0 0 1 1.33 2.3v6l-5-2.89a2.66 2.66 0 0 0-2.66 0l-9.51 5.48a2.66 2.66 0 0 0-1.34 2.3v10.95c0 .9.45 1.72 1.19 2.21L3.33 27.05A2.66 2.66 0 0 1 2 24.75V10.02z"
+                                            fill="url(#product-icon-elements--a)"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.5 34.07l.58.34c.82.48 1.84.48 2.66 0l12.75-7.36a2.66 2.66 0 0 0 1.33-2.3v-8.72l4.47 2.58a2.66 2.66 0 0 1 1.33 2.3v10.95c0 .95-.5 1.83-1.33 2.3l-9.48 5.48c-.82.48-1.83.48-2.65 0l-9.51-5.47-.15-.1z"
+                                            fill="#96F"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M32.82 16.03l-5-2.9a2.66 2.66 0 0 0-2.66 0l-9.51 5.48a2.66 2.66 0 0 0-1.34 2.3v10.95c0 .9.45 1.72 1.19 2.21l.58.34c.82.48 1.84.48 2.66 0l12.75-7.36a2.66 2.66 0 0 0 1.33-2.3v-8.72z"
+                                            fill="url(#product-icon-elements--b)"></path>
+                                        <defs>
+                                            <linearGradient id="product-icon-elements--a" x1="17.41" y1="2.24" x2="17" y2="32.18"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#11EFE3"></stop>
+                                                <stop offset=".33" stop-color="#15E8E2"></stop>
+                                                <stop offset=".74" stop-color="#1FD3E0"></stop>
+                                                <stop offset="1" stop-color="#21CFE0"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="product-icon-elements--b" x1="21.95" y1="40.81" x2="30.59" y2="9.56"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0048E5"></stop>
+                                                <stop offset=".64" stop-color="#625AF5"></stop>
+                                                <stop offset="1" stop-color="#8A62FC"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <span>Elements</span>
+                                </div>
+                                <h2>
+                                    Flexible UI components
+                                </h2>
+                                <p>
+                                    Build your own pixel-perfect payment experience – even if you <a href="#">process card payments
+                                        outside of Stripe</a>
+                                </p>
+                                <ul class="multiple-way-list">
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Meet business-specific needs with modular UI components</span>
+                                    </li>
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Design a fully branded checkout with customisable CSS-level styling</span>
+                                    </li>
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Reduce friction and simplify compliance with built-in logic</span>
+                                    </li>
+            
+                                </ul>
+            
+                            </div>
+                            <a href="#" class="learn-btn">
+                                <span>Explore Element</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="build-card">
+                            <div class="build-card-image">
+                                <img src="images/growth-image.webp">
+                                <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="ProductFeatureCard__gradientSvg">
+                                    <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189"
+                                        rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)"
+                                        fill="url(#product-card-paint-one-atlas"></ellipse>
+                                    <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229"
+                                        rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)"
+                                        fill="url(#product-card-paint-two-atlas)"></ellipse>
+                                    <defs>
+                                        <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                                            <stop offset="0.25" stop-color="#FFA500"></stop>
+                                            <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                        <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                                            <stop stop-color="#FFD848"></stop>
+                                            <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="build-card-information">
+                                <div class="build-flex">
+                                    <svg class="ProductIcon ProductIcon--PaymentLinks ProductBadge__icon" width="40" height="40"
+                                        viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.5603 16.2116c-.3287-.8362.2877-1.7409 1.1862-1.7409h15.7828c0 .3165-.059.633-.1768.9327l-3.5077 8.9217c-.3834.9751-1.3244 1.6163-2.3722 1.6163h-7.1818c0-.1582-.0295-.3165-.0884-.4663l-3.6421-9.2635Z"
+                                            fill="url(#product-icon-payment-links--a)"></path>
+                                        <path
+                                            d="M.0896108 4.74087C-.239137 3.90471.377287 3 1.27575 3H14.6995c.0185 0 .0369.00039.0552.00117.0258-.00078.0517-.00117.0777-.00117h7.6402c1.0478 0 1.9889.6412 2.3723 1.61636l3.5076 8.92164c.1179.2998.1768.6162.1768.9327H12.7465c-.8985 0-1.5149.9047-1.1862 1.7409l3.6421 9.2635c.0589.1498.0884.3081.0884.4663H1.27575c-.898464 0-1.514886-.9047-1.1861386-1.7408L3.73167 14.9371c.11784-.2998.11784-.633 0-.9327L.0896108 4.74087Z"
+                                            fill="url(#product-icon-payment-links--b)"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.2908 25.9414c0 .1583-.0295.3165-.0884.4664l-3.6421 9.2635c-.3287.8361.2877 1.7408 1.1862 1.7408h21.1968c1.0478 0 1.9889-.6412 2.3723-1.6163l3.5076-8.9217c.2357-.5995.2357-1.2659 0-1.8654l-3.5076-8.9216c-.3834-.9752-1.3245-1.6164-2.3723-1.6164h-5.414c0 .3165-.059.633-.1768.9327l-3.5077 8.9217c-.3834.9751-1.3244 1.6163-2.3722 1.6163h-7.1818Z"
+                                            fill="#96F"></path>
+                                        <defs>
+                                            <linearGradient id="product-icon-payment-links--a" x1="14.0622" y1="24.6669"
+                                                x2="29.3565" y2="12.5589" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0048E5"></stop>
+                                                <stop offset=".63979" stop-color="#625AF5"></stop>
+                                                <stop offset="1" stop-color="#8A62FC"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="product-icon-payment-links--b" x1="14.2646" y1="4.50656"
+                                                x2="14.0622" y2="24.6669" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#11EFE3"></stop>
+                                                <stop offset=".33" stop-color="#15E8E2"></stop>
+                                                <stop offset=".74" stop-color="#1FD3E0"></stop>
+                                                <stop offset="1" stop-color="#21CFE0"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <span>Payment Links</span>
+                                </div>
+                                <h2>
+                                    Shareable payment links
+                                </h2>
+                                <p>
+                                    Accept your first payment in minutes – no code required
+                                </p>
+                                <ul class="multiple-way-list">
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Share links over email, SMS, or any other channel</span>
+                                    </li>
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Accept one-time, recurring, or pay-what-you-want payments</span>
+                                    </li>
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Turn your link into a QR code or an embeddable buy button</span>
+                                    </li>
+            
+                                </ul>
+            
+                            </div>
+                            <a href="#" class="learn-btn">
+                                <span>Explore Payment Links</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="build-card">
+                            <div class="build-card-image">
+                                <img src="images/growth-image.webp">
+                                <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="ProductFeatureCard__gradientSvg">
+                                    <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189"
+                                        rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)"
+                                        fill="url(#product-card-paint-one-atlas"></ellipse>
+                                    <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229"
+                                        rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)"
+                                        fill="url(#product-card-paint-two-atlas)"></ellipse>
+                                    <defs>
+                                        <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                                            <stop offset="0.25" stop-color="#FFA500"></stop>
+                                            <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                        <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                                            <stop stop-color="#FFD848"></stop>
+                                            <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="build-card-information">
+                                <div class="build-flex">
+                                    <svg class="ProductIcon ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+                                        <title>Checkout</title>
+            
+                                        <path
+                                            d="M31.54 4h-19.7c-.84 0-1.63.43-2.09 1.14a2.52 2.52 0 0 0-.18 2.39l5.1 11.46c.3.64.3 1.38 0 2.02L8 36h23.54c.97 0 1.86-.58 2.26-1.48l5.98-13.5c.3-.65.3-1.39 0-2.04L33.8 5.48A2.48 2.48 0 0 0 31.54 4z"
+                                            fill="#96F"></path>
+                                        <path
+                                            d="M7.23 36a2.3 2.3 0 0 1-.98-.22h.04a2.43 2.43 0 0 1-1.23-1.23L.22 23.53a2.54 2.54 0 0 1 .17-2.38A2.45 2.45 0 0 1 2.46 20h19.5c.97 0 1.84.57 2.23 1.46l4.8 10.85.68 1.53c.1.22.23.42.38.6.49.64 1.2 1.3 1.98 1.51-.11.03-.3.05-.55.05H7.22z"
+                                            fill="url(#product-icon-checkout--a)"></path>
+                                        <path
+                                            d="M21.97 20c.9 0 1.72.5 2.14 1.3l.08.16 4.8 10.85.68 1.53a4.43 4.43 0 0 0 2.3 2.01l.18.07c-.2.05-.4.08-.61.08H8L14.67 21c.15-.32.22-.66.22-1.01h7.08z"
+                                            fill="url(#product-icon-checkout--b)"></path>
+                                        <defs>
+                                            <linearGradient id="product-icon-checkout--a" x1="16.01" y1="35.59" x2="16.01"
+                                                y2="21.16" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#21CFE0"></stop>
+                                                <stop offset=".17" stop-color="#20D1E0"></stop>
+                                                <stop offset=".38" stop-color="#18E2E2"></stop>
+                                                <stop offset=".61" stop-color="#13ECE3"></stop>
+                                                <stop offset="1" stop-color="#11EFE3"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="product-icon-checkout--b" x1="21.07" y1="43" x2="21.07" y2="14.5"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0048E5"></stop>
+                                                <stop offset="1" stop-color="#9B66FF"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <span>Checkout</span>
+                                </div>
+                                <h2>
+                                    Pre-built payment form
+                                </h2>
+                                <p>
+                                    Launch faster with a conversion-optimised checkout
+                                </p>
+                                <ul class="multiple-way-list">
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Embed on your site or redirect to a Stripe-hosted page</span>
+                                    </li>
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Customise the colours and fonts to match your brand</span>
+                                    </li>
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Add support for recurring payments and Stripe Tax with no additional integration
+                                            work</span>
+                                    </li>
+            
+                                </ul>
+            
+                            </div>
+                            <a href="#" class="learn-btn">
+                                <span>Explore Checkout</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="build-card">
+                            <div class="build-card-image">
+                                <img src="images/growth-image.webp">
+                                <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="ProductFeatureCard__gradientSvg">
+                                    <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189"
+                                        rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)"
+                                        fill="url(#product-card-paint-one-atlas"></ellipse>
+                                    <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229"
+                                        rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)"
+                                        fill="url(#product-card-paint-two-atlas)"></ellipse>
+                                    <defs>
+                                        <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                                            <stop offset="0.25" stop-color="#FFA500"></stop>
+                                            <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                        <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                                            <stop stop-color="#FFD848"></stop>
+                                            <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="build-card-information">
+                                <div class="build-flex">
+                                    <svg class="ProductIcon ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+                                        <title>Elements</title>
+            
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2 10.02c0-.95.5-1.83 1.33-2.3L16.08.36a2.66 2.66 0 0 1 2.66 0l12.75 7.36a2.66 2.66 0 0 1 1.33 2.3v6l-5-2.89a2.66 2.66 0 0 0-2.66 0l-9.51 5.48a2.66 2.66 0 0 0-1.34 2.3v10.95c0 .9.45 1.72 1.19 2.21L3.33 27.05A2.66 2.66 0 0 1 2 24.75V10.02z"
+                                            fill="url(#product-icon-elements--a)"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.5 34.07l.58.34c.82.48 1.84.48 2.66 0l12.75-7.36a2.66 2.66 0 0 0 1.33-2.3v-8.72l4.47 2.58a2.66 2.66 0 0 1 1.33 2.3v10.95c0 .95-.5 1.83-1.33 2.3l-9.48 5.48c-.82.48-1.83.48-2.65 0l-9.51-5.47-.15-.1z"
+                                            fill="#96F"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M32.82 16.03l-5-2.9a2.66 2.66 0 0 0-2.66 0l-9.51 5.48a2.66 2.66 0 0 0-1.34 2.3v10.95c0 .9.45 1.72 1.19 2.21l.58.34c.82.48 1.84.48 2.66 0l12.75-7.36a2.66 2.66 0 0 0 1.33-2.3v-8.72z"
+                                            fill="url(#product-icon-elements--b)"></path>
+                                        <defs>
+                                            <linearGradient id="product-icon-elements--a" x1="17.41" y1="2.24" x2="17" y2="32.18"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#11EFE3"></stop>
+                                                <stop offset=".33" stop-color="#15E8E2"></stop>
+                                                <stop offset=".74" stop-color="#1FD3E0"></stop>
+                                                <stop offset="1" stop-color="#21CFE0"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="product-icon-elements--b" x1="21.95" y1="40.81" x2="30.59" y2="9.56"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#0048E5"></stop>
+                                                <stop offset=".64" stop-color="#625AF5"></stop>
+                                                <stop offset="1" stop-color="#8A62FC"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <span>Elements</span>
+                                </div>
+                                <h2>
+                                    Flexible UI components
+                                </h2>
+                                <p>
+                                    Build your own pixel-perfect payment experience – even if you <a href="#">process card payments
+                                        outside of Stripe</a>
+                                </p>
+                                <ul class="multiple-way-list">
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Meet business-specific needs with modular UI components</span>
+                                    </li>
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Design a fully branded checkout with customisable CSS-level styling</span>
+                                    </li>
+                                    <li>
+                                        <svg class="ListIcon List__itemIcon" width="16" height="16" viewBox="0 0 16 16">
+                                            <g fill="var(--accentColor)" fill-rule="evenodd">
+                                                <circle opacity=".15" cx="8" cy="8" r="8"></circle>
+                                                <path
+                                                    d="M11.41 4.93L6.64 9.54 5.38 8.18a.7.7 0 0 0-.87-.04.61.61 0 0 0-.18.8l1.5 2.45c.15.22.41.36.69.36.28 0 .53-.14.68-.36.24-.31 4.82-5.78 4.82-5.78.6-.6-.13-1.15-.6-.68z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <span>Reduce friction and simplify compliance with built-in logic</span>
+                                    </li>
+            
+                                </ul>
+            
+                            </div>
+                            <a href="#" class="learn-btn">
+                                <span>Explore Element</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+            
+                    </div>
+            
+                </div>
+            </div>
+
+    <!-- ========== End multiple-way-componant ========== -->
+
+
+
+
+    <!-- ========== Start surface componant ========== -->
+   
+    <div class="build-growth-component design-developer-compontant session-componant surface-componant">
+        <div class="container-fluid custom-spacer-col">
+            <div class="build-growth-grid">
+                <div class="launch-header">
+                    <h2>Join us at session</h2>
+                    <h1>Surface the most relevant payment methods</h1>
+                    <p>
+                        Turn on the most popular payment methods from the Stripe Dashboard, and then use Stripe’s machine learning algorithm to dynamically show customers the most relevant ones you’ve enabled. Experiment with new payment methods, A/B test to understand impact, and set custom rules with no code – while offloading maintenance and eligibility requirements to Stripe. 
+                    </p>
+                    <a href="#" class="learn-btn">
+                        <span>Learn more about payment methods </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z" />
+                        </svg>
+                    </a>
+
+                    <div class="payment-additional-info">
+                        <p>
+                            <b>Access 100+ payment methods</b>, including buy now, pay later options that can boost eligible revenue by up to 14%, and bank debits and real-time payments that can lower transaction costs.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="build-image">
+                    <img src="images/a-b-testing-visual-gb.svg" alt="image">
+                </div>
+            </div>
+    
+            <div class="global-bottom-section">
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="PersonWithCheckmarkIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 8C25.8366 8 33 15.1634 33 24C33 29.087 30.626 33.6195 26.9256 36.5501C26.0383 33.2393 21.9317 30.7368 17 30.7368C12.0683 30.7368 7.96174 33.2392 7.07298 36.5493C3.37396 33.6195 1 29.087 1 24C1 15.1634 8.16344 8 17 8ZM17 18C14.2386 18 12 20.2386 12 23C12 25.7614 14.2386 28 17 28C19.7614 28 22 25.7614 22 23C22 20.2386 19.7614 18 17 18Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M17 8C25.8366 8 33 15.1634 33 24C33 29.087 30.626 33.6195 26.9256 36.5501C26.0383 33.2393 21.9317 30.7368 17 30.7368C12.0683 30.7368 7.96174 33.2392 7.07298 36.5493C3.37396 33.6195 1 29.087 1 24C1 15.1634 8.16344 8 17 8ZM17 18C14.2386 18 12 20.2386 12 23C12 25.7614 14.2386 28 17 28C19.7614 28 22 25.7614 22 23C22 20.2386 19.7614 18 17 18Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M30 3C34.9706 3 39 7.02944 39 12C39 16.9706 34.9706 21 30 21C25.0294 21 21 16.9706 21 12C21 7.02944 25.0294 3 30 3ZM33.94 7.73L28 13.78L26.43 12C26.1336 11.7182 25.6762 11.6943 25.352 11.9436C25.0279 12.193 24.9337 12.6413 25.13 13L27 16.2C27.1823 16.4942 27.5039 16.6732 27.85 16.6732C28.1961 16.6732 28.5177 16.4942 28.7 16.2C29 15.79 34.7 8.63 34.7 8.63C35.45 7.83 34.54 7.12 33.94 7.73Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#PersonWithCheckmarkIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M30 3C34.9706 3 39 7.02944 39 12C39 16.9706 34.9706 21 30 21C25.0294 21 21 16.9706 21 12C21 7.02944 25.0294 3 30 3ZM33.94 7.73L28 13.78L26.43 12C26.1336 11.7182 25.6762 11.6943 25.352 11.9436C25.0279 12.193 24.9337 12.6413 25.13 13L27 16.2C27.1823 16.4942 27.5039 16.6732 27.85 16.6732C28.1961 16.6732 28.5177 16.4942 28.7 16.2C29 15.79 34.7 8.63 34.7 8.63C35.45 7.83 34.54 7.12 33.94 7.73Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg>
+                        </div>
+                        <h4 class="copy_title">
+                            Convert more customers
+                        </h4>
+                        <p>Increase conversion with built-in optimisations, access to 100+ payment methods, and one-click checkout. Unify online and in-person payments to provide a seamless customer experience.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="GlobeWithPersonIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.1733 24.7498C14.304 25.0734 17.4598 25.0732 20.5904 24.7491C20.7185 24.7368 20.8447 24.7868 20.9296 24.8836C21.0144 24.9804 21.0474 25.1121 21.0184 25.2375C19.9907 29.7781 18.1429 32.8461 16.0269 33H15.8769V32.99H15.7169C13.6005 32.8457 11.7617 29.777 10.7347 25.235C10.7087 25.1085 10.7445 24.9771 10.8311 24.8813C10.9177 24.7855 11.0448 24.7366 11.1733 24.7498ZM30.3419 21.975C30.4884 21.8904 30.6724 21.9079 30.8002 22.0187C30.928 22.1295 30.9716 22.3091 30.9086 22.4661C29.2795 26.9034 25.7829 30.4007 21.3459 32.0307C21.1888 32.0937 21.0091 32.0501 20.8983 31.9221C20.7875 31.7942 20.7701 31.61 20.855 31.4636C22.0154 29.3363 22.8076 27.028 23.1979 24.6364C23.2286 24.4766 23.3535 24.3516 23.5133 24.3209C25.9051 23.9282 28.2137 23.1351 30.3419 21.975ZM1.65831 21.975C3.78653 23.1351 6.09507 23.9282 8.48691 24.3209C8.64671 24.3516 8.77166 24.4766 8.80231 24.6364C9.19264 27.028 9.98479 29.3363 11.1452 31.4636C11.2301 31.61 11.2127 31.7942 11.1019 31.9221C10.9911 32.0501 10.8114 32.0937 10.6543 32.0307C6.21731 30.4007 2.72068 26.9034 1.09161 22.4661C1.02866 22.3091 1.07219 22.1295 1.20002 22.0187C1.32785 21.9079 1.51186 21.8904 1.65831 21.975ZM15.8769 11C17.6537 10.9952 19.4289 11.108 21.1908 11.3377C21.3731 11.3633 21.5158 11.5077 21.5391 11.6903C22.0046 15.2144 22.0046 18.7845 21.5391 22.3086C21.5139 22.4925 21.3693 22.6371 21.1854 22.6623C17.661 23.1278 14.0906 23.1278 10.5662 22.6623C10.3844 22.6399 10.2403 22.4982 10.2149 22.3168C9.7734 18.7875 9.77407 15.217 10.2169 11.6879C10.2379 11.507 10.3789 11.3634 10.5594 11.3392C12.3236 11.1207 14.0992 11.0074 15.8769 11ZM7.98097 11.9508C8.07887 12.0356 8.12998 12.1624 8.11831 12.2914C7.79929 15.4215 7.79929 18.5758 8.11831 21.7059C8.13073 21.8344 8.08141 21.9611 7.98541 22.0474C7.88941 22.1337 7.75815 22.1693 7.63171 22.1433C-2.37949 19.9022 -2.70449 14.2755 7.62431 11.8633C7.75035 11.8334 7.88308 11.866 7.98097 11.9508ZM24.2998 11.8528L24.3759 11.8633C34.7047 14.2755 34.3797 19.9022 24.3685 22.1433C24.2421 22.1693 24.1108 22.1337 24.0148 22.0474C23.9188 21.9611 23.8695 21.8344 23.8819 21.7059C24.2009 18.5758 24.2009 15.4215 23.8819 12.2914C23.8702 12.1624 23.9213 12.0356 24.0192 11.9508C24.1171 11.866 24.2499 11.8334 24.3759 11.8633L24.2998 11.8528ZM21.333 1.9683C25.7713 3.59773 29.2692 7.09557 30.8986 11.5339C30.9616 11.6909 30.918 11.8705 30.7902 11.9813C30.6624 12.0921 30.4784 12.1096 30.3319 12.025C28.2036 10.8649 25.895 10.0718 23.5031 9.6791C23.3434 9.64847 23.2184 9.52354 23.1878 9.3638C22.7951 6.9719 22.002 4.6633 20.8419 2.535C20.7573 2.38855 20.7748 2.20454 20.8856 2.07671C20.9964 1.94888 21.176 1.90535 21.333 1.9683ZM10.6672 1.9683C10.8242 1.90535 11.0039 1.94888 11.1146 2.07671C11.2254 2.20454 11.2429 2.38855 11.1583 2.535C9.99822 4.6633 9.20515 6.9719 8.81241 9.3638C8.78178 9.52354 8.65685 9.64847 8.49711 9.6791C6.10521 10.0718 3.7966 10.8649 1.66831 12.025L1.59239 12.0588C1.46208 12.1012 1.31654 12.0736 1.21002 11.9813C1.08219 11.8705 1.03866 11.6909 1.10161 11.5339C2.73104 7.09557 6.22888 3.59773 10.6672 1.9683ZM16.0269 1C18.1428 1.1443 19.9904 4.2207 21.0182 8.7526C21.0469 8.87818 21.0135 9.00989 20.9286 9.10674C20.8437 9.20359 20.7175 9.25382 20.5892 9.2418C17.4585 8.92265 14.3035 8.92265 11.1728 9.2418C11.0443 9.2546 10.9173 9.20546 10.8308 9.10944C10.7444 9.01343 10.7088 8.88201 10.735 8.7555C11.762 4.2218 13.6007 1.1443 15.7169 1H16.0269Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M11.1733 24.7498C14.304 25.0734 17.4598 25.0732 20.5904 24.7491C20.7185 24.7368 20.8447 24.7868 20.9296 24.8836C21.0144 24.9804 21.0474 25.1121 21.0184 25.2375C19.9907 29.7781 18.1429 32.8461 16.0269 33H15.8769V32.99H15.7169C13.6005 32.8457 11.7617 29.777 10.7347 25.235C10.7087 25.1085 10.7445 24.9771 10.8311 24.8813C10.9177 24.7855 11.0448 24.7366 11.1733 24.7498ZM30.3419 21.975C30.4884 21.8904 30.6724 21.9079 30.8002 22.0187C30.928 22.1295 30.9716 22.3091 30.9086 22.4661C29.2795 26.9034 25.7829 30.4007 21.3459 32.0307C21.1888 32.0937 21.0091 32.0501 20.8983 31.9221C20.7875 31.7942 20.7701 31.61 20.855 31.4636C22.0154 29.3363 22.8076 27.028 23.1979 24.6364C23.2286 24.4766 23.3535 24.3516 23.5133 24.3209C25.9051 23.9282 28.2137 23.1351 30.3419 21.975ZM1.65831 21.975C3.78653 23.1351 6.09507 23.9282 8.48691 24.3209C8.64671 24.3516 8.77166 24.4766 8.80231 24.6364C9.19264 27.028 9.98479 29.3363 11.1452 31.4636C11.2301 31.61 11.2127 31.7942 11.1019 31.9221C10.9911 32.0501 10.8114 32.0937 10.6543 32.0307C6.21731 30.4007 2.72068 26.9034 1.09161 22.4661C1.02866 22.3091 1.07219 22.1295 1.20002 22.0187C1.32785 21.9079 1.51186 21.8904 1.65831 21.975ZM15.8769 11C17.6537 10.9952 19.4289 11.108 21.1908 11.3377C21.3731 11.3633 21.5158 11.5077 21.5391 11.6903C22.0046 15.2144 22.0046 18.7845 21.5391 22.3086C21.5139 22.4925 21.3693 22.6371 21.1854 22.6623C17.661 23.1278 14.0906 23.1278 10.5662 22.6623C10.3844 22.6399 10.2403 22.4982 10.2149 22.3168C9.7734 18.7875 9.77407 15.217 10.2169 11.6879C10.2379 11.507 10.3789 11.3634 10.5594 11.3392C12.3236 11.1207 14.0992 11.0074 15.8769 11ZM7.98097 11.9508C8.07887 12.0356 8.12998 12.1624 8.11831 12.2914C7.79929 15.4215 7.79929 18.5758 8.11831 21.7059C8.13073 21.8344 8.08141 21.9611 7.98541 22.0474C7.88941 22.1337 7.75815 22.1693 7.63171 22.1433C-2.37949 19.9022 -2.70449 14.2755 7.62431 11.8633C7.75035 11.8334 7.88308 11.866 7.98097 11.9508ZM24.2998 11.8528L24.3759 11.8633C34.7047 14.2755 34.3797 19.9022 24.3685 22.1433C24.2421 22.1693 24.1108 22.1337 24.0148 22.0474C23.9188 21.9611 23.8695 21.8344 23.8819 21.7059C24.2009 18.5758 24.2009 15.4215 23.8819 12.2914C23.8702 12.1624 23.9213 12.0356 24.0192 11.9508C24.1171 11.866 24.2499 11.8334 24.3759 11.8633L24.2998 11.8528ZM21.333 1.9683C25.7713 3.59773 29.2692 7.09557 30.8986 11.5339C30.9616 11.6909 30.918 11.8705 30.7902 11.9813C30.6624 12.0921 30.4784 12.1096 30.3319 12.025C28.2036 10.8649 25.895 10.0718 23.5031 9.6791C23.3434 9.64847 23.2184 9.52354 23.1878 9.3638C22.7951 6.9719 22.002 4.6633 20.8419 2.535C20.7573 2.38855 20.7748 2.20454 20.8856 2.07671C20.9964 1.94888 21.176 1.90535 21.333 1.9683ZM10.6672 1.9683C10.8242 1.90535 11.0039 1.94888 11.1146 2.07671C11.2254 2.20454 11.2429 2.38855 11.1583 2.535C9.99822 4.6633 9.20515 6.9719 8.81241 9.3638C8.78178 9.52354 8.65685 9.64847 8.49711 9.6791C6.10521 10.0718 3.7966 10.8649 1.66831 12.025L1.59239 12.0588C1.46208 12.1012 1.31654 12.0736 1.21002 11.9813C1.08219 11.8705 1.03866 11.6909 1.10161 11.5339C2.73104 7.09557 6.22888 3.59773 10.6672 1.9683ZM16.0269 1C18.1428 1.1443 19.9904 4.2207 21.0182 8.7526C21.0469 8.87818 21.0135 9.00989 20.9286 9.10674C20.8437 9.20359 20.7175 9.25382 20.5892 9.2418C17.4585 8.92265 14.3035 8.92265 11.1728 9.2418C11.0443 9.2546 10.9173 9.20546 10.8308 9.10944C10.7444 9.01343 10.7088 8.88201 10.735 8.7555C11.762 4.2218 13.6007 1.1443 15.7169 1H16.0269Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0328 38.5127C21.3758 35.9799 24.3642 34 28 34C31.6358 34 34.6242 35.9799 34.9672 38.5127C37.4291 36.4954 39 33.4311 39 30C39 23.9249 34.0751 19 28 19C21.9249 19 17 23.9249 17 30C17 33.4311 18.5709 36.4954 21.0328 38.5127ZM31 29C31 30.6569 29.6569 32 28 32C26.3431 32 25 30.6569 25 29C25 27.3431 26.3431 26 28 26C29.6569 26 31 27.3431 31 29Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#GlobeWithPersonIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0328 38.5127C21.3758 35.9799 24.3642 34 28 34C31.6358 34 34.6242 35.9799 34.9672 38.5127C37.4291 36.4954 39 33.4311 39 30C39 23.9249 34.0751 19 28 19C21.9249 19 17 23.9249 17 30C17 33.4311 18.5709 36.4954 21.0328 38.5127ZM31 29C31 30.6569 29.6569 32 28 32C26.3431 32 25 30.6569 25 29C25 27.3431 26.3431 26 28 26C29.6569 26 31 27.3431 31 29Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg>
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Global reach, local experience
+                        </h4>
+                        <p>Expand to new markets faster by launching payment methods and presenting in local currencies. Sell cross-border to 195+ countries and lower the costs of multi-currency management.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="CardWithMagnifyingGlassIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#CardWithMagnifyingGlassIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg>
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Less fraud, more revenue
+                        </h4>
+                        <p>Automatically decrease fraud and improve authorisation rates with Stripe’s machine learning–powered optimisations, which are trained on billions of data points.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="CardWithMagnifyingGlassIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#CardWithMagnifyingGlassIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg>
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Move faster and lower costs
+                        </h4>
+                        <p>Save time and engineering resources through increased developer productivity. Avoid downtime with leading reliability and reduce costs through alternative payment methods and rails.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+               
+            </div>
+    
+        </div>
+    </div>
+    
+    <!-- ========== End surface componant ========== -->
+    
+    <!-- ========== Start onclick checkout componant ========== -->
+
+    <div class="build-growth-component design-developer-compontant session-componant surface-componant click-componant ">
+        <div class="container-fluid custom-spacer-col">
+            <div class="build-growth-grid">
+                <div class="launch-header">
+                    <h2>Join us at session</h2>
+                    <h1>One-click checkout with Link</h1>
+                    <p>
+                        Enable your customers to check out in as little as six seconds with Link – a network that’s adding millions of new customers every month. Returning customers can use Link to pay with a previously saved US bank account or credit card, helping you improve your conversion rates and customer experience.
+                    </p>
+                    <a href="#" class="learn-btn">
+                        <span>Explore Link </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z" />
+                        </svg>
+                    </a>
+
+                    <div class="payment-additional-info">
+                        <p>
+                            <b>Access 100+ payment methods</b>, including buy now, pay later options that can boost eligible revenue by up to 14%, and bank debits and real-time payments that can lower transaction costs.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="build-image">
+                    <img src="images/pay-in-one-click.latin-gb.png" alt="image">
+                </div>
+            </div>
+    
+            <div class="global-bottom-section">
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="PersonWithCheckmarkIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 8C25.8366 8 33 15.1634 33 24C33 29.087 30.626 33.6195 26.9256 36.5501C26.0383 33.2393 21.9317 30.7368 17 30.7368C12.0683 30.7368 7.96174 33.2392 7.07298 36.5493C3.37396 33.6195 1 29.087 1 24C1 15.1634 8.16344 8 17 8ZM17 18C14.2386 18 12 20.2386 12 23C12 25.7614 14.2386 28 17 28C19.7614 28 22 25.7614 22 23C22 20.2386 19.7614 18 17 18Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M17 8C25.8366 8 33 15.1634 33 24C33 29.087 30.626 33.6195 26.9256 36.5501C26.0383 33.2393 21.9317 30.7368 17 30.7368C12.0683 30.7368 7.96174 33.2392 7.07298 36.5493C3.37396 33.6195 1 29.087 1 24C1 15.1634 8.16344 8 17 8ZM17 18C14.2386 18 12 20.2386 12 23C12 25.7614 14.2386 28 17 28C19.7614 28 22 25.7614 22 23C22 20.2386 19.7614 18 17 18Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M30 3C34.9706 3 39 7.02944 39 12C39 16.9706 34.9706 21 30 21C25.0294 21 21 16.9706 21 12C21 7.02944 25.0294 3 30 3ZM33.94 7.73L28 13.78L26.43 12C26.1336 11.7182 25.6762 11.6943 25.352 11.9436C25.0279 12.193 24.9337 12.6413 25.13 13L27 16.2C27.1823 16.4942 27.5039 16.6732 27.85 16.6732C28.1961 16.6732 28.5177 16.4942 28.7 16.2C29 15.79 34.7 8.63 34.7 8.63C35.45 7.83 34.54 7.12 33.94 7.73Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#PersonWithCheckmarkIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M30 3C34.9706 3 39 7.02944 39 12C39 16.9706 34.9706 21 30 21C25.0294 21 21 16.9706 21 12C21 7.02944 25.0294 3 30 3ZM33.94 7.73L28 13.78L26.43 12C26.1336 11.7182 25.6762 11.6943 25.352 11.9436C25.0279 12.193 24.9337 12.6413 25.13 13L27 16.2C27.1823 16.4942 27.5039 16.6732 27.85 16.6732C28.1961 16.6732 28.5177 16.4942 28.7 16.2C29 15.79 34.7 8.63 34.7 8.63C35.45 7.83 34.54 7.12 33.94 7.73Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg>
+                        </div>
+                        <h4 class="copy_title">
+                            Convert more customers
+                        </h4>
+                        <p>Increase conversion with built-in optimisations, access to 100+ payment methods, and one-click checkout. Unify online and in-person payments to provide a seamless customer experience.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="GlobeWithPersonIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.1733 24.7498C14.304 25.0734 17.4598 25.0732 20.5904 24.7491C20.7185 24.7368 20.8447 24.7868 20.9296 24.8836C21.0144 24.9804 21.0474 25.1121 21.0184 25.2375C19.9907 29.7781 18.1429 32.8461 16.0269 33H15.8769V32.99H15.7169C13.6005 32.8457 11.7617 29.777 10.7347 25.235C10.7087 25.1085 10.7445 24.9771 10.8311 24.8813C10.9177 24.7855 11.0448 24.7366 11.1733 24.7498ZM30.3419 21.975C30.4884 21.8904 30.6724 21.9079 30.8002 22.0187C30.928 22.1295 30.9716 22.3091 30.9086 22.4661C29.2795 26.9034 25.7829 30.4007 21.3459 32.0307C21.1888 32.0937 21.0091 32.0501 20.8983 31.9221C20.7875 31.7942 20.7701 31.61 20.855 31.4636C22.0154 29.3363 22.8076 27.028 23.1979 24.6364C23.2286 24.4766 23.3535 24.3516 23.5133 24.3209C25.9051 23.9282 28.2137 23.1351 30.3419 21.975ZM1.65831 21.975C3.78653 23.1351 6.09507 23.9282 8.48691 24.3209C8.64671 24.3516 8.77166 24.4766 8.80231 24.6364C9.19264 27.028 9.98479 29.3363 11.1452 31.4636C11.2301 31.61 11.2127 31.7942 11.1019 31.9221C10.9911 32.0501 10.8114 32.0937 10.6543 32.0307C6.21731 30.4007 2.72068 26.9034 1.09161 22.4661C1.02866 22.3091 1.07219 22.1295 1.20002 22.0187C1.32785 21.9079 1.51186 21.8904 1.65831 21.975ZM15.8769 11C17.6537 10.9952 19.4289 11.108 21.1908 11.3377C21.3731 11.3633 21.5158 11.5077 21.5391 11.6903C22.0046 15.2144 22.0046 18.7845 21.5391 22.3086C21.5139 22.4925 21.3693 22.6371 21.1854 22.6623C17.661 23.1278 14.0906 23.1278 10.5662 22.6623C10.3844 22.6399 10.2403 22.4982 10.2149 22.3168C9.7734 18.7875 9.77407 15.217 10.2169 11.6879C10.2379 11.507 10.3789 11.3634 10.5594 11.3392C12.3236 11.1207 14.0992 11.0074 15.8769 11ZM7.98097 11.9508C8.07887 12.0356 8.12998 12.1624 8.11831 12.2914C7.79929 15.4215 7.79929 18.5758 8.11831 21.7059C8.13073 21.8344 8.08141 21.9611 7.98541 22.0474C7.88941 22.1337 7.75815 22.1693 7.63171 22.1433C-2.37949 19.9022 -2.70449 14.2755 7.62431 11.8633C7.75035 11.8334 7.88308 11.866 7.98097 11.9508ZM24.2998 11.8528L24.3759 11.8633C34.7047 14.2755 34.3797 19.9022 24.3685 22.1433C24.2421 22.1693 24.1108 22.1337 24.0148 22.0474C23.9188 21.9611 23.8695 21.8344 23.8819 21.7059C24.2009 18.5758 24.2009 15.4215 23.8819 12.2914C23.8702 12.1624 23.9213 12.0356 24.0192 11.9508C24.1171 11.866 24.2499 11.8334 24.3759 11.8633L24.2998 11.8528ZM21.333 1.9683C25.7713 3.59773 29.2692 7.09557 30.8986 11.5339C30.9616 11.6909 30.918 11.8705 30.7902 11.9813C30.6624 12.0921 30.4784 12.1096 30.3319 12.025C28.2036 10.8649 25.895 10.0718 23.5031 9.6791C23.3434 9.64847 23.2184 9.52354 23.1878 9.3638C22.7951 6.9719 22.002 4.6633 20.8419 2.535C20.7573 2.38855 20.7748 2.20454 20.8856 2.07671C20.9964 1.94888 21.176 1.90535 21.333 1.9683ZM10.6672 1.9683C10.8242 1.90535 11.0039 1.94888 11.1146 2.07671C11.2254 2.20454 11.2429 2.38855 11.1583 2.535C9.99822 4.6633 9.20515 6.9719 8.81241 9.3638C8.78178 9.52354 8.65685 9.64847 8.49711 9.6791C6.10521 10.0718 3.7966 10.8649 1.66831 12.025L1.59239 12.0588C1.46208 12.1012 1.31654 12.0736 1.21002 11.9813C1.08219 11.8705 1.03866 11.6909 1.10161 11.5339C2.73104 7.09557 6.22888 3.59773 10.6672 1.9683ZM16.0269 1C18.1428 1.1443 19.9904 4.2207 21.0182 8.7526C21.0469 8.87818 21.0135 9.00989 20.9286 9.10674C20.8437 9.20359 20.7175 9.25382 20.5892 9.2418C17.4585 8.92265 14.3035 8.92265 11.1728 9.2418C11.0443 9.2546 10.9173 9.20546 10.8308 9.10944C10.7444 9.01343 10.7088 8.88201 10.735 8.7555C11.762 4.2218 13.6007 1.1443 15.7169 1H16.0269Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M11.1733 24.7498C14.304 25.0734 17.4598 25.0732 20.5904 24.7491C20.7185 24.7368 20.8447 24.7868 20.9296 24.8836C21.0144 24.9804 21.0474 25.1121 21.0184 25.2375C19.9907 29.7781 18.1429 32.8461 16.0269 33H15.8769V32.99H15.7169C13.6005 32.8457 11.7617 29.777 10.7347 25.235C10.7087 25.1085 10.7445 24.9771 10.8311 24.8813C10.9177 24.7855 11.0448 24.7366 11.1733 24.7498ZM30.3419 21.975C30.4884 21.8904 30.6724 21.9079 30.8002 22.0187C30.928 22.1295 30.9716 22.3091 30.9086 22.4661C29.2795 26.9034 25.7829 30.4007 21.3459 32.0307C21.1888 32.0937 21.0091 32.0501 20.8983 31.9221C20.7875 31.7942 20.7701 31.61 20.855 31.4636C22.0154 29.3363 22.8076 27.028 23.1979 24.6364C23.2286 24.4766 23.3535 24.3516 23.5133 24.3209C25.9051 23.9282 28.2137 23.1351 30.3419 21.975ZM1.65831 21.975C3.78653 23.1351 6.09507 23.9282 8.48691 24.3209C8.64671 24.3516 8.77166 24.4766 8.80231 24.6364C9.19264 27.028 9.98479 29.3363 11.1452 31.4636C11.2301 31.61 11.2127 31.7942 11.1019 31.9221C10.9911 32.0501 10.8114 32.0937 10.6543 32.0307C6.21731 30.4007 2.72068 26.9034 1.09161 22.4661C1.02866 22.3091 1.07219 22.1295 1.20002 22.0187C1.32785 21.9079 1.51186 21.8904 1.65831 21.975ZM15.8769 11C17.6537 10.9952 19.4289 11.108 21.1908 11.3377C21.3731 11.3633 21.5158 11.5077 21.5391 11.6903C22.0046 15.2144 22.0046 18.7845 21.5391 22.3086C21.5139 22.4925 21.3693 22.6371 21.1854 22.6623C17.661 23.1278 14.0906 23.1278 10.5662 22.6623C10.3844 22.6399 10.2403 22.4982 10.2149 22.3168C9.7734 18.7875 9.77407 15.217 10.2169 11.6879C10.2379 11.507 10.3789 11.3634 10.5594 11.3392C12.3236 11.1207 14.0992 11.0074 15.8769 11ZM7.98097 11.9508C8.07887 12.0356 8.12998 12.1624 8.11831 12.2914C7.79929 15.4215 7.79929 18.5758 8.11831 21.7059C8.13073 21.8344 8.08141 21.9611 7.98541 22.0474C7.88941 22.1337 7.75815 22.1693 7.63171 22.1433C-2.37949 19.9022 -2.70449 14.2755 7.62431 11.8633C7.75035 11.8334 7.88308 11.866 7.98097 11.9508ZM24.2998 11.8528L24.3759 11.8633C34.7047 14.2755 34.3797 19.9022 24.3685 22.1433C24.2421 22.1693 24.1108 22.1337 24.0148 22.0474C23.9188 21.9611 23.8695 21.8344 23.8819 21.7059C24.2009 18.5758 24.2009 15.4215 23.8819 12.2914C23.8702 12.1624 23.9213 12.0356 24.0192 11.9508C24.1171 11.866 24.2499 11.8334 24.3759 11.8633L24.2998 11.8528ZM21.333 1.9683C25.7713 3.59773 29.2692 7.09557 30.8986 11.5339C30.9616 11.6909 30.918 11.8705 30.7902 11.9813C30.6624 12.0921 30.4784 12.1096 30.3319 12.025C28.2036 10.8649 25.895 10.0718 23.5031 9.6791C23.3434 9.64847 23.2184 9.52354 23.1878 9.3638C22.7951 6.9719 22.002 4.6633 20.8419 2.535C20.7573 2.38855 20.7748 2.20454 20.8856 2.07671C20.9964 1.94888 21.176 1.90535 21.333 1.9683ZM10.6672 1.9683C10.8242 1.90535 11.0039 1.94888 11.1146 2.07671C11.2254 2.20454 11.2429 2.38855 11.1583 2.535C9.99822 4.6633 9.20515 6.9719 8.81241 9.3638C8.78178 9.52354 8.65685 9.64847 8.49711 9.6791C6.10521 10.0718 3.7966 10.8649 1.66831 12.025L1.59239 12.0588C1.46208 12.1012 1.31654 12.0736 1.21002 11.9813C1.08219 11.8705 1.03866 11.6909 1.10161 11.5339C2.73104 7.09557 6.22888 3.59773 10.6672 1.9683ZM16.0269 1C18.1428 1.1443 19.9904 4.2207 21.0182 8.7526C21.0469 8.87818 21.0135 9.00989 20.9286 9.10674C20.8437 9.20359 20.7175 9.25382 20.5892 9.2418C17.4585 8.92265 14.3035 8.92265 11.1728 9.2418C11.0443 9.2546 10.9173 9.20546 10.8308 9.10944C10.7444 9.01343 10.7088 8.88201 10.735 8.7555C11.762 4.2218 13.6007 1.1443 15.7169 1H16.0269Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0328 38.5127C21.3758 35.9799 24.3642 34 28 34C31.6358 34 34.6242 35.9799 34.9672 38.5127C37.4291 36.4954 39 33.4311 39 30C39 23.9249 34.0751 19 28 19C21.9249 19 17 23.9249 17 30C17 33.4311 18.5709 36.4954 21.0328 38.5127ZM31 29C31 30.6569 29.6569 32 28 32C26.3431 32 25 30.6569 25 29C25 27.3431 26.3431 26 28 26C29.6569 26 31 27.3431 31 29Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#GlobeWithPersonIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.0328 38.5127C21.3758 35.9799 24.3642 34 28 34C31.6358 34 34.6242 35.9799 34.9672 38.5127C37.4291 36.4954 39 33.4311 39 30C39 23.9249 34.0751 19 28 19C21.9249 19 17 23.9249 17 30C17 33.4311 18.5709 36.4954 21.0328 38.5127ZM31 29C31 30.6569 29.6569 32 28 32C26.3431 32 25 30.6569 25 29C25 27.3431 26.3431 26 28 26C29.6569 26 31 27.3431 31 29Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg>
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Global reach, local experience
+                        </h4>
+                        <p>Expand to new markets faster by launching payment methods and presenting in local currencies. Sell cross-border to 195+ countries and lower the costs of multi-currency management.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="CardWithMagnifyingGlassIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#CardWithMagnifyingGlassIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg>
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Less fraud, more revenue
+                        </h4>
+                        <p>Automatically decrease fraud and improve authorisation rates with Stripe’s machine learning–powered optimisations, which are trained on billions of data points.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="global-tab">
+                    <div class="copy_header">
+                        <div class="svg-service">
+                            <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="CardWithMagnifyingGlassIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C1.79086 5 0 6.79086 0 9V23C0 25.2091 1.79086 27 4 27H28C30.2091 27 32 25.2091 32 23V9C32 6.79086 30.2091 5 28 5H4ZM3.75 9C3.33579 9 3 9.33579 3 9.75V11.25C3 11.6642 3.33579 12 3.75 12H28.25C28.6642 12 29 11.6642 29 11.25V9.75C29 9.33579 28.6642 9 28.25 9H3.75Z" class="Icon__blendBackground" style="fill: var(--blendBackground);"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendForeground);"></path><g clip-path="url(#CardWithMagnifyingGlassIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 33C26.1677 33 28.1564 32.2336 29.71 30.9571L31.043 32.29C30.653 32.6806 30.6531 33.3134 31.0435 33.7038L36.8438 39.5041C37.2343 39.8946 37.8675 39.8946 38.258 39.5041L39.6739 38.0882C40.0645 37.6977 40.0645 37.0645 39.6739 36.674L33.8736 30.8736C33.4833 30.4833 32.8505 30.4831 32.4599 30.8731L31.108 29.5212C32.2938 27.9968 33 26.0809 33 24C33 19.0294 28.9706 15 24 15C19.0294 15 15 19.0294 15 24C15 28.9706 19.0294 33 24 33ZM24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" class="Icon__blendForeground" style="fill: var(--blendIntersection);"></path></g></svg>
+                        </div>
+                        
+                        <h4 class="copy_title">
+                            Move faster and lower costs
+                        </h4>
+                        <p>Save time and engineering resources through increased developer productivity. Avoid downtime with leading reliability and reduce costs through alternative payment methods and rails.</p>
+                        <a href="#" class="learn-btn">
+                            <span>See libraries </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>
+               
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- ========== End onclick checkout componant ========== -->
+    
+    <!-- ========== Start stripe-recived componant ========== -->
+
+    <div class="stripe-section">
+
+        <div class="container-fluid custom-spacer-col">
+           <div class="stripe-top">
+                 <div class="stripe-title">
+                    <div class="stripe-heading">
+                       <h1> Stripe received top scores in more criteria than any other vendor evaluated</h1>
+                    </div>
+                    <div class="stripe-description">
+                       <p>
+                          Stripe was recognised with the joint highest score in both the strategy and current offering categories in The Forrester Wave™.
+                       </p>
+                    </div>
+                 <div class="stripe-btn">
+                    <a href="#" class="contact-button hover-swap-link">
+                       <span>Read the Report</span>
+                       <div class="icon-swap-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/>
+                        </svg>
+                        <svg class="hover-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                        </svg>
+                      </div>
+                    </a>
+                 </div>
+                 </div>
+                 <div class="stripe-bottom-section">
+                    <div class="stripe-tab">
+                       <div class="copy_header">
+                          <h4 class="copy_title">                 
+                             5/5
+                          </h4>
+                          <p>score in payments performance optimization</p>
+                       </div>
+                    </div>
+                    <div class="stripe-tab">
+                       <div class="copy_header">
+                          <h4 class="copy_title">                 
+                             5/5
+                          </h4>
+                          <p>score in innovation</p>
+                       </div>
+                    </div>
+                  
+                 </div>
+           </div>
+
+
+           <div class="main">
+              <div class="stripe-slider slider-for">
+                 <div class="tab-pane stripe-1"  id="stripe-1">
+                    <div class="tab-description">
+                       <div class="stripe-tab-inner">
+                             <img src="images/shopify.webp">
+                             <div class="img-content">
+                             <div class="inner-content">
+                                   <div class="stripe-info">
+                                      <div class="row">
+                                         <div class="col-lg-6">
+                                            <div class="stripe-left">
+                                            <div class="title">
+                                               <p class="Quote__body">
+                                               " Shopify has been doing this with Stripe for almost a decade, and we trust Stripe’s DNA to always do the right thing for its customers. If you’re good at building software, you think of APIs, architecture, speed, and resilience. This is what Stripe is so good at: making the complexity of money go away, being resilient, uptime, and beautiful APIs. "
+                                               </p>
+                                               <span class="Quote__author"><strong>Kaz Nejatian</strong>, Vice President, Merchant Services, Shopify</span>
+
+                                            </div>
+                                               <div class="stripe-btn">
+                                                  <a href="#" class="contact-button">
+                                                     <span>Read the Full Story</span>
+                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                                                  </a>
+                                               </div>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-6">
+                                            <div class="stripe-inner-image">
+                                               <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" class="UserLogo variant--Flat TestimonialCard__logo" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><title>Shopify logo</title>
+                                                  <path fill="var(--userLogoColor, #95BF47)" d="M66.246 8.155c.117.02.273.098.293.274.02.156 3.615 24.484 3.615 24.484L61.341 35.1 41 31.584s2.423-18.778 2.52-19.423c.118-.88.157-.899 1.075-1.192.014-.014.67-.216 1.709-.535l1.437-.442c.196-1.407.88-3.224 1.798-4.67 1.31-2.071 2.892-3.224 4.494-3.263.821-.02 1.505.254 2.052.84.04.058.078.098.117.137.079-.02.176-.02.254-.02 1.25 0 2.267.704 2.97 2.052.215.41.372.82.47 1.153l.996-.313c.156-.04.527-.098.723.098.195.195 2.169 2.11 2.169 2.11s2.345.02 2.462.04zm-8.158-1.378c.28-.088.544-.172.791-.244-.254-.82-.84-2.188-2.071-2.423.371.977.469 2.11.489 2.912.276-.083.54-.166.79-.245zm-2.67.831l.823-.254c0-.88-.078-2.189-.527-3.107-.47.196-.86.528-1.153.84-.762.821-1.387 2.072-1.72 3.322a329.99 329.99 0 012.577-.801zm-.408-4.22c-.273-.177-.586-.255-.957-.255-2.462.078-4.612 3.928-5.198 6.507l.256-.08c.804-.25 1.655-.515 2.538-.78.313-1.64 1.095-3.321 2.11-4.416.392-.43.822-.762 1.251-.977zm.43 13.13l1.016-3.83s-.879-.449-2.638-.293c-4.474.293-6.506 3.42-6.311 6.507.132 2.051 1.347 2.914 2.412 3.67.832.591 1.573 1.117 1.633 2.095.039.547-.293 1.309-1.231 1.367-1.427.079-3.224-1.27-3.224-1.27l-.684 2.912s1.778 1.895 5.022 1.7c2.696-.176 4.572-2.326 4.377-5.491-.154-2.422-1.857-3.515-3.206-4.381-.883-.566-1.614-1.036-1.66-1.716-.02-.332 0-1.582 1.993-1.7a5.624 5.624 0 012.501.43z"></path>
+                                                  <path fill="#fff" d="M66.25 8.16c-.12-.02-2.47-.04-2.47-.04L61.61 6a.39.39 0 00-.27-.12V35.1l8.81-2.19s-3.6-24.3-3.61-24.48a.35.35 0 00-.3-.27z" class="UserLogo__path--blendModeMultiply"></path><path fill="var(--userLogoColorAlt, #FFF)" d="M56.46 12.69l-1.02 3.83s-1.13-.53-2.5-.43c-2 .12-2.01 1.37-2 1.7.12 1.72 4.62 2.09 4.87 6.1.2 3.16-1.68 5.31-4.38 5.49a6.59 6.59 0 01-5.02-1.7l.69-2.92s1.8 1.35 3.22 1.27a1.26 1.26 0 001.23-1.36c-.14-2.23-3.8-2.11-4.04-5.77-.2-3.09 1.83-6.21 6.3-6.5 1.77-.16 2.65.29 2.65.29z"></path>
+                                                  <path fill="#fff" d="M82.1 20.86c-1.02-.55-1.55-1.02-1.55-1.66 0-.83.72-1.35 1.88-1.35 1.32 0 2.5.54 2.5.54l.93-2.85s-.86-.66-3.38-.66c-3.51 0-5.96 2.01-5.96 4.84 0 1.6 1.14 2.84 2.66 3.72 1.23.7 1.66 1.19 1.66 1.93 0 .76-.6 1.37-1.76 1.37-1.7 0-3.3-.88-3.3-.88l-1 2.85s1.49 1 3.97 1c3.62 0 6.22-1.78 6.22-4.98.02-1.74-1.3-2.97-2.88-3.87zm14.41-6.02c-1.77 0-3.18.84-4.26 2.13l-.05-.02 1.54-8.1H89.7l-3.9 20.58h4.02l1.35-7.03c.53-2.66 1.9-4.3 3.18-4.3.9 0 1.25.6 1.25 1.49 0 .54-.05 1.23-.17 1.77l-1.53 8.05h4.03l1.58-8.32c.18-.88.3-1.93.3-2.62 0-2.24-1.22-3.63-3.3-3.63zm12.41 0c-4.84 0-8.05 4.37-8.05 9.26 0 3.13 1.94 5.63 5.55 5.63 4.75 0 7.97-4.26 7.97-9.26-.02-2.88-1.72-5.63-5.47-5.63zm-2 11.8c-1.36 0-1.95-1.17-1.95-2.62 0-2.3 1.2-6.08 3.39-6.08 1.42 0 1.9 1.24 1.9 2.43 0 2.48-1.2 6.27-3.33 6.27zm17.75-11.8c-2.71 0-4.26 2.38-4.26 2.38h-.06l.24-2.17h-3.56a77.76 77.76 0 01-.82 5.34l-2.8 14.73h4.03l1.12-5.96h.07s.82.53 2.37.53c4.73 0 7.81-4.85 7.81-9.75.02-2.68-1.19-5.1-4.14-5.1zm-3.85 11.86c-1.05 0-1.66-.59-1.66-.59l.67-3.77c.46-2.5 1.77-4.18 3.18-4.18 1.23 0 1.6 1.13 1.6 2.23 0 2.6-1.54 6.3-3.79 6.3zm13.76-17.63a2.3 2.3 0 00-2.3 2.35c0 1.19.75 2.01 1.89 2.01h.06c1.25 0 2.34-.84 2.36-2.34 0-1.18-.78-2.02-2.01-2.02zm-5.63 20.36h4.03l2.73-14.26h-4.06l-2.7 14.26zm17-14.3h-2.8l.14-.66c.24-1.37 1.06-2.6 2.39-2.6.72 0 1.29.2 1.29.2l.78-3.15s-.7-.35-2.19-.35c-1.43 0-2.85.4-3.95 1.34-1.37 1.18-2.01 2.86-2.34 4.56l-.12.66h-1.88l-.58 3.03h1.87l-2.13 11.27h4.03l2.13-11.27h2.77l.6-3.03zm9.7.04s-2.53 6.35-3.66 9.8h-.06c-.08-1.1-1-9.8-1-9.8h-4.22l2.43 13.11c.05.3.02.47-.08.67a6.95 6.95 0 01-2.2 2.42c-.75.55-1.6.9-2.28 1.13l1.12 3.42c.82-.17 2.5-.84 3.94-2.19 1.84-1.72 3.54-4.37 5.28-7.99l4.92-10.57h-4.2z"></path>
+                                               </svg>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                             
+                             </div>
+                             </div>
+                          
+                       
+                             <div class="overlay">
+  
+                             </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="tab-pane stripe-2 " id="stripe-2">
+                    <div class="tab-description">
+                       <div class="stripe-tab-inner">
+                             <img src="images/uber.webp">
+                             <div class="img-content">
+                             <div class="inner-content">
+                                <div class="stripe-info">
+                                   <div class="row">
+                                      <div class="col-lg-6">
+                                         <div class="stripe-left">
+                                         <div class="title">
+                                            <p class="Quote__body">
+                                            " 
+                                            Creating payments experiences that combine payments innovation, reduced friction, and cost savings is at the core of what we do. Using Link to give customers the option to easily pay with their bank accounts puts us in a position to tick all those boxes while providing access to an increasingly popular mode of payment. Stripe shares our commitment to reliability, customer centricity, and continued innovation – which is why they are a key partner.
+                                            "
+                                            </p>
+                                            <span class="Quote__author"><strong>Karl Hébert</strong>, Vice President of Payments, Risk, and Identity, Uber
+                                            </span>
+
+                                         </div>
+                                            <div class="stripe-btn">
+                                               <a href="#" class="contact-button">
+                                                  <span>Read the Full Story</span>
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                                               </a>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                         <div class="stripe-inner-image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none" class="UserLogo variant--Flat TestimonialCard__logo" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40">
+                                               <path fill="#FFF" d="M66.601 22.562V8H63v14.764C63 28.326 66.944 32 72.088 32c2.504 0 4.733-.944 6.345-2.596v2.192H82V8h-3.601v14.562c0 3.741-2.572 6.27-5.899 6.27-3.361 0-5.899-2.461-5.899-6.27zM86 31.596h3.454v-2.158C91.044 31.023 93.29 32 95.742 32c5.182 0 9.258-4.011 9.258-8.966 0-4.989-4.076-9-9.258-9a8.82 8.82 0 00-6.253 2.562V8H86v23.596zm3.42-8.562c0-3.337 2.729-5.967 6.08-5.967 3.316 0 6.046 2.63 6.046 5.967 0 3.303-2.73 5.966-6.046 5.966-3.385 0-6.08-2.663-6.08-5.966zm17.58-.051c0 5.153 4.108 9.017 9.435 9.017 3.238 0 5.884-1.39 7.66-3.695l-2.542-1.83c-1.323 1.728-3.064 2.542-5.118 2.542-2.994 0-5.396-2.102-5.884-4.915H125v-1.119c0-5.152-3.76-8.983-8.878-8.983-5.188 0-9.122 4.102-9.122 8.983zm9.052-6c2.611 0 4.805 1.763 5.397 4.407h-10.828c.627-2.644 2.82-4.407 5.431-4.407zm19.948.309V14h-1.226c-1.961 0-3.397.91-4.272 2.346V14.14H127V32h3.537V21.844c0-2.766 1.681-4.552 3.992-4.552H136z"></path>
+                                               <title>Uber logo</title>
+                                            </svg>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             
+                             </div>
+                             </div>
+                          
+                       
+                             <div class="overlay stripe-2-overlay">
+  
+                             </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="tab-pane stripe-3 " id="stripe-3">
+                    <div class="tab-description">
+                       <div class="stripe-tab-inner">
+                             <img src="images/MatchesFashion_landscape.webp">
+                             <div class="img-content">
+                             <div class="inner-content">
+                                <div class="stripe-info">
+                                   <div class="row">
+                                      <div class="col-lg-6">
+                                         <div class="stripe-left">
+                                         <div class="title">
+                                            <p class="Quote__body">
+                                            " 
+                                                  Through one integration, we were able to increase our acceptance rates by creating a bespoke approach for each market, offering relevant local payment methods, optimising payments, and navigating 3D Secure in a user-friendly way for our customers.
+                                            "
+                                            </p>
+                                            <span class="Quote__author"><strong>Lauren Mirynowski</strong>, Product Manager, Matches Fashion
+                                            </span>
+
+                                         </div>
+                                            <div class="stripe-btn">
+                                               <a href="#" class="contact-button">
+                                                  <span>Read the Full Story</span>
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                                               </a>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                         <div class="stripe-inner-image">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" class="UserLogo variant--Flat TestimonialCard__logo" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40">
+                                            <title>MatchesFashion logo</title>
+                                            <path fill="#FFF" d="M57.5 8.333l-5.166 6.334-5.167-6.334H45v10.5h1.75V10.25l5.584 6.833 5.5-6.833h.083v8.583h1.75v-10.5H57.5zm15.75 6.334h-5.416l1.5-2.75 1.25-2.167 1.166 2.167 1.5 2.75zm4.084 4.166l-5.667-10.5h-2.25l-5.667 10.5h1.917l1.25-2.583h7.167l1.25 2.583h2zm13-8.916V8.333h-12v1.584h5.083v8.916h1.75V9.917h5.167zm15.916.833c-1.416-1.833-3.5-2.75-6.166-2.75-1.834 0-3.5.5-4.667 1.417-1.417 1.083-2.167 2.5-2.167 4.166 0 1.75.75 3.167 2.167 4.167 1.167.833 2.833 1.417 4.75 1.417 2.667 0 4.5-.75 6.083-2.5l-1.5-.834c-1.166 1.25-2.583 1.75-4.5 1.75-3.166 0-5.083-1.583-5.083-4 0-2.25 2-4 5-4 2 0 3.417.5 4.583 1.667l1.5-.5zm16.417 8.083v-10.5h-1.833v3.584h-8.5V8.333H110.5v10.5h1.834V13.5h8.5v5.333h1.833zm17 0V17.25h-9.417V13.5h6.25v-1.583h-6.25v-2h9V8.333h-10.833v10.5h11.25zm13.75-8.083l1.083-1.167C152.917 8.583 151 8 148.667 8c-3.5 0-5.417 1.25-5.417 3.167 0 2 1.667 2.5 4.917 2.75 3.167.166 5 .166 5 1.666 0 1.167-1.333 1.834-3.917 1.834-1.916 0-3.666-.5-5.416-1.5l-1 1.25c1.583 1.25 3.666 1.75 6.333 1.75 3.833 0 5.833-1.334 5.833-3.5 0-1.75-1.25-2.667-3.916-3-2.167-.25-3.917-.167-5.084-.584-.583-.25-.916-.5-.916-1 0-.833 1.166-1.416 3.416-1.416 1.75.166 3.334.583 4.917 1.333zm-97.584 13v-1.583H45v10.5h1.75v-5.334h6.333V25.75H46.75v-2h9.083zm10.417 5h-5.417l2.75-5.083 2.667 5.083zm4 3.917l-5.667-10.584h-2.25L56.75 32.667h1.917l1.25-2.334h7.166l1.25 2.334h1.917zm13-8.084l1.083-1.166c-1.583-1-3.5-1.584-5.833-1.584-3.5 0-5.417 1.25-5.417 3.167 0 2 1.667 2.5 4.917 2.75 3.167.167 5 .167 5 1.667 0 1.166-1.333 1.833-3.917 1.833-1.916 0-3.666-.5-5.416-1.5l-1 1.25c1.583 1.25 3.666 1.75 6.333 1.75 3.833 0 5.833-1.333 5.833-3.5 0-1.75-1.25-2.667-3.916-3-2.167-.25-3.917-.167-5.084-.583-.583-.25-.916-.5-.916-1 0-.834 1.166-1.417 3.416-1.417 1.75.167 3.334.583 4.917 1.333zm18 8.084v-10.5H99.5v3.583h-8.583v-3.583h-1.834v10.5h1.834v-5.334H99.5v5.334h1.75zm5.333-10.5h1.75V32.75h-1.75V22.167zm18.667 5.25c0 2.333-1.917 4-5 4s-5.083-1.584-5.083-4c0-2.334 2.083-4 5.083-4 1.333 0 2.583.416 3.417 1 1.083.75 1.583 1.75 1.583 3zm1.917 0c0-1.667-.75-3.084-2.167-4.167-1.167-.917-2.833-1.417-4.667-1.417-1.833 0-3.5.5-4.666 1.417-1.417 1.083-2.167 2.5-2.167 4.167 0 1.75.75 3.083 2.167 4.166 1.166.834 2.833 1.417 4.75 1.417 1.833 0 3.5-.5 4.666-1.417 1.334-1.083 2.084-2.416 2.084-4.166zm14.916-5.25v8.666l-8.166-8.666h-2.167v10.5h1.75V24l8.167 8.667h2.166v-10.5h-1.75z"></path>
+                                         </svg>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             
+                             </div>
+                             </div>
+                          
+                       
+                             <div class="overlay stripe-3-overlay">
+  
+                             </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="tab-pane stripe-4" id="stripe-4">
+                    <div class="tab-description">
+                       <div class="stripe-tab-inner">
+                             <img src="images/slack_testimonial.webp">
+                             <div class="img-content">
+                             <div class="inner-content">
+                                <div class="stripe-info">
+                                   <div class="row">
+                                      <div class="col-lg-6">
+                                         <div class="stripe-left">
+                                         <div class="title">
+                                            <p class="Quote__body">
+                                            " 
+                                                  If you look at every company larger than us, they all use multiple payment processors – but Stripe didn’t exist when these companies were growing up. Our feeling is that we can’t just look to what our larger peers have before us – because now Stripe is here. We’re buying into Stripe’s platform and long-term vision.
+                                            "
+                                            </p>
+                                            <span class="Quote__author"><strong>Britt Jamison</strong>, Product Manager, Slack
+                                            </span>
+
+                                         </div>
+                                            <div class="stripe-btn">
+                                               <a href="#" class="contact-button">
+                                                  <span>Read the Full Story</span>
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                                               </a>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                         <div class="stripe-inner-image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" class="UserLogo variant--Flat TestimonialCard__logo" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><title>Slack logo</title><g fill="none">
+                                               <path fill="#FFF" d="M80.95 28.15l1.32-3.06a8.8 8.8 0 005.2 1.62c1.38 0 2.25-.53 2.25-1.34-.02-2.26-8.28-.49-8.34-6.15-.03-2.87 2.53-5.08 6.15-5.08 2.15 0 4.3.53 5.83 1.75L92.12 19a9.32 9.32 0 00-4.8-1.53c-1.13 0-1.88.53-1.88 1.21.02 2.21 8.34 1 8.43 6.4 0 2.94-2.49 5-6.07 5-2.61 0-5.02-.62-6.85-1.94M131.59 24a3.8 3.8 0 110-3.74l3.64-2.02a7.98 7.98 0 100 7.78L131.59 24zM95.7 7.53h4.55v22.26H95.7zm41.31 0V29.8h4.56v-6.68l5.4 6.68h5.84l-6.88-7.93 6.37-7.4h-5.58l-5.15 6.15V7.53zm-23.21 16.5a4.2 4.2 0 01-3.56 1.9 3.8 3.8 0 110-7.62c1.53 0 2.9.85 3.55 1.96v3.76zm0-9.57v1.8c-.75-1.25-2.6-2.12-4.54-2.12-4 0-7.15 3.53-7.15 7.95 0 4.43 3.15 8 7.15 8 1.94 0 3.79-.87 4.53-2.13v1.8h4.56v-15.3h-4.56z"></path>
+                                               <path fill="#FFF" d="M52.79 24a2.8 2.8 0 11-2.81-2.8h2.81V24zm1.4 0a2.8 2.8 0 115.62 0v7.02a2.8 2.8 0 11-5.62 0v-7.01z"></path>
+                                               <path fill="#FFF" d="M57 12.74a2.8 2.8 0 112.81-2.8v2.8h-2.8zm0 1.42a2.8 2.8 0 110 5.62h-7.04a2.8 2.8 0 110-5.62H57z"></path>
+                                               <path fill="#FFF" d="M68.26 16.97a2.8 2.8 0 112.81 2.8h-2.8v-2.8zm-1.4 0a2.8 2.8 0 11-5.62 0V9.93a2.8 2.8 0 115.62 0v7.04z"></path>
+                                               <path fill="#FFF" d="M64.05 28.22a2.8 2.8 0 11-2.81 2.8v-2.8h2.8zm0-1.4a2.8 2.8 0 110-5.62h7.04a2.8 2.8 0 110 5.61h-7.04z"></path>
+                                            </g>
+                                         </svg>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             
+                             </div>
+                             </div>
+                          
+                       
+                             <div class="overlay stripe-4-overlay">
+  
+                             </div>
+                       </div>
+                    </div>
+                 </div>
+               </div>
+
+               <div class="action slide-ul">
+                 <a href="#" data-slide="1">
+                    <div class="a1">  
+                       <div class="slide-button">
+                          <button class="nav-link active" id="stripe-1-tab" data-bs-toggle="tab" data-bs-target="#stripe-1" type="button" role="tab">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" class="UserLogo CarouselNavItem__logo" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><title>Shopify logo</title><path fill="var(--userLogoColor, #95BF47)" d="M66.246 8.155c.117.02.273.098.293.274.02.156 3.615 24.484 3.615 24.484L61.341 35.1 41 31.584s2.423-18.778 2.52-19.423c.118-.88.157-.899 1.075-1.192.014-.014.67-.216 1.709-.535l1.437-.442c.196-1.407.88-3.224 1.798-4.67 1.31-2.071 2.892-3.224 4.494-3.263.821-.02 1.505.254 2.052.84.04.058.078.098.117.137.079-.02.176-.02.254-.02 1.25 0 2.267.704 2.97 2.052.215.41.372.82.47 1.153l.996-.313c.156-.04.527-.098.723.098.195.195 2.169 2.11 2.169 2.11s2.345.02 2.462.04zm-8.158-1.378c.28-.088.544-.172.791-.244-.254-.82-.84-2.188-2.071-2.423.371.977.469 2.11.489 2.912.276-.083.54-.166.79-.245zm-2.67.831l.823-.254c0-.88-.078-2.189-.527-3.107-.47.196-.86.528-1.153.84-.762.821-1.387 2.072-1.72 3.322a329.99 329.99 0 012.577-.801zm-.408-4.22c-.273-.177-.586-.255-.957-.255-2.462.078-4.612 3.928-5.198 6.507l.256-.08c.804-.25 1.655-.515 2.538-.78.313-1.64 1.095-3.321 2.11-4.416.392-.43.822-.762 1.251-.977zm.43 13.13l1.016-3.83s-.879-.449-2.638-.293c-4.474.293-6.506 3.42-6.311 6.507.132 2.051 1.347 2.914 2.412 3.67.832.591 1.573 1.117 1.633 2.095.039.547-.293 1.309-1.231 1.367-1.427.079-3.224-1.27-3.224-1.27l-.684 2.912s1.778 1.895 5.022 1.7c2.696-.176 4.572-2.326 4.377-5.491-.154-2.422-1.857-3.515-3.206-4.381-.883-.566-1.614-1.036-1.66-1.716-.02-.332 0-1.582 1.993-1.7a5.624 5.624 0 012.501.43z"></path><path fill="var(--userLogoColor, #5E8E3E)" d="M66.25 8.16c-.12-.02-2.47-.04-2.47-.04L61.61 6a.39.39 0 00-.27-.12V35.1l8.81-2.19s-3.6-24.3-3.61-24.48a.35.35 0 00-.3-.27z" class="UserLogo__path--blendModeMultiply"></path><path fill="var(--userLogoColorAlt, #FFF)" d="M56.46 12.69l-1.02 3.83s-1.13-.53-2.5-.43c-2 .12-2.01 1.37-2 1.7.12 1.72 4.62 2.09 4.87 6.1.2 3.16-1.68 5.31-4.38 5.49a6.59 6.59 0 01-5.02-1.7l.69-2.92s1.8 1.35 3.22 1.27a1.26 1.26 0 001.23-1.36c-.14-2.23-3.8-2.11-4.04-5.77-.2-3.09 1.83-6.21 6.3-6.5 1.77-.16 2.65.29 2.65.29z"></path><path fill="var(--userLogoColor, #000)" d="M82.1 20.86c-1.02-.55-1.55-1.02-1.55-1.66 0-.83.72-1.35 1.88-1.35 1.32 0 2.5.54 2.5.54l.93-2.85s-.86-.66-3.38-.66c-3.51 0-5.96 2.01-5.96 4.84 0 1.6 1.14 2.84 2.66 3.72 1.23.7 1.66 1.19 1.66 1.93 0 .76-.6 1.37-1.76 1.37-1.7 0-3.3-.88-3.3-.88l-1 2.85s1.49 1 3.97 1c3.62 0 6.22-1.78 6.22-4.98.02-1.74-1.3-2.97-2.88-3.87zm14.41-6.02c-1.77 0-3.18.84-4.26 2.13l-.05-.02 1.54-8.1H89.7l-3.9 20.58h4.02l1.35-7.03c.53-2.66 1.9-4.3 3.18-4.3.9 0 1.25.6 1.25 1.49 0 .54-.05 1.23-.17 1.77l-1.53 8.05h4.03l1.58-8.32c.18-.88.3-1.93.3-2.62 0-2.24-1.22-3.63-3.3-3.63zm12.41 0c-4.84 0-8.05 4.37-8.05 9.26 0 3.13 1.94 5.63 5.55 5.63 4.75 0 7.97-4.26 7.97-9.26-.02-2.88-1.72-5.63-5.47-5.63zm-2 11.8c-1.36 0-1.95-1.17-1.95-2.62 0-2.3 1.2-6.08 3.39-6.08 1.42 0 1.9 1.24 1.9 2.43 0 2.48-1.2 6.27-3.33 6.27zm17.75-11.8c-2.71 0-4.26 2.38-4.26 2.38h-.06l.24-2.17h-3.56a77.76 77.76 0 01-.82 5.34l-2.8 14.73h4.03l1.12-5.96h.07s.82.53 2.37.53c4.73 0 7.81-4.85 7.81-9.75.02-2.68-1.19-5.1-4.14-5.1zm-3.85 11.86c-1.05 0-1.66-.59-1.66-.59l.67-3.77c.46-2.5 1.77-4.18 3.18-4.18 1.23 0 1.6 1.13 1.6 2.23 0 2.6-1.54 6.3-3.79 6.3zm13.76-17.63a2.3 2.3 0 00-2.3 2.35c0 1.19.75 2.01 1.89 2.01h.06c1.25 0 2.34-.84 2.36-2.34 0-1.18-.78-2.02-2.01-2.02zm-5.63 20.36h4.03l2.73-14.26h-4.06l-2.7 14.26zm17-14.3h-2.8l.14-.66c.24-1.37 1.06-2.6 2.39-2.6.72 0 1.29.2 1.29.2l.78-3.15s-.7-.35-2.19-.35c-1.43 0-2.85.4-3.95 1.34-1.37 1.18-2.01 2.86-2.34 4.56l-.12.66h-1.88l-.58 3.03h1.87l-2.13 11.27h4.03l2.13-11.27h2.77l.6-3.03zm9.7.04s-2.53 6.35-3.66 9.8h-.06c-.08-1.1-1-9.8-1-9.8h-4.22l2.43 13.11c.05.3.02.47-.08.67a6.95 6.95 0 01-2.2 2.42c-.75.55-1.6.9-2.28 1.13l1.12 3.42c.82-.17 2.5-.84 3.94-2.19 1.84-1.72 3.54-4.37 5.28-7.99l4.92-10.57h-4.2z"></path></svg>
+                          </button>
+                          </div>
+                      </div>
+                 </a>
+                 <a href="#" data-slide="2">
+                    <div class="a2">  
+                       <div class="slide-button">
+                          <button class="nav-link" id="stripe-2-tab" data-bs-toggle="tab" data-bs-target="#stripe-2" type="button" role="tab">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none" class="UserLogo CarouselNavItem__logo variant--Flat" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><path fill="var(--userLogoColor, #000)" d="M66.601 22.562V8H63v14.764C63 28.326 66.944 32 72.088 32c2.504 0 4.733-.944 6.345-2.596v2.192H82V8h-3.601v14.562c0 3.741-2.572 6.27-5.899 6.27-3.361 0-5.899-2.461-5.899-6.27zM86 31.596h3.454v-2.158C91.044 31.023 93.29 32 95.742 32c5.182 0 9.258-4.011 9.258-8.966 0-4.989-4.076-9-9.258-9a8.82 8.82 0 00-6.253 2.562V8H86v23.596zm3.42-8.562c0-3.337 2.729-5.967 6.08-5.967 3.316 0 6.046 2.63 6.046 5.967 0 3.303-2.73 5.966-6.046 5.966-3.385 0-6.08-2.663-6.08-5.966zm17.58-.051c0 5.153 4.108 9.017 9.435 9.017 3.238 0 5.884-1.39 7.66-3.695l-2.542-1.83c-1.323 1.728-3.064 2.542-5.118 2.542-2.994 0-5.396-2.102-5.884-4.915H125v-1.119c0-5.152-3.76-8.983-8.878-8.983-5.188 0-9.122 4.102-9.122 8.983zm9.052-6c2.611 0 4.805 1.763 5.397 4.407h-10.828c.627-2.644 2.82-4.407 5.431-4.407zm19.948.309V14h-1.226c-1.961 0-3.397.91-4.272 2.346V14.14H127V32h3.537V21.844c0-2.766 1.681-4.552 3.992-4.552H136z"></path><title>Uber logo</title></svg>
+                          </button>
+                       </div>
+                      </div>
+                 </a>
+                 <a href="#" data-slide="3">
+                    <div class="a3">  
+                       <div class="slide-button">
+                          <button class="nav-link" id="stripe-3-tab" data-bs-toggle="tab" data-bs-target="#stripe-3" type="button" role="tab">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" class="UserLogo CarouselNavItem__logo variant--Flat" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><title>MatchesFashion logo</title><path fill="var(--userLogoColor, #1D1D1B)" d="M57.5 8.333l-5.166 6.334-5.167-6.334H45v10.5h1.75V10.25l5.584 6.833 5.5-6.833h.083v8.583h1.75v-10.5H57.5zm15.75 6.334h-5.416l1.5-2.75 1.25-2.167 1.166 2.167 1.5 2.75zm4.084 4.166l-5.667-10.5h-2.25l-5.667 10.5h1.917l1.25-2.583h7.167l1.25 2.583h2zm13-8.916V8.333h-12v1.584h5.083v8.916h1.75V9.917h5.167zm15.916.833c-1.416-1.833-3.5-2.75-6.166-2.75-1.834 0-3.5.5-4.667 1.417-1.417 1.083-2.167 2.5-2.167 4.166 0 1.75.75 3.167 2.167 4.167 1.167.833 2.833 1.417 4.75 1.417 2.667 0 4.5-.75 6.083-2.5l-1.5-.834c-1.166 1.25-2.583 1.75-4.5 1.75-3.166 0-5.083-1.583-5.083-4 0-2.25 2-4 5-4 2 0 3.417.5 4.583 1.667l1.5-.5zm16.417 8.083v-10.5h-1.833v3.584h-8.5V8.333H110.5v10.5h1.834V13.5h8.5v5.333h1.833zm17 0V17.25h-9.417V13.5h6.25v-1.583h-6.25v-2h9V8.333h-10.833v10.5h11.25zm13.75-8.083l1.083-1.167C152.917 8.583 151 8 148.667 8c-3.5 0-5.417 1.25-5.417 3.167 0 2 1.667 2.5 4.917 2.75 3.167.166 5 .166 5 1.666 0 1.167-1.333 1.834-3.917 1.834-1.916 0-3.666-.5-5.416-1.5l-1 1.25c1.583 1.25 3.666 1.75 6.333 1.75 3.833 0 5.833-1.334 5.833-3.5 0-1.75-1.25-2.667-3.916-3-2.167-.25-3.917-.167-5.084-.584-.583-.25-.916-.5-.916-1 0-.833 1.166-1.416 3.416-1.416 1.75.166 3.334.583 4.917 1.333zm-97.584 13v-1.583H45v10.5h1.75v-5.334h6.333V25.75H46.75v-2h9.083zm10.417 5h-5.417l2.75-5.083 2.667 5.083zm4 3.917l-5.667-10.584h-2.25L56.75 32.667h1.917l1.25-2.334h7.166l1.25 2.334h1.917zm13-8.084l1.083-1.166c-1.583-1-3.5-1.584-5.833-1.584-3.5 0-5.417 1.25-5.417 3.167 0 2 1.667 2.5 4.917 2.75 3.167.167 5 .167 5 1.667 0 1.166-1.333 1.833-3.917 1.833-1.916 0-3.666-.5-5.416-1.5l-1 1.25c1.583 1.25 3.666 1.75 6.333 1.75 3.833 0 5.833-1.333 5.833-3.5 0-1.75-1.25-2.667-3.916-3-2.167-.25-3.917-.167-5.084-.583-.583-.25-.916-.5-.916-1 0-.834 1.166-1.417 3.416-1.417 1.75.167 3.334.583 4.917 1.333zm18 8.084v-10.5H99.5v3.583h-8.583v-3.583h-1.834v10.5h1.834v-5.334H99.5v5.334h1.75zm5.333-10.5h1.75V32.75h-1.75V22.167zm18.667 5.25c0 2.333-1.917 4-5 4s-5.083-1.584-5.083-4c0-2.334 2.083-4 5.083-4 1.333 0 2.583.416 3.417 1 1.083.75 1.583 1.75 1.583 3zm1.917 0c0-1.667-.75-3.084-2.167-4.167-1.167-.917-2.833-1.417-4.667-1.417-1.833 0-3.5.5-4.666 1.417-1.417 1.083-2.167 2.5-2.167 4.167 0 1.75.75 3.083 2.167 4.166 1.166.834 2.833 1.417 4.75 1.417 1.833 0 3.5-.5 4.666-1.417 1.334-1.083 2.084-2.416 2.084-4.166zm14.916-5.25v8.666l-8.166-8.666h-2.167v10.5h1.75V24l8.167 8.667h2.166v-10.5h-1.75z"></path></svg>
+                          </button>
+                       </div>
+                      </div>
+                 </a>
+                 <a href="#" data-slide="4">
+                    <div class="a3">  
+                       <div class="slide-button">
+                          <button class="nav-link" id="stripe-4-tab" data-bs-toggle="tab" data-bs-target="#stripe-4" type="button" role="tab">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" class="UserLogo CarouselNavItem__logo variant--Flat" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><title>Slack logo</title><g fill="none"><path fill="var(--userLogoColor, #000)" d="M80.95 28.15l1.32-3.06a8.8 8.8 0 005.2 1.62c1.38 0 2.25-.53 2.25-1.34-.02-2.26-8.28-.49-8.34-6.15-.03-2.87 2.53-5.08 6.15-5.08 2.15 0 4.3.53 5.83 1.75L92.12 19a9.32 9.32 0 00-4.8-1.53c-1.13 0-1.88.53-1.88 1.21.02 2.21 8.34 1 8.43 6.4 0 2.94-2.49 5-6.07 5-2.61 0-5.02-.62-6.85-1.94M131.59 24a3.8 3.8 0 110-3.74l3.64-2.02a7.98 7.98 0 100 7.78L131.59 24zM95.7 7.53h4.55v22.26H95.7zm41.31 0V29.8h4.56v-6.68l5.4 6.68h5.84l-6.88-7.93 6.37-7.4h-5.58l-5.15 6.15V7.53zm-23.21 16.5a4.2 4.2 0 01-3.56 1.9 3.8 3.8 0 110-7.62c1.53 0 2.9.85 3.55 1.96v3.76zm0-9.57v1.8c-.75-1.25-2.6-2.12-4.54-2.12-4 0-7.15 3.53-7.15 7.95 0 4.43 3.15 8 7.15 8 1.94 0 3.79-.87 4.53-2.13v1.8h4.56v-15.3h-4.56z"></path><path fill="var(--userLogoColor, #E01E5A)" d="M52.79 24a2.8 2.8 0 11-2.81-2.8h2.81V24zm1.4 0a2.8 2.8 0 115.62 0v7.02a2.8 2.8 0 11-5.62 0v-7.01z"></path><path fill="var(--userLogoColor, #36C5F0)" d="M57 12.74a2.8 2.8 0 112.81-2.8v2.8h-2.8zm0 1.42a2.8 2.8 0 110 5.62h-7.04a2.8 2.8 0 110-5.62H57z"></path><path fill="var(--userLogoColor, #2EB67D)" d="M68.26 16.97a2.8 2.8 0 112.81 2.8h-2.8v-2.8zm-1.4 0a2.8 2.8 0 11-5.62 0V9.93a2.8 2.8 0 115.62 0v7.04z"></path><path fill="var(--userLogoColor, #ECB22E)" d="M64.05 28.22a2.8 2.8 0 11-2.81 2.8v-2.8h2.8zm0-1.4a2.8 2.8 0 110-5.62h7.04a2.8 2.8 0 110 5.61h-7.04z"></path></g></svg>
+                          </button>
+                       </div>
+                      </div>
+                 </a>
+               </div>
+
+               </div>
+           </div>
+  
+          
+  
+     </div>
+    
+    <!-- ========== End stripe-recived componant ========== -->
+    
+
+   </main>
+
+ 
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="footer-component">
+         <div class="container-fluid custom-spacer-col">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="footer-left-main">
+                     <div class="footer-logo">
+                        <a href="index.html">
+                           <img src="./images/footer-logo.png" alt="stripe">
+                        </a>
+                     </div>
+                     <div class="footer-left">
+                        <a href="#">
+                           <svg class="LocaleControl__triggerIcon" width="16" height="16" viewBox="0 0 16 16">
+                              <path
+                                 d="M3.54 8.04h4.42v4.43c0 .57.76.75 1.01.24l4.96-9.93a.54.54 0 0 0-.72-.72L3.3 7.03c-.5.25-.33 1.01.24 1.01"
+                                 fill="#0A2540" fill-rule="evenodd"></path>
+                           </svg>
+                           <span>India (English)</span>
+                        </a>
+                     </div>
+                  </div>
+   
+               </div>
+               <div class="col-md-9">
+                  <div class="footer-links-wrap">
+                     <div class="footer-links-list">
+                        <div class="footer-list-inner">
+                           <h6>Products & pricing</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Pricing</a></li>
+                              <li class="nav-item"><a href="#">Atlas</a></li>
+                              <li class="nav-item"><a href="#">Billing</a></li>
+                              <li class="nav-item"><a href="#">Capital</a></li>
+                              <li class="nav-item"><a href="#">Checkout</a></li>
+                              <li class="nav-item"><a href="#">Climate</a></li>
+                              <li class="nav-item"><a href="#">Connect</a></li>
+                              <li class="nav-item"><a href="#">Data Pipeline</a></li>
+                              <li class="nav-item"><a href="#">Elements</a></li>
+                              <li class="nav-item"><a href="#">Financial Connections</a></li>
+                              <li class="nav-item"><a href="#">Identity</a></li>
+                              <li class="nav-item"><a href="#">Invoicing</a></li>
+                              <li class="nav-item"><a href="#">Issuing</a></li>
+                              <li class="nav-item"><a href="#">Link</a></li>
+                              <li class="nav-item"><a href="#">Payments</a></li>
+                              <li class="nav-item"><a href="#">Payment Links</a></li>
+                              <li class="nav-item"><a href="#">Payouts</a></li>
+                              <li class="nav-item"><a href="#">Radar</a></li>
+                              <li class="nav-item"><a href="#">Revenue Recognition</a></li>
+                              <li class="nav-item"><a href="#">Tax</a></li>
+                              <li class="nav-item"><a href="#">Terminal</a></li>
+                              <li class="nav-item"><a href="#">Treasury</a></li>
+                           </ul>
+                        </div>
+   
+   
+                     </div>
+                     <div class="footer-links-list">
+                        <div class="footer-list-inner">
+                           <h6>Solutions</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Startups</a></li>
+                              <li class="nav-item"><a href="#">Enterprises</a></li>
+                              <li class="nav-item"><a href="#">SaaS</a></li>
+                              <li class="nav-item"><a href="#">Retail</a></li>
+                              <li class="nav-item"><a href="#">Platforms</a></li>
+                              <li class="nav-item"><a href="#">E-Commerce</a></li>
+                              <li class="nav-item"><a href="#">Marketplaces</a></li>
+                              <li class="nav-item"><a href="#">Crypto</a></li>
+                              <li class="nav-item"><a href="#">Creator economy</a></li>
+                              <li class="nav-item"><a href="#">Embedded finance</a></li>
+                              <li class="nav-item"><a href="#">Global businesses</a></li>
+                              <li class="nav-item"><a href="#">Finance automation</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-list-inner">
+                           <h6>Integrations & custom solutions</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Stripe App Marketplace</a></li>
+   
+                              <li class="nav-item"><a href="#">Partner ecosystem</a></li>
+                              <li class="nav-item"><a href="#">Professional services</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-list-inner">
+                           <h6>Developers</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Documentation</a></li>
+                              <li class="nav-item"><a href="#">API reference</a></li>
+                              <li class="nav-item"><a href="#">API status</a></li>
+                              <li class="nav-item"><a href="#">API changelog</a></li>
+                              <li class="nav-item"><a href="#">Stripe Apps</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="footer-links-list">
+                        <div class="footer-list-inner">
+                           <h6>Resources</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Guides</a></li>
+                              <li class="nav-item"><a href="#">Customer stories</a></li>
+                              <li class="nav-item"><a href="#">Blog</a></li>
+                              <li class="nav-item"><a href="#">Annual conference</a></li>
+                              <li class="nav-item"><a href="#">Privacy & terms</a></li>
+                              <li class="nav-item"><a href="#">Prohibited & restricted businesses</a></li>
+                              <li class="nav-item"><a href="#">Licences</a></li>
+                              <li class="nav-item"><a href="#">Sitemap</a></li>
+                              <li class="nav-item"><a href="#">Cookie settings</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-list-inner">
+                           <h6>Company</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Jobs</a></li>
+                              <li class="nav-item"><a href="#">Newsroom</a></li>
+                              <li class="nav-item"><a href="#">Stripe Press</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-list-inner">
+                           <h6>Support</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Contact sales</a></li>
+                              <li class="nav-item"><a href="#">Support centre</a></li>
+                              <li class="nav-item"><a href="#">Support plans</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="footer-copyright">
+               <p>© 2025 Stripe, Inc</p>
+            </div>
+   
+         </div>
+      </div>
+   </footer>
+
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/Gradient.js" ></script>
+   <script src="js/custom.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+   <script>
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    fade: true,
+});
+
+// Click event for navigation links
+$('a[data-slide]').click(function(e) {
+    e.preventDefault();
+
+    // Remove 'active' class from all links and add to the clicked one
+    $('a[data-slide]').removeClass('active');
+    $(this).addClass('active');
+
+    // Get the slide number and go to that slide
+    var slideno = $(this).data('slide');
+    $('.slider-for').slick('slickGoTo', slideno - 1);
+});
+   </script>
+
+</body>
+
+</html>

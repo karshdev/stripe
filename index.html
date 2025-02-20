@@ -1,0 +1,1852 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="#2196F3">
+   <title>Stripe</title>
+   <meta name="description" content="">
+   <meta name="template" content="ethos-page-content">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- <link href="css/slick.css" rel="stylesheet" /> -->
+   <link href="css/custom-main.css" rel="stylesheet">
+   <link rel="preload" href="https://b.stripecdn.com/mkt-statics-srv/assets/f965fdf4.woff2" as="font" crossorigin="" />
+   <link href="css/BackgroundGlobe-64953aedea5f231d07b7.css" rel="stylesheet">
+   <link href="css/f965fdf4.woff2" rel="stylesheet">
+   <link href="css/Globe-b2159f87180df559d2e8.css" rel="srtylesheet">
+   <link href="css/RowLayout-9272a8ee72d3dac4a6ef.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/Globe-b2159f87180df559d2e8.css" media="all" />
+   <link rel="stylesheet" href="css/RowLayout-9272a8ee72d3dac4a6ef.css" media="all" />
+   
+</head>
+
+<body>
+
+   <!-- <style>
+      .section-title-1 {
+        font-size:90px;
+        font-weight:700;
+        text-transform: uppercase;
+        width:500px;
+        max-width:80vw;
+       
+    }
+
+    .banner-title{
+      padding-top:350px;
+    }
+    
+
+    .text {
+	line-height: 1;
+	margin: var(--gradient-title-margin) 0 0 0;
+	text-transform: none;
+	letter-spacing: 2px;
+	min-height: 200px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.text-above {
+	color: var(--font-color);
+	position: relative;
+}
+
+.text-under {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.text-under-blended {
+	color: #3a3a3a;
+	mix-blend-mode: color-burn;
+}
+
+.text-under-overlay {
+	opacity: 0.2;
+	color: #3a3a3a;
+}
+   </style> -->
+
+
+   <!-- Header -->
+
+   <header class="header-wrapper">
+      
+      <div class="main-header">
+         <div class="container-fluid custom-spacer-col">
+            <nav class="navbar navbar-expand-md navbar-light">
+               <a class="navbar-brand" href="index.html">
+                  <img class="logo" src="images/logo.png" alt="Stripe">
+               </a>
+               <!-- menu start here -->
+               <div class="header-main-nav">
+                  <!-- mobile menu trigger -->
+                  <div class="mobile-menu-trigger" id="mobile-nav-toggle" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                     <div class="mobile-inner">
+                         <svg width="16" height="10" viewBox="0 0 16 10">
+                             <title>Open mobile navigation</title>
+                             <g fill="var(--knockoutColor)" fill-rule="evenodd">
+                               <rect y="8" width="16" height="2" rx="1"></rect>
+                               <rect y="4" width="16" height="2" rx="1"></rect>
+                               <rect width="16" height="2" rx="1"></rect>
+                             </g>
+                           </svg>
+                     </div>
+ 
+                   </div>
+                  <nav class="menu">
+                     <div class="mobile-menu-head">
+                        <div class="go-back">back</div>
+                        <div class="mobile-menu-close">
+                           <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <title>Close mobile navigation</title>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00061 6.58508L12.5926 1.99312C12.9835 1.60223 13.6172 1.60223 14.0081 1.99312C14.399 2.384 14.399 3.01775 14.0081 3.40864L9.41678 7.99995L14.0081 12.5913C14.399 12.9822 14.399 13.6159 14.0081 14.0068C13.6172 14.3977 12.9835 14.3977 12.5926 14.0068L8.00061 9.41482L3.40864 14.0068C3.01775 14.3977 2.384 14.3977 1.99312 14.0068C1.60223 13.6159 1.60223 12.9822 1.99312 12.5913L6.58443 7.99995L1.99312 3.40864C1.60223 3.01775 1.60223 2.384 1.99312 1.99312C2.384 1.60223 3.01775 1.60223 3.40864 1.99312L8.00061 6.58508Z" fill="#4F5B76"></path>
+                           </svg>
+                        </div>
+                     </div>
+                     <ul class="menu-main">
+                        <li class="menu-item-has-children">
+                           <a href="#">product
+                              <span class="nav-arrow-link">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path>
+                                 </svg>
+                              </span>
+                           </a>
+                           <div class="sub-menu mega-menu">
+
+                              <ul class="menu-main">
+                                 <li class="nav-item">
+                                    <a href="#">Nav 1</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 2</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 3</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 4</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 5</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a href="#">Nav 6</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#">Developers</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#">Pricing</a>
+                        </li>
+                        
+                     </ul>
+                  </nav>
+               </div>
+
+               <div class="sign-in-group">
+                  <a href="#" class="sign-button">
+                     <span>Sign in</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/></svg>
+                  </a>
+                  <a href="#" class="contact-button">
+                     <span>Contact sales</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/></svg>
+                  </a>
+               </div>
+
+               <!-- menu end here -->
+            </nav>
+            <div class="bg-offcanvas offcanvas offcanvas-end" id="demo">
+               <div class="offcanvas-header">
+                   <svg viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg" width="60" height="25" class="UserLogo variant-- "><title>Stripe logo</title><path fill="var(--userLogoColor, #0A2540)" d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v3.32a8.33 8.33 0 0 1-4.56 1.1c-4.01 0-6.83-2.5-6.83-7.48 0-4.19 2.39-7.52 6.3-7.52 3.92 0 5.96 3.28 5.96 7.5 0 .4-.04 1.26-.06 1.48zm-5.92-5.62c-1.03 0-2.17.73-2.17 2.58h4.25c0-1.85-1.07-2.58-2.08-2.58zM40.95 20.3c-1.44 0-2.32-.6-2.9-1.04l-.02 4.63-4.12.87V5.57h3.76l.08 1.02a4.7 4.7 0 0 1 3.23-1.29c2.9 0 5.62 2.6 5.62 7.4 0 5.23-2.7 7.6-5.65 7.6zM40 8.95c-.95 0-1.54.34-1.97.81l.02 6.12c.4.44.98.78 1.95.78 1.52 0 2.54-1.65 2.54-3.87 0-2.15-1.04-3.84-2.54-3.84zM28.24 5.57h4.13v14.44h-4.13V5.57zm0-4.7L32.37 0v3.36l-4.13.88V.88zm-4.32 9.35v9.79H19.8V5.57h3.7l.12 1.22c1-1.77 3.07-1.41 3.62-1.22v3.79c-.52-.17-2.29-.43-3.32.86zm-8.55 4.72c0 2.43 2.6 1.68 3.12 1.46v3.36c-.55.3-1.54.54-2.89.54a4.15 4.15 0 0 1-4.27-4.24l.01-13.17 4.02-.86v3.54h3.14V9.1h-3.13v5.85zm-4.91.7c0 2.97-2.31 4.66-5.73 4.66a11.2 11.2 0 0 1-4.46-.93v-3.93c1.38.75 3.1 1.31 4.46 1.31.92 0 1.53-.24 1.53-1C6.26 13.77 0 14.51 0 9.95 0 7.04 2.28 5.3 5.62 5.3c1.36 0 2.72.2 4.09.75v3.88a9.23 9.23 0 0 0-4.1-1.06c-.86 0-1.44.25-1.44.9 0 1.85 6.29.97 6.29 5.88z" fill-rule="evenodd"></path></svg>
+                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <title>Close mobile navigation</title>
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00061 6.58508L12.5926 1.99312C12.9835 1.60223 13.6172 1.60223 14.0081 1.99312C14.399 2.384 14.399 3.01775 14.0081 3.40864L9.41678 7.99995L14.0081 12.5913C14.399 12.9822 14.399 13.6159 14.0081 14.0068C13.6172 14.3977 12.9835 14.3977 12.5926 14.0068L8.00061 9.41482L3.40864 14.0068C3.01775 14.3977 2.384 14.3977 1.99312 14.0068C1.60223 13.6159 1.60223 12.9822 1.99312 12.5913L6.58443 7.99995L1.99312 3.40864C1.60223 3.01775 1.60223 2.384 1.99312 1.99312C2.384 1.60223 3.01775 1.60223 3.40864 1.99312L8.00061 6.58508Z" fill="#4F5B76" style="
+                       fill: #3F4B66;
+                       
+                   "></path>
+                         </svg>
+                   </button>
+               </div>
+               <div class="offcanvas-body">
+                 
+                   <ul class="inner-list">
+                       <li>
+                           <a href="#">
+                              <span> Products</span>
+                               <svg class="SiteMobileMenuNavItem__chevron" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#3F4B66"></path>
+                                 </svg>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                              <span> Solutions</span>
+                               <svg class="SiteMobileMenuNavItem__chevron" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#3F4B66"></path>
+                                 </svg>
+
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                              <span> Developers</span>
+                               <svg class="SiteMobileMenuNavItem__chevron" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#3F4B66"></path>
+                                 </svg>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <span>Resources</span>
+                               <svg class="SiteMobileMenuNavItem__chevron" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#3F4B66"></path>
+                                 </svg>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <span>Contact sales</span>
+                           </a>
+
+                       </li>
+                   </ul>
+                   
+                 <div class="sign-in-btn">
+                   <a href="#" class="btn-dark">
+                       <span> Sign in</span>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                           </path>
+                       </svg>
+                   </a>
+                 </di>
+               </div>
+           </div>
+           </div>
+         </div>
+      </div>
+
+</header>
+
+<div class="bg-line">
+   <div class="line"></div>
+   <div class="line"></div>
+   <div class="line"></div>
+   <div class="line"></div>
+   <div class="line"></div>
+</div>
+
+   <main>
+      
+      <!-- ========== Start banner section compontant ========== -->
+
+      <div class="banner-section">
+         <div class="container-fluid custom-spacer-col">
+            <div class="row">
+               <div class="col-lg-6 col-md-8">
+                 <div class="banner-left">
+                     <div class="banner-top">
+                        <div class="hero-caption">
+                           <div class="herocaption-content">
+                              <span>Preview</span>
+                           </div>
+                        </div>
+                        <div class="banner-title">
+                            
+                           <div class="text text-under text-under-blended section-title-1">Financial infrastructure to grow your revenue</div>
+                            <div class="text text-under text-under-overlay section-title-1">Financial infrastructure to grow your revenue</div>
+                           <!-- <div class="banner-overlay">
+      
+                           </div> -->
+                        </div>
+                     </div>
+   
+                     <div class="banner-description">
+                        <p>  Join the millions of companies of all sizes that use Stripe to accept payments online and in person, embed financial services, power custom revenue models, and build a more profitable business.</p>
+                     </div>
+                     <!-- <a href="#" class="btn-dark">
+                        <span>Contact sales</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                     </a> -->
+
+                     <div class="banner-input">
+                        <input type="email" value="" placeholder="email address">
+                        
+                        <div class="learn-btn">
+                           <a href="#">start now</a>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                        </div>
+                     </div>
+                 </div>
+               </div>
+            </div>
+         </div>
+   
+         <div class="banner-right">
+            <img src="images/banner-image.png">
+         </div>
+         <canvas id="gradient-canvas" style="width:100vw;"></canvas>
+
+      </div>
+
+      <!-- ========== End banner section compontant ========== -->
+
+      <!-- ========== Start brand logo componant ========== -->
+      
+      <div class="brand-logo">
+         <div class="container-fluid custom-spacer-col">
+            <div class="row brand-logo-list">
+               <div class="col-lg-3 col-md-3 col-6">
+                  <div class="logo-item">
+                     <img src="images/airbnb.png" alt="brand logo">
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-6 ">
+                  <div class="logo-item">
+                     <img src="images/google.png" alt="brand logo">
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-6 ">
+                  <div class="logo-item">
+                     <img src="images/amazon.png" alt="brand logo">
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-6 ">
+                  <div class="logo-item">
+                     <img src="images/anthropc.png" alt="brand logo">
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-6 ">
+                  <div class="logo-item">
+                     <img src="images/marriot.png" alt="brand logo">
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-6 ">
+                  <div class="logo-item">
+                     <img src="images/open-ai.png" alt="brand logo">
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-6 ">
+                  <div class="logo-item">
+                     <img src="images/shopify.png" alt="brand logo">
+                  </div>
+               </div>
+      
+               <div class="col-lg-3 col-md-3 col-6 ">
+                  <div class="logo-item">
+                     <img src="images/urbn.png" alt="brand logo">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- ========== End brand logo componant ========== -->
+      
+
+      <!-- ========== Start module solution componant ========== -->
+      <div class="module-solution-section">
+         <div class="module-inner">
+            <div class="container-fluid custom-spacer-col">
+               <div class="module-section">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="module-left">
+                           <div class="module-top">
+                              <div class="copy_header">
+                                 <h4 class="copy_title">
+                                    Modular solutions
+                                 </h4>
+                                 <h1> A fully integrated suite of financial and payments products</h1>
+                              </div>
+                              <p>
+                                 Reduce costs, grow revenue, and run your business more efficiently on a fully integrated
+                                 platform. Use Stripe to handle all of your payments-related needs, manage revenue operations,
+                                 and launch (or invent) new business models.
+                              </p>
+                           </div>
+      
+                           <div class="module-top payment-module">
+                              <div class="copy_header">
+                                 <div class="inner-title">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M34.61 11.28a2.56 2.56 0 0 0-1.22-1.04L8.54.2A2.57 2.57 0 0 0 5 2.6V15c0 1.05.64 2 1.61 2.4l6.44 2.6 21.56 8.72c.26-.4.4-.88.39-1.36V12.64c0-.48-.13-.96-.39-1.37z"
+                                          fill="url(#product-icon-payments-CustomerProfile-Twilio-a)"></path>
+                                       <path
+                                          d="M34.63 11.28L13.06 20l-6.45 2.6A2.58 2.58 0 0 0 5 25v12.42a2.58 2.58 0 0 0 3.54 2.39L33.4 29.76c.5-.21.93-.57 1.21-1.04.26-.41.4-.88.39-1.36V12.64c0-.48-.12-.95-.37-1.36z"
+                                          fill="#96F"></path>
+                                       <path
+                                          d="M34.62 11.28l.1.17c.18.37.28.77.28 1.19v-.03 14.75c0 .48-.13.95-.39 1.36L13.06 20l21.56-8.72z"
+                                          fill="url(#product-icon-payments-CustomerProfile-Twilio-b)"></path>
+                                       <defs>
+                                          <linearGradient id="product-icon-payments-CustomerProfile-Twilio-a" x1="20"
+                                             y1="4.13" x2="20" y2="21.13" gradientUnits="userSpaceOnUse">
+                                             <stop stop-color="#11EFE3"></stop>
+                                             <stop offset="1" stop-color="#21CFE0"></stop>
+                                          </linearGradient>
+                                          <linearGradient id="product-icon-payments-CustomerProfile-Twilio-b" x1="35"
+                                             y1="11.28" x2="35" y2="28.72" gradientUnits="userSpaceOnUse">
+                                             <stop stop-color="#0048E5"></stop>
+                                             <stop offset="1" stop-color="#9B66FF"></stop>
+                                          </linearGradient>
+                                       </defs>
+                                    </svg>
+                                    <span>Payments</span>
+                                 </div>
+                                 <h1> Accept and optimise payments, globally </h1>
+      
+                              </div>
+                              <p>
+                                 Increase authorisation rates, optimise your checkout conversion, and offer local payment
+                                 methods in every market.
+                              </p>
+                              <div class="enterprise-btn see-all-btn">
+                                 <a href="#" class="contact-button">
+                                    <span>Start with Payments</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                       <path fill="currentColor"
+                                          d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                       </path>
+                                    </svg>
+                                 </a>
+      
+                                 <div class="module-list">
+                                    <h1>See also</h1>
+                                    <ul class="list">
+                                       <li>
+                                          <a href="#">Tax</a>
+                                          for automating sales tax and VAT
+      
+                                       </li>
+                                       <li>
+                                          <a href="#">Radar</a>
+                                          for fraud prevention and management
+                                       </li>
+                                       <li>
+                                          <a href="#">Terminal</a>
+                                          for custom in-person payments
+                                       </li>
+                                    </ul>
+                                 </div>
+      
+      
+                              </div>
+                           </div>
+      
+                           <div class="module-top payment-module">
+                              <div class="copy_header">
+                                 <div class="inner-title">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M26 2.46C26 1.1 24.9 0 23.53 0H2.47A2.47 2.47 0 0 0 0 2.46v30.08a2.46 2.46 0 0 0 3.47 2.25l10.2-4.53 10.86-4.83c.9-.4 1.47-1.27 1.47-2.25V2.46z"
+                                          fill="url(#product-icon-billing-BillingSection-a)"></path>
+                                       <path d="M26.5 39a13.5 13.5 0 1 0 0-27 13.5 13.5 0 0 0 0 27z" fill="#00D924"></path>
+                                       <path d="M26 12v11.18c0 .98-.57 1.86-1.47 2.25l-10.7 4.76A13.5 13.5 0 0 1 26 12z"
+                                          fill="url(#product-icon-billing-BillingSection-b)"></path>
+                                       <defs>
+                                          <linearGradient id="product-icon-billing-BillingSection-a" x1="13" y1="6.35" x2="13"
+                                             y2="35.03" gradientUnits="userSpaceOnUse">
+                                             <stop stop-color="#FFD748"></stop>
+                                             <stop offset="1" stop-color="#FFC148"></stop>
+                                          </linearGradient>
+                                          <linearGradient id="product-icon-billing-BillingSection-b" x1="19.5" y1="12.01"
+                                             x2="19.5" y2="30.19" gradientUnits="userSpaceOnUse">
+                                             <stop stop-color="#00A600"></stop>
+                                             <stop offset="1" stop-color="#00D924"></stop>
+                                          </linearGradient>
+                                       </defs>
+                                    </svg>
+                                    <span>Billing</span>
+                                 </div>
+                                 <h1> Capture recurring revenue </h1>
+      
+                              </div>
+                              <p>
+                                 Support recurring business models, minimise churn, and automate finance operations.
+                              </p>
+                              <div class="enterprise-btn see-all-btn">
+                                 <a href="#" class="contact-button">
+                                    <span>Start with Billing</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                       <path fill="currentColor"
+                                          d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                       </path>
+                                    </svg>
+                                 </a>
+      
+                                 <div class="module-list">
+                                    <h1>See also</h1>
+                                    <ul class="list">
+                                       <li>
+                                          <a href="#">Invoicing</a>
+                                          for invoice creation, collection, and tracking
+                                       </li>
+                                       <li>
+                                          <a href="#">Revenue Recognition</a>
+                                          for streamlined accrual accounting
+                                       </li>
+                                       <li>
+                                          <a href="#">Sigma</a>
+                                          for custom revenue reports
+      
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+      
+                           <div class="module-top payment-module">
+                              <div class="copy_header">
+                                 <div class="inner-title">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M12.47.01a13.01 13.01 0 0 0 .5 25.99h10.55c1.37 0 2.48-1.1 2.48-2.48V13.01a12.99 12.99 0 0 0-13.53-13z"
+                                          fill="url(#product-icon-connect-ConnectSection-a)"></path>
+                                       <path
+                                          d="M27.53 39.99a13.01 13.01 0 0 0-.5-25.99H16.48A2.48 2.48 0 0 0 14 16.48v10.51a12.99 12.99 0 0 0 13.53 13z"
+                                          fill="#0073E6"></path>
+                                       <path
+                                          d="M26 14v9.52A2.48 2.48 0 0 1 23.52 26H14v-9.52A2.48 2.48 0 0 1 16.32 14l.16-.01H26z"
+                                          fill="url(#product-icon-connect-ConnectSection-b)"></path>
+                                       <defs>
+                                          <linearGradient id="product-icon-connect-ConnectSection-a" x1="13" y1="1.71" x2="13"
+                                             y2="15.25" gradientUnits="userSpaceOnUse">
+                                             <stop stop-color="#11EFE3"></stop>
+                                             <stop offset=".33" stop-color="#15E8E2"></stop>
+                                             <stop offset=".74" stop-color="#1FD3E0"></stop>
+                                             <stop offset="1" stop-color="#21CFE0"></stop>
+                                          </linearGradient>
+                                          <linearGradient id="product-icon-connect-ConnectSection-b" x1="20" y1="15.72"
+                                             x2="20" y2="27.24" gradientUnits="userSpaceOnUse">
+                                             <stop stop-color="#00299C"></stop>
+                                             <stop offset="1" stop-color="#0073E6"></stop>
+                                          </linearGradient>
+                                       </defs>
+                                    </svg>
+                                    <span>Connect</span>
+                                 </div>
+                                 <h1> Set up multi-party payments and payouts</h1>
+      
+                              </div>
+                              <p>
+                                 Integrate payments into your platform or marketplace for end-to-end payments experiences.
+                              </p>
+                              <div class="enterprise-btn see-all-btn">
+                                 <a href="#" class="contact-button">
+                                    <span>Start with Connect</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                       <path fill="currentColor"
+                                          d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z">
+                                       </path>
+                                    </svg>
+                                 </a>
+      
+                                 <div class="module-list">
+                                    <h1>See also</h1>
+                                    <ul class="list">
+                                       <li>
+                                          <a href="#">Terminal</a>
+                                          for custom in-person payments
+                                       </li>
+                                       <li>
+                                          <a href="#">Instant Payouts</a>
+                                          for fast payments to users
+                                       </li>
+                                       <li>
+                                          <a href="#">Payment Elements</a>
+                                          for customisable UIs
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="module-image">
+                           <img src="images/module.png">
+                        </div>
+                        
+                        <div class="module-image">
+                           <img src="images/module-image-2.png">
+                        </div>
+                        <div class="module-image">
+                           <img src="images/module-image-3.png">
+                        </div>
+                        <div class="module-image">
+                           <img src="images/module-image-4.png">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- ========== End module solution componant ========== -->
+      
+      <!-- ========== Start global scale componant ========== -->
+
+      <div class="global-scale-section"> 
+         <div class="global-inner">
+            <div class=" custom-spacer-col">
+               <div class="global-inner-section">
+                  <div class="global-top-section">
+                     <div class="copy_header">
+                        <h4 class="copy_title">                 
+                           Global scale
+                        </h4>
+                        <h1> The backbone for global commerce</h1>
+                     </div>
+                     <p>Stripe makes moving money as easy and programmable as moving data.
+                     Our teams are based in offices around the world and we process hundreds of billions of dollars each year for ambitious businesses of all sizes
+                     </p>
+                  </div>
+   
+                  <div class="global-bottom-section">
+                     <div class="global-tab">
+                        <div class="copy_header">
+                           <h4 class="copy_title">                 
+                            500M+
+                           </h4>
+                           <p> API requests per day, peaking at 13,000 requests a second.</p>
+                        </div>
+                     </div>
+                     <div class="global-tab">
+                        <div class="copy_header">
+                           <h4 class="copy_title">                 
+                              99.999%
+                           </h4>
+                           <p> historical uptime for <a href="#">Stripe services</a></p>
+                        </div>
+                     </div>
+                     <div class="global-tab">
+                        <div class="copy_header">
+                           <h4 class="copy_title">                 
+                              90+
+                           </h4>
+                           <p>
+                              of U.S. adults have bought from businesses using Stripe.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="global-tab">
+                        <div class="copy_header">
+                           <h4 class="copy_title">                 
+                              135+
+                           </h4>
+                           <p>currencies and payment methods supported.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="Section__backgroundMask">
+            <div class="Section__background">
+              <figure class="BackgroundGlobe" data-js-controller="BackgroundGlobe">
+                <div class="Globe js-globe Globe--isAngled">
+                  <canvas data-engine="three.js r151" width="3456" height="1802" style="display: block; width: 1728px; height: 901px"></canvas>
+                </div>
+              </figure>
+              <div class="Guides" aria-hidden="true">
+                <div class="Guides__container">
+                  <div class="Guides__guide"></div>
+                  <div class="Guides__guide"></div>
+                  <div class="Guides__guide"></div>
+                  <div class="Guides__guide"></div>
+                  <div class="Guides__guide"></div>
+                </div>
+              </div>
+            </div>
+         </div>
+
+
+
+         </div>
+       
+        
+
+      </div> 
+
+    
+
+      <!-- ========== End global scale componant ========== -->
+
+      <!-- ========== Start enterprise componant ========== -->
+   
+      <div class="enterprise-section">
+         <div class="container-fluid custom-spacer-col">
+            <div class="enterprise-top">
+                  <div class="enterprise-title">
+                     <div class="enterprise-heading">
+                        <h4>Enterprise reinvention</h4>
+                        <h1>Bring agility to your enterprise</h1>
+                     </div>
+                     <div class="enterprise-description">
+                        <p>Quickly build great payments experiences, improve performance, expand into new markets, and engage customers with subscriptions and marketplaces. Get expert integration guidance from our 
+                           <a href="#">professional services</a>
+                           team and 
+                           <a href="#">certified partners</a>
+                           , and connect Stripe to Salesforce, SAP, and more through the 
+                           <a href="#">Stripe App Marketplace</a>
+                           
+                        </p>
+                     </div>
+                  <div class="enterprise-btn">
+                     <a href="#" class="contact-button">
+                        <span>Contact Sales CTA Enterprise</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                     </a>
+                  </div>
+                  </div>
+            </div>
+
+            <div class="enetrprise-middle">
+               <div class="enterprise-slider"> 
+                  <div class="enterprise-box">
+                     <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane  show active"  role="tabpanel" id="enterprise-1">
+                           <div class="row tab-description">
+                              <div class="col-lg-3">
+                                 <div class="left-inner">
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title">                 
+                                             Millions
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">    
+                                          BMW owners using ConnectedDrive Store
+                                       </div>
+                                    </div>
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title">
+                                            350+
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">                                    
+                                          US dealerships
+                                       </div>
+                                    </div>
+               
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title inner-title">
+                                             Products used
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">
+                                         <ul>
+                                          <li>
+                                             <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <title>Payments</title>
+                                                <path d="M34.61 11.28a2.56 2.56 0 0 0-1.22-1.04L8.54.2A2.57 2.57 0 0 0 5 2.6V15c0 1.05.64 2 1.61 2.4l6.44 2.6 21.56 8.72c.26-.4.4-.88.39-1.36V12.64c0-.48-.13-.96-.39-1.37z" fill="url(#product-icon-payments-CustomerProfile-Twilio-a)"></path><path d="M34.63 11.28L13.06 20l-6.45 2.6A2.58 2.58 0 0 0 5 25v12.42a2.58 2.58 0 0 0 3.54 2.39L33.4 29.76c.5-.21.93-.57 1.21-1.04.26-.41.4-.88.39-1.36V12.64c0-.48-.12-.95-.37-1.36z" fill="#96F"></path><path d="M34.62 11.28l.1.17c.18.37.28.77.28 1.19v-.03 14.75c0 .48-.13.95-.39 1.36L13.06 20l21.56-8.72z" fill="url(#product-icon-payments-CustomerProfile-Twilio-b)"></path><defs><linearGradient id="product-icon-payments-CustomerProfile-Twilio-a" x1="20" y1="4.13" x2="20" y2="21.13" gradientUnits="userSpaceOnUse"><stop stop-color="#11EFE3"></stop><stop offset="1" stop-color="#21CFE0"></stop></linearGradient><linearGradient id="product-icon-payments-CustomerProfile-Twilio-b" x1="35" y1="11.28" x2="35" y2="28.72" gradientUnits="userSpaceOnUse"><stop stop-color="#0048E5"></stop><stop offset="1" stop-color="#9B66FF"></stop></linearGradient></defs>
+                                             </svg>
+                                             <span>Payments</span>
+                                          </li>
+                                          <li>
+                                             <svg class="ProductIcon ProductIcon--Connect StripeProductUsed__productLogo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   
+                                                <title>Connect</title>
+                                              
+                                              <path d="M12.47.01a13.01 13.01 0 0 0 .5 25.99h10.55c1.37 0 2.48-1.1 2.48-2.48V13.01a12.99 12.99 0 0 0-13.53-13z" fill="url(#product-icon-connect-CustomerProfile-BMW-a)"></path><path d="M27.53 39.99a13.01 13.01 0 0 0-.5-25.99H16.48A2.48 2.48 0 0 0 14 16.48v10.51a12.99 12.99 0 0 0 13.53 13z" fill="#0073E6"></path><path d="M26 14v9.52A2.48 2.48 0 0 1 23.52 26H14v-9.52A2.48 2.48 0 0 1 16.32 14l.16-.01H26z" fill="url(#product-icon-connect-CustomerProfile-BMW-b)"></path><defs><linearGradient id="product-icon-connect-CustomerProfile-BMW-a" x1="13" y1="1.71" x2="13" y2="15.25" gradientUnits="userSpaceOnUse"><stop stop-color="#11EFE3"></stop><stop offset=".33" stop-color="#15E8E2"></stop><stop offset=".74" stop-color="#1FD3E0"></stop><stop offset="1" stop-color="#21CFE0"></stop></linearGradient><linearGradient id="product-icon-connect-CustomerProfile-BMW-b" x1="20" y1="15.72" x2="20" y2="27.24" gradientUnits="userSpaceOnUse"><stop stop-color="#00299C"></stop><stop offset="1" stop-color="#0073E6"></stop></linearGradient></defs>
+                                            </svg>
+                                            <span>Connect</span>
+                                          </li>
+                                         </ul>
+                                       </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-9">
+                                 <div class="right-inner">
+                                    <img src="images/bmw-landscape.webp">
+                                    <div class="img-content">
+                                      <div class="inner-content">
+                                       <div class="image-top">
+                                          <img class="left-top-img" src="images/img-top-1.png" alt="image">
+                                          <img class="right-top-img" src="images/svg_to_png-1.png" alt="image">
+                                          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none" class="UserLogo variant--Flat CustomersCaseStudyCard__logo" preserveAspectRatio="xMinYMin meet" viewBox="80 0 200 40">
+                                             <path stroke="#fff" d="M111.852 20c0 6.55-5.302 11.852-11.852 11.852V20h11.852zM100 8.148V20H88.148c0-6.55 5.302-11.852 11.852-11.852z"></path>
+                                             <path fill="#fff" d="M100 8.149c6.55 0 11.852 5.302 11.852 11.85H100V8.15zm-11.852 11.85H100v11.853c-6.55 0-11.852-5.302-11.852-11.852z"></path>
+                                             <path fill="#fff" d="M100 8.148v.65c6.176 0 11.202 5.025 11.202 11.202h.649c0-6.545-5.305-11.852-11.851-11.852zm0 23.054c-6.176 0-11.202-5.025-11.202-11.202h-.65c0 6.545 5.306 11.852 11.852 11.852M100 0C88.955 0 80 8.955 80 20s8.955 20 20 20 20-8.955 20-20-8.955-20-20-20zm18.7 20c0 10.327-8.372 18.7-18.7 18.7S81.3 30.327 81.3 20 89.673 1.3 100 1.3s18.7 8.373 18.7 18.7z"></path>
+                                             <path fill="#fff" d="M91.453 10.351c.64-.668 1.001-1.44.363-2.178-.348-.4-.933-.487-1.416-.29l-.049.018.016-.042c.071-.19.117-.797-.404-1.215a1.206 1.206 0 00-.894-.248c-.6.06-1.062.468-2.318 1.86-.438.49-.86.994-1.264 1.511l3.453 3.253c1.144-1.258 1.61-1.725 2.513-2.67v.001zm-4.505-.795c.696-.846 1.434-1.612 1.769-1.915.105-.096.22-.19.36-.229.227-.062.46.098.514.33.053.232-.094.452-.257.634-.368.412-1.717 1.813-1.717 1.813l-.67-.634zM88.3 10.83s1.313-1.38 1.742-1.82c.17-.175.28-.281.397-.339.152-.073.317-.088.466.01a.406.406 0 01.175.43c-.043.196-.205.384-.34.528L89 11.489l-.7-.66zm12.095-4.358l1.105-2.46.071-.218-.02.228.116 3.286c.396.038.791.09 1.183.156l-.18-4.868a26.011 26.011 0 00-1.651-.127L99.93 5.153l-.038.2-.04-.2-1.088-2.684c-.55.023-1.1.066-1.652.127l-.18 4.868c.393-.065.788-.117 1.184-.156l.116-3.286-.02-.228.07.22 1.106 2.458h1.007zm9.181 5.088c.272.29.663.756.883 1.04l4.045-2.551a27 27 0 00-.765-.942l-2.562 1.682-.174.15.13-.19 1.132-2.242-.8-.795-2.26 1.124-.19.129.151-.174 1.696-2.543a24.621 24.621 0 00-.951-.762L107.343 9.5c.325.248.754.614 1.028.862l2.417-1.246.156-.113-.114.153-1.254 2.404z"></path>
+                                             <title>BMW logo</title>
+                                          </svg> -->
+                                          <!-- <svg class="CustomersCaseStudyCard__icon" role="presentation" width="20" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16.9.27c1.62 0 2.92 1.3 2.92 2.91v13.1c0 .8-.65 1.45-1.46 1.45H3.42c-2.15 0-3.24-1.05-3.24-2.83V6.4c0-2.45 2.18-3.2 4.12-3.2C4.3 1.57 5.6.26 7.21.26h9.7zM7.83 3.55a1.1 1.1 0 1 0 0 2.18h5.45a1.1 1.1 0 1 0 0-2.18H7.82zm0 4.36a1.1 1.1 0 1 0 0 2.18h8.73a1.1 1.1 0 0 0 0-2.18H7.82zm0 4.36a1.1 1.1 0 1 0 0 2.18h8.73a1.1 1.1 0 1 0 0-2.18H7.82zM4 5.73c-.9 0-1.64.73-1.64 1.63v7.1c0 .6.5 1.09 1.1 1.09h1.09V5.73H4z" fill="#fff"></path>
+                                          </svg> -->
+                                       </div>
+                                      <div>
+                                       <div class="image-heading">
+                                          <h1 class="CustomersCaseStudyCard__title">Learn why BMW chose Stripe to power e-commerce and payments</h1>
+                                       </div>
+                                       <div class="cta-section">
+                                          <span class="cta">Read story
+                                             <svg class="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                             <g fill-rule="evenodd">
+                                               <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                                               <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+                                             </g>
+                                         </svg>
+                                             </span>
+                                       </div>
+                                      </div>
+                                    
+                                      </div>
+                                    </div>
+                                   
+                                
+                                    <div class="overlay">
+         
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="enterprise-2" role="tabpanel">
+                           <div class="row tab-description">
+                              <div class="col-lg-3">
+                                 <div class="left-inner">
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title">                 
+                                             5+
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">    
+                                       Amazon businesses on Stripe including Prime, Audible, and Amazon Pay.
+                                       </div>
+                                    </div>
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title">
+                                            50+
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">                                    
+                                       Payment methods available on Stripe
+                                       </div>
+                                    </div>
+               
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title inner-title">
+                                             Products used
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">
+                                         <ul>
+                                          <li>
+                                             <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                                                <title>Payments</title>
+                                              
+                                              <path d="M34.61 11.28a2.56 2.56 0 0 0-1.22-1.04L8.54.2A2.57 2.57 0 0 0 5 2.6V15c0 1.05.64 2 1.61 2.4l6.44 2.6 21.56 8.72c.26-.4.4-.88.39-1.36V12.64c0-.48-.13-.96-.39-1.37z" fill="url(#product-icon-payments-CustomerProfile-Maersk-a)"></path><path d="M34.63 11.28L13.06 20l-6.45 2.6A2.58 2.58 0 0 0 5 25v12.42a2.58 2.58 0 0 0 3.54 2.39L33.4 29.76c.5-.21.93-.57 1.21-1.04.26-.41.4-.88.39-1.36V12.64c0-.48-.12-.95-.37-1.36z" fill="#96F"></path><path d="M34.62 11.28l.1.17c.18.37.28.77.28 1.19v-.03 14.75c0 .48-.13.95-.39 1.36L13.06 20l21.56-8.72z" fill="url(#product-icon-payments-CustomerProfile-Maersk-b)"></path><defs><linearGradient id="product-icon-payments-CustomerProfile-Maersk-a" x1="20" y1="4.13" x2="20" y2="21.13" gradientUnits="userSpaceOnUse"><stop stop-color="#11EFE3"></stop><stop offset="1" stop-color="#21CFE0"></stop></linearGradient><linearGradient id="product-icon-payments-CustomerProfile-Maersk-b" x1="35" y1="11.28" x2="35" y2="28.72" gradientUnits="userSpaceOnUse"><stop stop-color="#0048E5"></stop><stop offset="1" stop-color="#9B66FF"></stop></linearGradient></defs>
+                                            </svg>
+                                             <span>Payments</span>
+                                          </li>
+                                          <li>
+                                             <svg class="ProductIcon ProductIcon--Connect StripeProductUsed__productLogo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                                                <title>Connect</title>
+                                              
+                                              <path d="M12.47.01a13.01 13.01 0 0 0 .5 25.99h10.55c1.37 0 2.48-1.1 2.48-2.48V13.01a12.99 12.99 0 0 0-13.53-13z" fill="url(#product-icon-connect-CustomerProfile-Maersk-a)"></path><path d="M27.53 39.99a13.01 13.01 0 0 0-.5-25.99H16.48A2.48 2.48 0 0 0 14 16.48v10.51a12.99 12.99 0 0 0 13.53 13z" fill="#0073E6"></path><path d="M26 14v9.52A2.48 2.48 0 0 1 23.52 26H14v-9.52A2.48 2.48 0 0 1 16.32 14l.16-.01H26z" fill="url(#product-icon-connect-CustomerProfile-Maersk-b)"></path><defs><linearGradient id="product-icon-connect-CustomerProfile-Maersk-a" x1="13" y1="1.71" x2="13" y2="15.25" gradientUnits="userSpaceOnUse"><stop stop-color="#11EFE3"></stop><stop offset=".33" stop-color="#15E8E2"></stop><stop offset=".74" stop-color="#1FD3E0"></stop><stop offset="1" stop-color="#21CFE0"></stop></linearGradient><linearGradient id="product-icon-connect-CustomerProfile-Maersk-b" x1="20" y1="15.72" x2="20" y2="27.24" gradientUnits="userSpaceOnUse"><stop stop-color="#00299C"></stop><stop offset="1" stop-color="#0073E6"></stop></linearGradient></defs>
+                                            </svg>
+                                            <span>Connect</span>
+                                          </li>
+                                         </ul>
+                                       </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-9">
+                                 <div class="right-inner">
+                                    <img src="images/bmw-landscape.webp">
+                                    <div class="img-content">
+                                      <div class="inner-content">
+                                       <div class="image-top">
+                                          <img class="left-top-img" src="images/img-top-2.png" alt="image">
+                                          <img class="right-top-img" src="images/svg_to_png-1.png" alt="image">
+                                       </div>
+                                      <div>
+                                       <div class="image-heading">
+                                          <h1 class="CustomersCaseStudyCard__title">See how Amazon simplified cross-border payments with Stripe</h1>
+                                       </div>
+                                       <div class="cta-section">
+                                          <span class="cta">Read story
+                                             <svg class="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                             <g fill-rule="evenodd">
+                                               <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                                               <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+                                             </g>
+                                         </svg>
+                                             </span>
+                                       </div>
+                                      </div>
+                                    
+                                      </div>
+                                    </div>
+                                   
+                                
+                                    <div class="overlay enterprise-2-overlay">
+         
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div  class="tab-pane " id="enterprise-3" role="tabpanel">
+                           <div class="row tab-description">
+                              <div class="col-lg-3">
+                                 <div class="left-inner">
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title">                 
+                                             130
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">    
+                                       Countries in logistics network
+                                       </div>
+                                    </div>
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title">
+                                             $10+
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">                                    
+                                       Billion worth of goods moved around the world each year
+                                       </div>
+                                    </div>
+               
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title inner-title">
+                                             Products used
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">
+                                         <ul>
+                                          <li>
+                                             <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M34.61 11.28a2.56 2.56 0 0 0-1.22-1.04L8.54.2A2.57 2.57 0 0 0 5 2.6V15c0 1.05.64 2 1.61 2.4l6.44 2.6 21.56 8.72c.26-.4.4-.88.39-1.36V12.64c0-.48-.13-.96-.39-1.37z" fill="url(#product-icon-payments-CustomerProfile-Amazon-a)"></path><path d="M34.63 11.28L13.06 20l-6.45 2.6A2.58 2.58 0 0 0 5 25v12.42a2.58 2.58 0 0 0 3.54 2.39L33.4 29.76c.5-.21.93-.57 1.21-1.04.26-.41.4-.88.39-1.36V12.64c0-.48-.12-.95-.37-1.36z" fill="#96F"></path><path d="M34.62 11.28l.1.17c.18.37.28.77.28 1.19v-.03 14.75c0 .48-.13.95-.39 1.36L13.06 20l21.56-8.72z" fill="url(#product-icon-payments-CustomerProfile-Amazon-b)"></path><defs><linearGradient id="product-icon-payments-CustomerProfile-Amazon-a" x1="20" y1="4.13" x2="20" y2="21.13" gradientUnits="userSpaceOnUse"><stop stop-color="#11EFE3"></stop><stop offset="1" stop-color="#21CFE0"></stop></linearGradient><linearGradient id="product-icon-payments-CustomerProfile-Amazon-b" x1="35" y1="11.28" x2="35" y2="28.72" gradientUnits="userSpaceOnUse"><stop stop-color="#0048E5"></stop><stop offset="1" stop-color="#9B66FF"></stop></linearGradient></defs>
+                                            </svg>
+                                             <span>Payments</span>
+                                          </li>
+                                          <li>
+                                             <svg class="ProductIcon ProductIcon--Connect StripeProductUsed__productLogo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                                                <title>Connect</title>
+                                              
+                                              <path d="M12.47.01a13.01 13.01 0 0 0 .5 25.99h10.55c1.37 0 2.48-1.1 2.48-2.48V13.01a12.99 12.99 0 0 0-13.53-13z" fill="url(#product-icon-connect-CustomerProfile-Maersk-a)"></path><path d="M27.53 39.99a13.01 13.01 0 0 0-.5-25.99H16.48A2.48 2.48 0 0 0 14 16.48v10.51a12.99 12.99 0 0 0 13.53 13z" fill="#0073E6"></path><path d="M26 14v9.52A2.48 2.48 0 0 1 23.52 26H14v-9.52A2.48 2.48 0 0 1 16.32 14l.16-.01H26z" fill="url(#product-icon-connect-CustomerProfile-Maersk-b)"></path><defs><linearGradient id="product-icon-connect-CustomerProfile-Maersk-a" x1="13" y1="1.71" x2="13" y2="15.25" gradientUnits="userSpaceOnUse"><stop stop-color="#11EFE3"></stop><stop offset=".33" stop-color="#15E8E2"></stop><stop offset=".74" stop-color="#1FD3E0"></stop><stop offset="1" stop-color="#21CFE0"></stop></linearGradient><linearGradient id="product-icon-connect-CustomerProfile-Maersk-b" x1="20" y1="15.72" x2="20" y2="27.24" gradientUnits="userSpaceOnUse"><stop stop-color="#00299C"></stop><stop offset="1" stop-color="#0073E6"></stop></linearGradient></defs>
+                                            </svg>
+                                            <span>Connect</span>
+                                          </li>
+                                         </ul>
+                                       </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-9">
+                                 <div class="right-inner">
+                                    <img src="images/bmw-landscape.webp">
+                                    <div class="img-content">
+                                      <div class="inner-content">
+                                       <div class="image-top">
+                                          <img class="left-top-img" src="images/img-top-3.png" alt="image">
+                                          <img class="right-top-img" src="images/svg_to_png-1.png" alt="image">
+                                       </div>
+                                      <div>
+                                       <div class="image-heading">
+                                          <h1 class="CustomersCaseStudyCard__title">See how Maersk tapped into new technology to make it easier to ship around the world</h1>
+                                       </div>
+                                       <div class="cta-section">
+                                          <span class="cta">Read story
+                                             <svg class="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                             <g fill-rule="evenodd">
+                                               <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                                               <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+                                             </g>
+                                         </svg>
+                                             </span>
+                                       </div>
+                                      </div>
+                                    
+                                      </div>
+                                    </div>
+                                   
+                                
+                                    <div class="overlay enterprise-3-overlay">
+         
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="enterprise-4" role="tabpanel">
+                           <div class="row tab-description">
+                              <div class="col-lg-3">
+                                 <div class="left-inner">
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title">                 
+                                             +5.5%
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">    
+                                       Uplift from Stripe's Global Payments Infrastructure
+                                       </div>
+                                    </div>
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title">
+                                             +1%
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">                                    
+                                       Uplift from Adaptive Acceptance
+                                       </div>
+                                    </div>
+               
+                                    <div class="enterprise-box-left">
+                                       <div class="copy_header">
+                                          <h1 class="copy_title inner-title">
+                                             Products used
+                                          </h1>
+                                      </div>
+                                      <div class="copy_body">
+                                         <ul>
+                                          <li>
+                                             <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                                                <title>Payments</title>
+                                              
+                                              <path d="M34.61 11.28a2.56 2.56 0 0 0-1.22-1.04L8.54.2A2.57 2.57 0 0 0 5 2.6V15c0 1.05.64 2 1.61 2.4l6.44 2.6 21.56 8.72c.26-.4.4-.88.39-1.36V12.64c0-.48-.13-.96-.39-1.37z" fill="url(#product-icon-payments-CustomerProfile-Amazon-a-1)"></path><path d="M34.63 11.28L13.06 20l-6.45 2.6A2.58 2.58 0 0 0 5 25v12.42a2.58 2.58 0 0 0 3.54 2.39L33.4 29.76c.5-.21.93-.57 1.21-1.04.26-.41.4-.88.39-1.36V12.64c0-.48-.12-.95-.37-1.36z" fill="#96F"></path><path d="M34.62 11.28l.1.17c.18.37.28.77.28 1.19v-.03 14.75c0 .48-.13.95-.39 1.36L13.06 20l21.56-8.72z" fill="url(#product-icon-payments-CustomerProfile-Amazon-b)"></path><defs><linearGradient id="product-icon-payments-CustomerProfile-Amazon-a-1" x1="20" y1="4.13" x2="20" y2="21.13" gradientUnits="userSpaceOnUse"><stop stop-color="#11EFE3"></stop><stop offset="1" stop-color="#21CFE0"></stop></linearGradient><linearGradient id="product-icon-payments-CustomerProfile-Amazon-b" x1="35" y1="11.28" x2="35" y2="28.72" gradientUnits="userSpaceOnUse"><stop stop-color="#0048E5"></stop><stop offset="1" stop-color="#9B66FF"></stop></linearGradient></defs>
+                                            </svg>
+                                             <span>Payments</span>
+                                          </li>
+                                          <li>
+                                              
+                                             <svg class="ProductIcon ProductIcon--Sigma StripeProductUsed__productLogo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             
+                                                <title>Sigma</title>
+                                             
+                                             <path d="M5 35V7a3 3 0 0 1 5.48-1.69L21.2 21 9.32 38H8a3 3 0 0 1-3-3z" fill="url(#product-icon-sigma-CustomerProfile-Twilio-a)"></path><path d="M8.06 4h25.16a1.5 1.5 0 0 1 1.1 2.51L21.15 21 5.84 4.92A3 3 0 0 1 8.05 4z" fill="url(#product-icon-sigma-CustomerProfile-Twilio-b)"></path><path d="M7.88 38H33.2a1.5 1.5 0 0 0 1.11-2.51L21.11 21 7.14 36.33A1 1 0 0 0 7.88 38z" fill="#9A66FF"></path><defs><linearGradient id="product-icon-sigma-CustomerProfile-Twilio-a" x1="13.1" y1="38" x2="13.1" y2="12.99" gradientUnits="userSpaceOnUse"><stop stop-color="#9860FE"></stop><stop offset="1" stop-color="#6E00F5"></stop></linearGradient><linearGradient id="product-icon-sigma-CustomerProfile-Twilio-b" x1="20.28" y1="8.42" x2="20.28" y2="19.47" gradientUnits="userSpaceOnUse"><stop stop-color="#FF5091"></stop><stop offset="1" stop-color="#E03071"></stop></linearGradient></defs>
+                                          </svg>
+                                            <span>Sigma</span>
+                                          </li>
+                                         </ul>
+                                       </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              <div class="col-lg-9">
+                                 <div class="right-inner">
+                                    <img src="images/bmw-landscape.webp">
+                                    <div class="img-content">
+                                      <div class="inner-content">
+                                       <div class="image-top">
+                                          <img class="left-top-img" src="images/img-top-4.png" alt="image">
+                                          <img class="right-top-img" src="images/svg_to_png-1.png" alt="image">
+                                       </div>
+                                      <div>
+                                       <div class="image-heading">
+                                          <h1 class="CustomersCaseStudyCard__title">See how Twilio increased authorization rates by 10% with Stripe</h1>
+                                       </div>
+                                       <div class="cta-section">
+                                          <span class="cta">Read story
+                                             <svg class="" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                             <g fill-rule="evenodd">
+                                               <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                                               <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+                                             </g>
+                                         </svg>
+                                             </span>
+                                       </div>
+                                      </div>
+                                    
+                                      </div>
+                                    </div>
+                                   
+                                
+                                    <div class="overlay enterprise-4-overlay">
+         
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                        </div>
+                       
+                     </div>
+                  
+                   <ul class="slide-ul nav nav-tabs" id="myTab" role="tablist">
+                     <li  class="nav-item active" role="presentation">
+                        <div class="slide-button">
+                           <button class="nav-link active" id="enterprise-1-tab" data-bs-toggle="tab" data-bs-target="#enterprise-1" type="button" role="tab">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none" class="UserLogo variant--Flat" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><path fill="var(--userLogoColor, #0166B1)" d="M111.852 20c0 6.55-5.302 11.852-11.852 11.852V20h11.852zM100 8.148V20H88.148c0-6.55 5.302-11.852 11.852-11.852z"></path><path fill="var(--userLogoColorAlt, #fff)" d="M100 8.149c6.55 0 11.852 5.302 11.852 11.85H100V8.15zm-11.852 11.85H100v11.853c-6.55 0-11.852-5.302-11.852-11.852z"></path><path fill="var(--userLogoColor, #6F6F6F)" d="M100 8.148v.65c6.176 0 11.202 5.025 11.202 11.202h.649c0-6.545-5.305-11.852-11.851-11.852zm0 23.054c-6.176 0-11.202-5.025-11.202-11.202h-.65c0 6.545 5.306 11.852 11.852 11.852M100 0C88.955 0 80 8.955 80 20s8.955 20 20 20 20-8.955 20-20-8.955-20-20-20zm18.7 20c0 10.327-8.372 18.7-18.7 18.7S81.3 30.327 81.3 20 89.673 1.3 100 1.3s18.7 8.373 18.7 18.7z"></path><path fill="var(--userLogoColor, #6F6F6F)" d="M91.453 10.351c.64-.668 1.001-1.44.363-2.178-.348-.4-.933-.487-1.416-.29l-.049.018.016-.042c.071-.19.117-.797-.404-1.215a1.206 1.206 0 00-.894-.248c-.6.06-1.062.468-2.318 1.86-.438.49-.86.994-1.264 1.511l3.453 3.253c1.144-1.258 1.61-1.725 2.513-2.67v.001zm-4.505-.795c.696-.846 1.434-1.612 1.769-1.915.105-.096.22-.19.36-.229.227-.062.46.098.514.33.053.232-.094.452-.257.634-.368.412-1.717 1.813-1.717 1.813l-.67-.634zM88.3 10.83s1.313-1.38 1.742-1.82c.17-.175.28-.281.397-.339.152-.073.317-.088.466.01a.406.406 0 01.175.43c-.043.196-.205.384-.34.528L89 11.489l-.7-.66zm12.095-4.358l1.105-2.46.071-.218-.02.228.116 3.286c.396.038.791.09 1.183.156l-.18-4.868a26.011 26.011 0 00-1.651-.127L99.93 5.153l-.038.2-.04-.2-1.088-2.684c-.55.023-1.1.066-1.652.127l-.18 4.868c.393-.065.788-.117 1.184-.156l.116-3.286-.02-.228.07.22 1.106 2.458h1.007zm9.181 5.088c.272.29.663.756.883 1.04l4.045-2.551a27 27 0 00-.765-.942l-2.562 1.682-.174.15.13-.19 1.132-2.242-.8-.795-2.26 1.124-.19.129.151-.174 1.696-2.543a24.621 24.621 0 00-.951-.762L107.343 9.5c.325.248.754.614 1.028.862l2.417-1.246.156-.113-.114.153-1.254 2.404z"></path><title>BMW logo</title></svg>
+                           </button>
+                           </div>
+                     </li>
+                     <li>
+                        <div class="slide-button">
+                           <button class="nav-link" id="enterprise-2-tab" data-bs-toggle="tab" data-bs-target="#enterprise-2" type="button" role="tab">
+                            
+                               <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" class="UserLogo variant--Flat" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><title>Amazon logo</title><g fill="none" fill-rule="evenodd"><path fill="var(--userLogoColor, #EFA82E)" d="M111.58 33.91C106.18 37.9 98.37 40 91.64 40a36.13 36.13 0 01-24.37-9.28c-.5-.45-.05-1.08.56-.72a49.08 49.08 0 0024.37 6.46c5.98 0 12.55-1.24 18.6-3.8.9-.39 1.67.6.78 1.25"></path><path fill="var(--userLogoColor, #EFA82E)" d="M113.82 31.36c-.69-.88-4.56-.42-6.3-.21-.52.06-.6-.4-.13-.73 3.09-2.17 8.15-1.54 8.73-.82.6.74-.15 5.8-3.04 8.21-.45.38-.87.18-.67-.31.65-1.63 2.1-5.26 1.41-6.14"></path><path fill="var(--userLogoColor, #1B1A19)" d="M107.65 15.13v-2.1c0-.33.24-.54.53-.54h9.45c.3 0 .54.22.54.53v1.8c0 .3-.26.7-.71 1.33l-4.9 6.97c1.82-.04 3.74.23 5.4 1.16.36.2.47.51.5.82v2.24c0 .31-.34.67-.7.48a10.89 10.89 0 00-9.98.02c-.33.17-.67-.18-.67-.49v-2.13c0-.34 0-.93.35-1.45l5.67-8.11h-4.94a.53.53 0 01-.54-.53M73.2 28.26h-2.88a.54.54 0 01-.5-.48V13.06c0-.3.24-.53.55-.53h2.67c.28.01.5.23.52.5v1.92h.06c.7-1.86 2-2.73 3.78-2.73 1.8 0 2.92.87 3.73 2.73a4.08 4.08 0 013.96-2.73c1.2 0 2.52.5 3.33 1.61.9 1.24.72 3.04.72 4.62v9.28c0 .3-.25.53-.55.53h-2.87a.54.54 0 01-.52-.52v-7.8c0-.63.06-2.18-.08-2.76-.22-1-.86-1.27-1.69-1.27-.7 0-1.42.46-1.72 1.2-.29.75-.26 1.99-.26 2.82v7.8c0 .3-.25.53-.56.53h-2.87a.54.54 0 01-.51-.52v-7.8c0-1.65.26-4.06-1.77-4.06-2.07 0-1.99 2.35-1.99 4.05v7.8c0 .3-.25.53-.55.53m53.11-13.03c-2.11 0-2.25 2.88-2.25 4.67 0 1.8-.02 5.64 2.23 5.64 2.22 0 2.33-3.1 2.33-4.99 0-1.24-.05-2.72-.43-3.9-.32-1.02-.96-1.42-1.88-1.42m-.02-3.01c4.26 0 6.57 3.66 6.57 8.3 0 4.5-2.55 8.05-6.57 8.05-4.19 0-6.46-3.65-6.46-8.2 0-4.59 2.3-8.15 6.46-8.15m12.1 16.04h-2.87a.54.54 0 01-.51-.52V13a.55.55 0 01.55-.48h2.66c.25.01.46.18.51.41v2.25h.05c.81-2.01 1.94-2.97 3.92-2.97 1.29 0 2.55.47 3.35 1.74.75 1.17.75 3.16.75 4.58v9.26a.55.55 0 01-.55.46h-2.88a.54.54 0 01-.5-.46v-8c0-1.6.18-3.95-1.8-3.95-.7 0-1.35.46-1.67 1.17-.4.9-.46 1.8-.46 2.79v7.92c0 .3-.25.53-.55.53m-35.38-.03a.6.6 0 01-.68.06c-.96-.79-1.13-1.15-1.65-1.9-1.57 1.6-2.7 2.08-4.73 2.08-2.42 0-4.3-1.5-4.3-4.47a4.87 4.87 0 013.06-4.69c1.56-.68 3.74-.8 5.4-1v-.36c0-.69.06-1.5-.35-2.08-.35-.53-1.02-.75-1.61-.75-1.1 0-2.07.56-2.31 1.72-.05.26-.24.52-.5.53l-2.78-.3c-.24-.05-.5-.24-.43-.6.64-3.37 3.69-4.4 6.42-4.4 1.4 0 3.23.38 4.33 1.44 1.4 1.3 1.26 3.04 1.26 4.93v4.47c0 1.34.56 1.93 1.09 2.66.18.26.22.57-.01.76-.59.49-1.63 1.4-2.2 1.9h-.01zm-2.9-7c0 1.12.03 2.05-.54 3.05-.45.8-1.18 1.3-1.98 1.3-1.1 0-1.75-.84-1.75-2.08 0-2.44 2.2-2.88 4.27-2.88v.61zm-34.76 7a.6.6 0 01-.68.06c-.95-.79-1.12-1.15-1.65-1.9-1.57 1.6-2.69 2.08-4.73 2.08-2.42 0-4.3-1.5-4.3-4.47a4.87 4.87 0 013.06-4.69c1.56-.68 3.74-.8 5.4-1v-.36c0-.69.06-1.5-.35-2.08-.34-.53-1.02-.75-1.6-.75-1.1 0-2.08.56-2.32 1.72-.05.26-.24.52-.5.53l-2.78-.3c-.23-.05-.5-.24-.43-.6.64-3.37 3.7-4.4 6.43-4.4 1.4 0 3.22.38 4.32 1.44 1.4 1.3 1.27 3.04 1.27 4.93v4.47c0 1.34.55 1.93 1.08 2.66.18.26.22.57-.01.76-.59.49-1.63 1.4-2.2 1.9zm-2.9-7c0 1.12.03 2.05-.53 3.05-.46.8-1.18 1.3-2 1.3-1.1 0-1.74-.84-1.74-2.08 0-2.44 2.2-2.88 4.28-2.88v.61z"></path></g></svg>
+                            
+                              </button>
+                              </div>
+                     </li>
+                     <li>
+                        <div class="slide-button">
+                           <button class="nav-link" id="enterprise-3-tab" data-bs-toggle="tab" data-bs-target="#enterprise-3" type="button" role="tab">
+                              
+                              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none" class="UserLogo variant--Flat" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><path fill="var(--userLogoColor, #000)" fill-rule="evenodd" d="M71.56 26.746V12.891h3.716l4.707 10.354L84.62 12.89h3.559v13.855h-3.064v-8.06l-3.534 8.06h-3.265l-3.58-8.016v8.016H71.56zm28.947-5.364l-2.563-5.874-2.505 5.873h5.068zm-7.359 5.364h-3.603l6.193-13.855h4.435l6.237 13.855h-3.556l-1.227-2.76h-7.29l-1.189 2.76zm14.699 0V12.891h13.329v2.77h-10.11v2.752h8.669v2.704h-8.669v2.858h10.135v2.771h-13.354zm19.211-7.493h7.004V15.66h-7.004v3.592zm-3.265 7.493V12.891h11.155c1.49 0 2.355.855 2.355 2.323v4.655c0 1.071-.955 2.039-2.808 2.039-.105.005-.212 0-.322 0l3.247 4.838h-3.583l-3.079-4.737h-3.7v4.737h-3.265zm19.384.008h-1.105c-1.443 0-2.138-.827-2.138-2.032v-1.81h3.243v1.072h6.89v-2.836h-7.903c-1.262 0-2.171-.842-2.171-2.01v-4.114c0-1.245.989-2.125 2.193-2.125h9.035c1.221 0 2.065.905 2.065 2.213v1.653h-3.219V15.67h-6.89v2.729h7.88c1.164 0 2.229.764 2.229 2.234v3.955c0 1.347-.752 2.166-2.16 2.166h-7.949zm13.221 0V12.897h3.31v5.542l6.304-5.542h4.481l-7.52 6.437 7.791 7.42h-4.64l-6.416-6.302v6.302h-3.31z" clip-rule="evenodd"></path><path fill="var(--userLogoColor, #42B0D5)" fill-rule="evenodd" d="M54.397 4H31.608c-.959 0-1.878.38-2.555 1.055A3.578 3.578 0 0028 7.6v24.307c0 1.981 1.615 3.588 3.608 3.588h22.79c1.995 0 3.613-1.61 3.613-3.594V7.594C58.011 5.609 56.393 4 54.397 4zm-.686 7.507l-5.924 7.357 8.56 4.079-.006.029h-9.503l2.118 9.166-.029.017-5.924-7.357-5.924 7.357-.024-.012 2.113-9.172H29.67l-.011-.028 8.56-4.08-5.924-7.356.017-.023 8.56 4.079 2.113-9.167h.035l2.113 9.167 8.56-4.08.018.024z" clip-rule="evenodd"></path><title>Maersk logo</title></svg>
+                                 
+                           </button>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="slide-button">
+                           <button class="nav-link" id="enterprise-4-tab" data-bs-toggle="tab" data-bs-target="#enterprise-4" type="button" role="tab">
+                            
+                           <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none" class="UserLogo" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40"><path fill="var(--userLogoColor, #F22F46)" d="M64.4 16.3c0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7 0 3.1 1.4 3.1 3.1zm-3.1 4.3c-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1 0-1.7-1.4-3.1-3.1-3.1zM80 20c0 8.3-6.7 15-15 15s-15-6.7-15-15S56.7 5 65 5s15 6.7 15 15zm-4 0c0-6.1-4.9-11-11-11s-11 4.9-11 11 4.9 11 11 11 11-4.9 11-11zm-7.3.6c-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1 0-1.7-1.4-3.1-3.1-3.1zm0-7.4c-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1 0-1.7-1.4-3.1-3.1-3.1zm51.6-2.3c.1 0 .2.1.3.2v3.2c0 .2-.2.3-.3.3H115c-.2 0-.3-.2-.3-.3v-3.1c0-.2.2-.3.3-.3h5.3zm-.1 4.5H110c-.1 0-.3.1-.3.3l-1.3 5-.1.3-1.6-5.3c0-.1-.2-.3-.3-.3h-4c-.1 0-.3.1-.3.3l-1.5 5-.1.3-.1-.3-.6-2.5-.6-2.5c0-.1-.2-.3-.3-.3h-8v-4.3c0-.1-.2-.3-.4-.2l-5 1.6c-.2 0-.3.1-.3.3v2.7h-1.3c-.1 0-.3.1-.3.3v3.8c0 .1.1.3.3.3h1.3v4.7c0 3.3 1.8 4.8 5.1 4.8 1.4 0 2.7-.3 3.6-.8v-4c0-.2-.2-.3-.3-.2-.5.2-1 .3-1.4.3-.9 0-1.4-.4-1.4-1.4v-3.4h2.9c.1 0 .3-.1.3-.3v-3.2L97.8 29c0 .1.2.3.3.3h4.2c.1 0 .3-.1.3-.3l1.8-5.6.9 2.9.8 2.7c0 .1.2.3.3.3h4.2c.1 0 .3-.1.3-.3l3.8-12.6V29c0 .1.1.3.3.3h5.1c.1 0 .3-.1.3-.3V15.7c0-.1-.1-.3-.2-.3zm6.7-4.5h-5.1c-.1 0-.3.1-.3.3v17.7c0 .1.1.3.3.3h5.1c.1 0 .3-.1.3-.3V11.1c0-.1-.1-.2-.3-.2zm6.8 0h-5.3c-.1 0-.3.1-.3.3v3.1c0 .1.1.3.3.3h5.3c.1 0 .3-.1.3-.3v-3.2c0-.1-.1-.2-.3-.2zm-.1 4.5h-5.1c-.1 0-.3.1-.3.3v13.1c0 .1.1.3.3.3h5.1c.1 0 .3-.1.3-.3V15.7c0-.1-.1-.3-.3-.3zm16.1 6.8c0 3.8-3.2 7.1-7.7 7.1-4.4 0-7.6-3.3-7.6-7.1s3.2-7.1 7.7-7.1c4.4 0 7.6 3.3 7.6 7.1zm-5.4.1c0-1.4-1-2.5-2.2-2.4-1.3 0-2.2 1.1-2.2 2.4 0 1.3 1 2.4 2.2 2.4 1.3 0 2.2-1.1 2.2-2.4z"></path><title>Twilio logo</title></svg>
+                         
+                        </button>
+                        </div>
+                     </li>
+
+                  </ul>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+      <!-- ========== End enterprise componant ========== -->
+
+      <!-- ========== Start build growth componant ========== -->
+      
+      <div class="build-growth-component">
+         <div class="container-fluid custom-spacer-col">
+            <div class="launch-header">
+               <h2>Built for growth</h2>
+               <h1>Take your startup farther, faster</h1>
+               <p>
+                  Startups build on Stripe to launch faster, adapt as they grow, and automate workflows to do more with less. Build your own API-based integration or use our low- to no-code solutions, which are simple enough for easy implementation and powerful enough to scale as fast and as far as you need.
+               </p>
+            </div>
+
+            <div class="build-grid-section">
+               <div class="build-left-box">
+                  <div class="build-card">
+                     <div class="build-card-image">
+                        <img src="images/growth-image.webp">
+                        <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductFeatureCard__gradientSvg">
+                           <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189" rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)" fill="url(#product-card-paint-one-atlas"></ellipse>
+                           <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229" rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)" fill="url(#product-card-paint-two-atlas)"></ellipse>
+                           <defs>
+                             <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                               <stop offset="0.25" stop-color="#FFA500"></stop>
+                               <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                             </radialGradient>
+                             <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                               <stop stop-color="#FFD848"></stop>
+                               <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                             </radialGradient>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div class="build-card-information">
+                        <div class="build-flex">
+                           <svg class="ProductIcon ProductIcon--Atlas ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <title>Atlas</title>
+                            <g clip-path="url(#product-icon-atlas--a)"><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42 8.65 17.31a2.64 2.64 0 0 1-1.65 3.73l-.17.04c-.12.03-.24.04-.36.05h-.18L20.5 35.99 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.52.3z" fill="#FB0"></path><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 3.65 39.33a2.64 2.64 0 0 1-2.37-3.83l8.66-17.3 8.2-16.43A2.64 2.64 0 0 1 20.52.3z" fill="url(#product-icon-atlas--b)"></path><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.34.3h.18z" fill="url(#product-icon-atlas--c)"></path></g><defs><linearGradient id="product-icon-atlas--b" x1="16.03" y1="18.01" x2="15.94" y2="39.33" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD748"></stop><stop offset=".54" stop-color="#FFCD48"></stop><stop offset="1" stop-color="#FFCB48"></stop></linearGradient><linearGradient id="product-icon-atlas--c" x1="20.51" y1="34.72" x2="20.51" y2="15.01" gradientUnits="userSpaceOnUse"><stop stop-color="#FFAD00"></stop><stop offset="1" stop-color="#FF7600"></stop></linearGradient><clipPath id="product-icon-atlas--a"><path fill="#fff" d="M0 0h40v40H0z"></path></clipPath></defs>
+                          </svg>
+                           <span>Atlas</span>
+                        </div>
+                        <h2>
+                           Incorporate your company
+                        </h2>
+                        <p>
+                           Form a legal entity, issue stock, and start accepting payments.
+                        </p>
+                        <a href="#" class="learn-btn">
+                           <span>Learn about Atlas </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="build-card">
+                     <div class="build-card-image">
+                        <img src="images/growth-image.webp">
+                        <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductFeatureCard__gradientSvg">
+                           <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189" rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)" fill="url(#product-card-paint-one-atlas"></ellipse>
+                           <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229" rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)" fill="url(#product-card-paint-two-atlas)"></ellipse>
+                           <defs>
+                             <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                               <stop offset="0.25" stop-color="#11EFE3"></stop>
+                               <stop offset="0.744792" stop-color="#11EFE3" stop-opacity="0"></stop>
+                             </radialGradient>
+                             <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                               <stop stop-color="#9966FF"></stop>
+                               <stop offset="1" stop-color="#9966FF" stop-opacity="0"></stop>
+                             </radialGradient>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div class="build-card-information">
+                        <div class="build-flex">
+                           <svg class="ProductIcon ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                              <title>Checkout</title>
+                            
+                            <path d="M31.54 4h-19.7c-.84 0-1.63.43-2.09 1.14a2.52 2.52 0 0 0-.18 2.39l5.1 11.46c.3.64.3 1.38 0 2.02L8 36h23.54c.97 0 1.86-.58 2.26-1.48l5.98-13.5c.3-.65.3-1.39 0-2.04L33.8 5.48A2.48 2.48 0 0 0 31.54 4z" fill="#96F"></path><path d="M7.23 36a2.3 2.3 0 0 1-.98-.22h.04a2.43 2.43 0 0 1-1.23-1.23L.22 23.53a2.54 2.54 0 0 1 .17-2.38A2.45 2.45 0 0 1 2.46 20h19.5c.97 0 1.84.57 2.23 1.46l4.8 10.85.68 1.53c.1.22.23.42.38.6.49.64 1.2 1.3 1.98 1.51-.11.03-.3.05-.55.05H7.22z" fill="url(#product-icon-checkout--a)"></path><path d="M21.97 20c.9 0 1.72.5 2.14 1.3l.08.16 4.8 10.85.68 1.53a4.43 4.43 0 0 0 2.3 2.01l.18.07c-.2.05-.4.08-.61.08H8L14.67 21c.15-.32.22-.66.22-1.01h7.08z" fill="url(#product-icon-checkout--b)"></path><defs><linearGradient id="product-icon-checkout--a" x1="16.01" y1="35.59" x2="16.01" y2="21.16" gradientUnits="userSpaceOnUse"><stop stop-color="#21CFE0"></stop><stop offset=".17" stop-color="#20D1E0"></stop><stop offset=".38" stop-color="#18E2E2"></stop><stop offset=".61" stop-color="#13ECE3"></stop><stop offset="1" stop-color="#11EFE3"></stop></linearGradient><linearGradient id="product-icon-checkout--b" x1="21.07" y1="43" x2="21.07" y2="14.5" gradientUnits="userSpaceOnUse"><stop stop-color="#0048E5"></stop><stop offset="1" stop-color="#9B66FF"></stop></linearGradient></defs>
+                          </svg>
+                           <span>Checkout</span>
+                        </div>
+                        <h2>
+                           Sell to consumers
+                        </h2>
+                        <p>
+                           Launch a B2C business with a prebuilt payment page that’s optimized for conversion.
+                        </p>
+                        <a href="#" class="learn-btn">
+                           <span>Start with Checkout </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="build-left-box">
+                  <div class="build-card">
+                     <div class="build-card-image">
+                        <img src="images/growth-image.webp">
+                        <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductFeatureCard__gradientSvg">
+                           <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189" rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)" fill="url(#product-card-paint-one-atlas"></ellipse>
+                           <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229" rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)" fill="url(#product-card-paint-two-atlas)"></ellipse>
+                           <defs>
+                             <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                               <stop offset="0.25" stop-color="#FFA500"></stop>
+                               <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                             </radialGradient>
+                             <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                               <stop stop-color="#FFD848"></stop>
+                               <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                             </radialGradient>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div class="build-card-information">
+                        <div class="build-flex">
+                           <svg class="ProductIcon ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                              <title>Payment Links</title>
+                            
+                            <path d="M31.54 4h-19.7c-.84 0-1.63.43-2.09 1.14a2.52 2.52 0 0 0-.18 2.39l5.1 11.46c.3.64.3 1.38 0 2.02L8 36h23.54c.97 0 1.86-.58 2.26-1.48l5.98-13.5c.3-.65.3-1.39 0-2.04L33.8 5.48A2.48 2.48 0 0 0 31.54 4z" fill="#96F"></path><path d="M7.23 36a2.3 2.3 0 0 1-.98-.22h.04a2.43 2.43 0 0 1-1.23-1.23L.22 23.53a2.54 2.54 0 0 1 .17-2.38A2.45 2.45 0 0 1 2.46 20h19.5c.97 0 1.84.57 2.23 1.46l4.8 10.85.68 1.53c.1.22.23.42.38.6.49.64 1.2 1.3 1.98 1.51-.11.03-.3.05-.55.05H7.22z" fill="url(#product-icon-checkout--a)"></path><path d="M21.97 20c.9 0 1.72.5 2.14 1.3l.08.16 4.8 10.85.68 1.53a4.43 4.43 0 0 0 2.3 2.01l.18.07c-.2.05-.4.08-.61.08H8L14.67 21c.15-.32.22-.66.22-1.01h7.08z" fill="url(#product-icon-checkout--b)"></path><defs><linearGradient id="product-icon-checkout--a" x1="16.01" y1="35.59" x2="16.01" y2="21.16" gradientUnits="userSpaceOnUse"><stop stop-color="#21CFE0"></stop><stop offset=".17" stop-color="#20D1E0"></stop><stop offset=".38" stop-color="#18E2E2"></stop><stop offset=".61" stop-color="#13ECE3"></stop><stop offset="1" stop-color="#11EFE3"></stop></linearGradient><linearGradient id="product-icon-checkout--b" x1="21.07" y1="43" x2="21.07" y2="14.5" gradientUnits="userSpaceOnUse"><stop stop-color="#0048E5"></stop><stop offset="1" stop-color="#9B66FF"></stop></linearGradient></defs>
+                          </svg>
+                           <span>Payment Links</span>
+                        </div>
+                        <h2>
+                           Validate your idea
+                        </h2>
+                        <p>
+                           Test your product idea by launching payments with little to no code.
+                        </p>
+                        <a href="#" class="learn-btn">
+                           <span>Try Payment Links </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="build-card">
+                     <div class="build-card-image">
+                        <img src="images/growth-image.webp">
+                        <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductFeatureCard__gradientSvg">
+                           <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189" rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)" fill="url(#product-card-paint-one-atlas"></ellipse>
+                           <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229" rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)" fill="url(#product-card-paint-two-atlas)"></ellipse>
+                           <defs>
+                             <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                               <stop offset="0.25" stop-color="#FFA500"></stop>
+                               <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                             </radialGradient>
+                             <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                               <stop stop-color="#FFD848"></stop>
+                               <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                             </radialGradient>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div class="build-card-information">
+                        <div class="build-flex">
+                           <svg class="ProductIcon ProductIcon--Invoicing ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                              <title>Invoicing</title>
+                            
+                            <path d="M12.5001 1C11.1194 1 10.0001 2.11929 10.0001 3.5V36.3314C10.0001 37.4628 9.24028 38.4532 8.14746 38.7462L36.1472 31.24C37.2401 30.9472 38.0001 29.9567 38.0001 28.8252V3.5C38.0001 2.11929 36.8808 1 35.5001 1H12.5001Z" fill="#00D924"></path><path d="M1.25338 24.5476C0.0575759 25.238 -0.352092 26.7668 0.338338 27.9626L5.81522 37.449C6.38097 38.4289 7.53438 38.9067 8.62734 38.6138L34.7744 31.6076L24.5869 13.9626C23.8969 12.7668 22.3676 12.3571 21.1718 13.0476L1.25338 24.5476Z" fill="url(#product-icon-invoicing--a)"></path><path d="M8.40173 38.6633C8.4771 38.6504 8.55237 38.6339 8.62737 38.6138L34.7744 31.6076L24.5869 13.9626C23.897 12.7668 22.3677 12.3571 21.1719 13.0476L10.0002 19.4976V36.3314C10.0002 37.3728 9.35638 38.2947 8.40173 38.6633Z" fill="url(#product-icon-invoicing--b)"></path><defs><linearGradient id="product-icon-invoicing--a" x1="17.3897" y1="20.25" x2="17.3893" y2="38" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD748"></stop><stop offset="1" stop-color="#FFC148"></stop></linearGradient><linearGradient id="product-icon-invoicing--b" x1="21.5889" y1="12.7122" x2="21.5881" y2="38.6633" gradientUnits="userSpaceOnUse"><stop stop-color="#00A600"></stop><stop offset="1" stop-color="#00D924"></stop></linearGradient></defs>
+                          </svg>
+                           <span>Invoicing</span>
+                        </div>
+                        <h2>
+                           Sell to businesses
+                        </h2>
+                        <p>
+                           Launch a B2B business and collect one-time or recurring payments from customers.
+                        </p>
+                        <a href="#" class="learn-btn">
+                           <span>Explore Invoicing  </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- ========== End build growth componant ========== -->
+
+      <!-- ========== Start design-developer componant ========== -->
+      
+      <div class="build-growth-component design-developer-compontant">
+         <div class="container-fluid custom-spacer-col ">
+            <div class="build-growth-grid">
+               <div class="launch-header">
+                  <h2>Designed for developers</h2>
+                  <h1>Ship more quickly with powerful and easy-to-use APIs</h1>
+                  <p>
+                     Save engineering time with unified payments functionality. We obsess over the maze of gateways, payments rails, and financial institutions that make up the global economic landscape so that your teams can build what you need on one platform.
+                  </p>
+                  <a href="#" class="learn-btn">
+                     <span>Read the docs</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/></svg>
+                  </a>
+               </div>
+               <div class="build-image">
+                  <img src="images/code-image.png" alt="image">
+               </div>
+            </div>
+
+            <div class="global-bottom-section">
+               <div class="global-tab">
+                  <div class="copy_header">
+                     <svg class="AnimatedIcon__icon" width="60" height="60" preserveAspectRatio="xMinYMin" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" data-js-controller="TerminalIcon">
+                        <defs>
+                        <path id="terminalIconCode" d="M44 28a4 4 0 0 1 4 4v17a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h24zm-23.2 5.17l-.67.75a.5.5 0 0 0-.02.64l.06.06 3.29 2.92-3.3 2.92a.5.5 0 0 0-.03.7l.66.76c.18.2.5.22.7.04l4.97-4.42-4.96-4.41a.5.5 0 0 0-.7.04z"></path>
+                        <path id="terminalIconCursor" d="M27.64 40h6.72c.22 0 .3.02.38.07.09.04.15.1.2.19.04.08.06.16.06.38v.72c0 .22-.02.3-.07.38a.45.45 0 0 1-.19.2c-.08.04-.16.06-.38.06h-6.72c-.22 0-.3-.02-.38-.07a.45.45 0 0 1-.2-.19c-.04-.08-.06-.16-.06-.38v-.72c0-.22.02-.3.07-.38.04-.09.1-.15.19-.2.08-.04.16-.06.38-.06z"></path>
+                        <path id="terminalIconGear" d="M42.5 42l1.13 3.13.64.13 2.24-2.46.93.38-.16 3.33c.19.11.37.23.54.36l3.02-1.42.7.71-1.41 3.02c.13.17.25.35.36.54l3.33-.16.38.93-2.46 2.24c.05.21.1.42.13.64L55 54.5v1l-3.13 1.13c-.04.25-.1.5-.15.73l2.48 2.15-.38.93-3.28-.24c-.14.24-.3.47-.47.7l1.48 2.94-.71.7-2.94-1.47c-.23.17-.46.33-.7.47l.24 3.28-.93.38-2.15-2.48c-.27.06-.54.12-.82.16L42.5 68h-1l-1.04-3.12c-.28-.04-.55-.1-.82-.16l-2.15 2.48-.93-.38.24-3.28c-.24-.14-.47-.3-.7-.47l-2.94 1.48-.7-.71 1.47-2.94c-.17-.23-.33-.46-.47-.7l-3.28.24-.38-.93 2.48-2.15a9.95 9.95 0 0 1-.16-.82L29 55.5v-1l3.12-1.04c.04-.25.08-.49.14-.73l-2.46-2.24.38-.93 3.33.16c.11-.19.23-.37.36-.54l-1.42-3.02.71-.7 3.02 1.41c.17-.13.35-.25.54-.36l-.16-3.33.93-.38 2.24 2.46s.42-.1.64-.13L41.5 42h1zM42 53a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+                        <clipPath id="terminalIconClipPath">
+                          <use href="#terminalIconCode"></use>
+                        </clipPath>
+                      </defs>
+                  
+                      <use href="#terminalIconCode" fill="#00d4ff"></use>
+                      <use href="#terminalIconCursor" fill="#0c2e4e" data-js-target="TerminalIcon.cursor"></use>
+                      <use href="#terminalIconGear" fill="#7a73ff" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+                      <g clip-path="url(#terminalIconClipPath)">
+                        <use href="#terminalIconGear" fill="#cff" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+                      </g>
+                      </svg>
+                     <h4 class="copy_title">                 
+                        Use Stripe with your stack
+                     </h4>
+                     <p>We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
+                     <a href="#" class="learn-btn">
+                        <span>See libraries </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="global-tab">
+                  <div class="copy_header">
+                     <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="BrowserWithNoCodeIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C1.79086 2 0 3.79086 0 6V26C0 28.2091 1.79086 30 4 30H32C34.2091 30 36 28.2091 36 26V6C36 3.79086 34.2091 2 32 2H4ZM4.5 8C5.32843 8 6 7.32843 6 6.5C6 5.67157 5.32843 5 4.5 5C3.67157 5 3 5.67157 3 6.5C3 7.32843 3.67157 8 4.5 8ZM11 6.5C11 7.32843 10.3284 8 9.5 8C8.67157 8 8 7.32843 8 6.5C8 5.67157 8.67157 5 9.5 5C10.3284 5 11 5.67157 11 6.5ZM14.5 8C15.3284 8 16 7.32843 16 6.5C16 5.67157 15.3284 5 14.5 5C13.6716 5 13 5.67157 13 6.5C13 7.32843 13.6716 8 14.5 8Z" class="Icon__blendBackground" style="fill: #00d4ff;"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C1.79086 2 0 3.79086 0 6V26C0 28.2091 1.79086 30 4 30H32C34.2091 30 36 28.2091 36 26V6C36 3.79086 34.2091 2 32 2H4ZM4.5 8C5.32843 8 6 7.32843 6 6.5C6 5.67157 5.32843 5 4.5 5C3.67157 5 3 5.67157 3 6.5C3 7.32843 3.67157 8 4.5 8ZM11 6.5C11 7.32843 10.3284 8 9.5 8C8.67157 8 8 7.32843 8 6.5C8 5.67157 8.67157 5 9.5 5C10.3284 5 11 5.67157 11 6.5ZM14.5 8C15.3284 8 16 7.32843 16 6.5C16 5.67157 15.3284 5 14.5 5C13.6716 5 13 5.67157 13 6.5C13 7.32843 13.6716 8 14.5 8Z" class="Icon__blendBackground" style="fill: #00d4ff;"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M40 18.5C40 15.4624 37.5376 13 34.5 13H17.5C14.4624 13 12 15.4624 12 18.5C12 21.5376 14.4624 24 17.5 24H34.5C37.5376 24 40 21.5376 40 18.5ZM14 18.5C14 20.433 15.567 22 17.5 22C19.433 22 21 20.433 21 18.5C21 16.567 19.433 15 17.5 15C15.567 15 14 16.567 14 18.5ZM12 31.5C12 28.4624 14.4624 26 17.5 26H34.5C37.5376 26 40 28.4624 40 31.5C40 34.5376 37.5376 37 34.5 37H17.5C14.4624 37 12 34.5376 12 31.5ZM31 31.5C31 33.433 32.567 35 34.5 35C36.433 35 38 33.433 38 31.5C38 29.567 36.433 28 34.5 28C32.567 28 31 29.567 31 31.5Z" class="Icon__blendForeground" style="fill: #7a73ff;"></path><g clip-path="url(#BrowserWithNoCodeIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M40 18.5C40 15.4624 37.5376 13 34.5 13H17.5C14.4624 13 12 15.4624 12 18.5C12 21.5376 14.4624 24 17.5 24H34.5C37.5376 24 40 21.5376 40 18.5ZM14 18.5C14 20.433 15.567 22 17.5 22C19.433 22 21 20.433 21 18.5C21 16.567 19.433 15 17.5 15C15.567 15 14 16.567 14 18.5ZM12 31.5C12 28.4624 14.4624 26 17.5 26H34.5C37.5376 26 40 28.4624 40 31.5C40 34.5376 37.5376 37 34.5 37H17.5C14.4624 37 12 34.5376 12 31.5ZM31 31.5C31 33.433 32.567 35 34.5 35C36.433 35 38 33.433 38 31.5C38 29.567 36.433 28 34.5 28C32.567 28 31 29.567 31 31.5Z" class="Icon__blendForeground" style="fill: #cff;"></path></g></svg>
+                     <h4 class="copy_title">                 
+                        Use Stripe with your stack
+                     </h4>
+                     <p>We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
+                     <a href="#" class="learn-btn">
+                        <span>See libraries </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="global-tab">
+                  <div class="copy_header">
+                     <svg class="AnimatedIcon__icon" width="60" height="60" preserveAspectRatio="xMinYMin" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" data-js-controller="BlocksIcon">
+                        <defs>
+                        <path id="blocksIconBack" d="M30.68 31.37l9 4.15A4 4 0 0 1 42 39.15v10.89a4 4 0 0 1-2.32 3.63l-9 4.15a4 4 0 0 1-3.36 0l-9-4.15A4 4 0 0 1 16 50.04V39.15a4 4 0 0 1 .35-1.62L29 43.36v-1.54l-11.85-5.47a4 4 0 0 1 1.17-.83l9-4.15a4 4 0 0 1 3.36 0z"></path>
+                        <path id="blocksIconFront" d="M55 45.15v10.89a4 4 0 0 1-2.32 3.63l-9 4.15a4 4 0 0 1-3.36 0l-9-4.15A4 4 0 0 1 29 56.04V45.15a4 4 0 0 1 .35-1.62L42 49.37l12.65-5.84a4 4 0 0 1 .35 1.62zm-11.32-7.78l9 4.15a4 4 0 0 1 1.17.83L42 47.82l-11.86-5.47a4 4 0 0 1 1.18-.83l9-4.15a4 4 0 0 1 3.36 0z"></path>
+                        <clipPath id="blocksIconClipPath">
+                          <use data-js-target-list="BlocksIcon.firstBackBlocks" href="#blocksIconFront" transform="translate(-13, -6)" data-js-bbox="firstHiddenBlock"></use>
+                          <use data-js-target-list="BlocksIcon.secondBackBlocks" href="#blocksIconFront" transform="translate(-65, -30)" data-js-bbox="secondHiddenBlock"></use>
+                        </clipPath>
+                      </defs>
+                  
+                      <use data-js-target="BlocksIcon.firstHiddenBlock" href="#blocksIconFront" transform="translate(-13, -6)" style="visibility: hidden;"></use>
+                      <use data-js-target="BlocksIcon.secondHiddenBlock" href="#blocksIconFront" transform="translate(-65, -30)" style="visibility: hidden;"></use>
+                  
+                      <use data-js-target-list="BlocksIcon.secondBackBlocks" href="#blocksIconFront" fill="#00d4ff" style="opacity: 0;"></use>
+                      <use data-js-target-list="BlocksIcon.secondFrontBlocks" href="#blocksIconFront" fill="#7a73ff" style="opacity: 0;"></use>
+                      <use data-js-target-list="BlocksIcon.firstBackBlocks" href="#blocksIconFront" fill="#00d4ff" transform="translate(-13, -6)"></use>
+                      <use data-js-target-list="BlocksIcon.firstFrontBlocks" href="#blocksIconFront" fill="#7a73ff"></use>
+                      <g clip-path="url(#blocksIconClipPath)">
+                        <use data-js-target-list="BlocksIcon.firstFrontBlocks" href="#blocksIconFront" fill="#cff"></use>
+                        <use data-js-target-list="BlocksIcon.secondFrontBlocks" href="#blocksIconFront" fill="#cff" style="opacity: 0;"></use>
+                      </g>
+                      </svg>
+                     <h4 class="copy_title">                 
+                        Use Stripe with your stack
+                     </h4>
+                     <p>We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
+                     <a href="#" class="learn-btn">
+                        <span>See libraries </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="global-tab">
+                  <div class="copy_header">
+                     <svg class="Icon " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="BrowserWithCodeIconClipPath-"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C1.79086 2 0 3.79086 0 6V26C0 28.2091 1.79086 30 4 30H32C34.2091 30 36 28.2091 36 26V6C36 3.79086 34.2091 2 32 2H4ZM4.5 8C5.32843 8 6 7.32843 6 6.5C6 5.67157 5.32843 5 4.5 5C3.67157 5 3 5.67157 3 6.5C3 7.32843 3.67157 8 4.5 8ZM11 6.5C11 7.32843 10.3284 8 9.5 8C8.67157 8 8 7.32843 8 6.5C8 5.67157 8.67157 5 9.5 5C10.3284 5 11 5.67157 11 6.5ZM14.5 8C15.3284 8 16 7.32843 16 6.5C16 5.67157 15.3284 5 14.5 5C13.6716 5 13 5.67157 13 6.5C13 7.32843 13.6716 8 14.5 8Z" class="Icon__blendBackground" style="fill:#00d4ff;"></path></clipPath></defs><path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C1.79086 2 0 3.79086 0 6V26C0 28.2091 1.79086 30 4 30H32C34.2091 30 36 28.2091 36 26V6C36 3.79086 34.2091 2 32 2H4ZM4.5 8C5.32843 8 6 7.32843 6 6.5C6 5.67157 5.32843 5 4.5 5C3.67157 5 3 5.67157 3 6.5C3 7.32843 3.67157 8 4.5 8ZM11 6.5C11 7.32843 10.3284 8 9.5 8C8.67157 8 8 7.32843 8 6.5C8 5.67157 8.67157 5 9.5 5C10.3284 5 11 5.67157 11 6.5ZM14.5 8C15.3284 8 16 7.32843 16 6.5C16 5.67157 15.3284 5 14.5 5C13.6716 5 13 5.67157 13 6.5C13 7.32843 13.6716 8 14.5 8Z" class="Icon__blendBackground" style="fill: #00d4ff;"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.5573 17C24.2261 17 23.9341 17.2173 23.839 17.5345L18.289 36.0345C18.1446 36.5157 18.5049 37 19.0073 37H21.4413C21.7725 37 22.0645 36.7827 22.1597 36.4655L27.7097 17.9655C27.854 17.4843 27.4937 17 26.9913 17H24.5573ZM13.7428 19.7011C14.0238 19.3968 14.4983 19.3778 14.8026 19.6587L16.6396 21.3544C16.944 21.6354 16.963 22.1099 16.682 22.4142L12.443 27.0066L16.682 31.5989C16.963 31.9033 16.944 32.3778 16.6396 32.6587L14.8026 34.3544C14.4983 34.6354 14.0238 34.6164 13.7428 34.312L7.4689 27.5153C7.2037 27.228 7.20371 26.7852 7.4689 26.4979L13.7428 19.7011ZM32.2558 19.7011C31.9749 19.3968 31.5004 19.3778 31.196 19.6587L29.359 21.3544C29.0546 21.6354 29.0357 22.1099 29.3166 22.4142L33.5557 27.0066L29.3166 31.5989C29.0357 31.9033 29.0546 32.3778 29.359 32.6587L31.196 34.3544C31.5004 34.6354 31.9749 34.6164 32.2558 34.312L38.5297 27.5153C38.7949 27.228 38.7949 26.7852 38.5297 26.4979L32.2558 19.7011Z" class="Icon__blendForeground" style="fill: #7a73ff;"></path><g clip-path="url(#BrowserWithCodeIconClipPath-)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.5573 17C24.2261 17 23.9341 17.2173 23.839 17.5345L18.289 36.0345C18.1446 36.5157 18.5049 37 19.0073 37H21.4413C21.7725 37 22.0645 36.7827 22.1597 36.4655L27.7097 17.9655C27.854 17.4843 27.4937 17 26.9913 17H24.5573ZM13.7428 19.7011C14.0238 19.3968 14.4983 19.3778 14.8026 19.6587L16.6396 21.3544C16.944 21.6354 16.963 22.1099 16.682 22.4142L12.443 27.0066L16.682 31.5989C16.963 31.9033 16.944 32.3778 16.6396 32.6587L14.8026 34.3544C14.4983 34.6354 14.0238 34.6164 13.7428 34.312L7.4689 27.5153C7.2037 27.228 7.20371 26.7852 7.4689 26.4979L13.7428 19.7011ZM32.2558 19.7011C31.9749 19.3968 31.5004 19.3778 31.196 19.6587L29.359 21.3544C29.0546 21.6354 29.0357 22.1099 29.3166 22.4142L33.5557 27.0066L29.3166 31.5989C29.0357 31.9033 29.0546 32.3778 29.359 32.6587L31.196 34.3544C31.5004 34.6354 31.9749 34.6164 32.2558 34.312L38.5297 27.5153C38.7949 27.228 38.7949 26.7852 38.5297 26.4979L32.2558 19.7011Z" class="Icon__blendForeground" style="fill:#cff;"></path></g></svg>
+                     <h4 class="copy_title">                 
+                        Use Stripe with your stack
+                     </h4>
+                     <p>We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
+                     <a href="#" class="learn-btn">
+                        <span>See libraries </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+      
+      <!-- ========== End design-developer componant ========== -->
+     
+      <!-- ========== Start low code componant ========== -->
+      
+     
+      <div class="build-growth-component low-code-compontant">
+         <div class="container-fluid custom-spacer-col ">
+            <div class="launch-header">
+               <h2>Launch with ease</h2>
+               <h1>Low- and no-code options for getting started</h1>
+               <p>
+                  If you’d like to use Stripe for your business but don’t have developers on staff, no problem. We have a few options depending on your needs.
+               </p>
+            </div>
+
+            <div class="build-grid-section">
+               <div class="build-left-box">
+                  <div>
+                     <div class="build-card">
+                        <div class="build-card-image">
+                           <img src="images/pre-integrate.png">
+                           <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductFeatureCard__gradientSvg">
+                              <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189" rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)" fill="url(#product-card-paint-one-atlas"></ellipse>
+                              <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229" rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)" fill="url(#product-card-paint-two-atlas)"></ellipse>
+                              <defs>
+                                <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                                  <stop offset="0.25" stop-color="#FFA500"></stop>
+                                  <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                                  <stop stop-color="#FFD848"></stop>
+                                  <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                                </radialGradient>
+                              </defs>
+                           </svg>
+                        </div>
+                        <div class="build-card-information">
+                           <div class="build-flex">
+                              <svg class="ProductIcon ProductIcon--Atlas ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <title>Atlas</title>
+                               <g clip-path="url(#product-icon-atlas--a)"><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42 8.65 17.31a2.64 2.64 0 0 1-1.65 3.73l-.17.04c-.12.03-.24.04-.36.05h-.18L20.5 35.99 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.52.3z" fill="#FB0"></path><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 3.65 39.33a2.64 2.64 0 0 1-2.37-3.83l8.66-17.3 8.2-16.43A2.64 2.64 0 0 1 20.52.3z" fill="url(#product-icon-atlas--b)"></path><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.34.3h.18z" fill="url(#product-icon-atlas--c)"></path></g><defs><linearGradient id="product-icon-atlas--b" x1="16.03" y1="18.01" x2="15.94" y2="39.33" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD748"></stop><stop offset=".54" stop-color="#FFCD48"></stop><stop offset="1" stop-color="#FFCB48"></stop></linearGradient><linearGradient id="product-icon-atlas--c" x1="20.51" y1="34.72" x2="20.51" y2="15.01" gradientUnits="userSpaceOnUse"><stop stop-color="#FFAD00"></stop><stop offset="1" stop-color="#FF7600"></stop></linearGradient><clipPath id="product-icon-atlas--a"><path fill="#fff" d="M0 0h40v40H0z"></path></clipPath></defs>
+                             </svg>
+                              <span>Atlas</span>
+                           </div>
+                           <h2>
+                              Use a pre-integrated platform
+                           </h2>
+                           <p>
+                              Explore our directory to find out-of-the-box solutions that connect with Stripe, such as Squarespace and Lightspeed.
+                           </p>
+                           <a href="#" class="learn-btn">
+                              <span>
+                                 See directory </span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                 
+                  <div class="build-card">
+                     <div class="build-card-image">
+                        <img src="images/build_with_stripe.png">
+                        <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductFeatureCard__gradientSvg">
+                           <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189" rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)" fill="url(#product-card-paint-one-atlas"></ellipse>
+                           <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229" rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)" fill="url(#product-card-paint-two-atlas)"></ellipse>
+                           <defs>
+                             <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                               <stop offset="0.25" stop-color="#FFA500"></stop>
+                               <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                             </radialGradient>
+                             <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                               <stop stop-color="#FFD848"></stop>
+                               <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                             </radialGradient>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div class="build-card-information">
+                        <div class="build-flex">
+                           <svg class="ProductIcon ProductIcon--Atlas ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <title>Atlas</title>
+                            <g clip-path="url(#product-icon-atlas--a)"><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42 8.65 17.31a2.64 2.64 0 0 1-1.65 3.73l-.17.04c-.12.03-.24.04-.36.05h-.18L20.5 35.99 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.52.3z" fill="#FB0"></path><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 3.65 39.33a2.64 2.64 0 0 1-2.37-3.83l8.66-17.3 8.2-16.43A2.64 2.64 0 0 1 20.52.3z" fill="url(#product-icon-atlas--b)"></path><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.34.3h.18z" fill="url(#product-icon-atlas--c)"></path></g><defs><linearGradient id="product-icon-atlas--b" x1="16.03" y1="18.01" x2="15.94" y2="39.33" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD748"></stop><stop offset=".54" stop-color="#FFCD48"></stop><stop offset="1" stop-color="#FFCB48"></stop></linearGradient><linearGradient id="product-icon-atlas--c" x1="20.51" y1="34.72" x2="20.51" y2="15.01" gradientUnits="userSpaceOnUse"><stop stop-color="#FFAD00"></stop><stop offset="1" stop-color="#FF7600"></stop></linearGradient><clipPath id="product-icon-atlas--a"><path fill="#fff" d="M0 0h40v40H0z"></path></clipPath></defs>
+                          </svg>
+                           <span>Atlas</span>
+                        </div>
+                        <h2>
+                           Build with Stripe-certified experts
+                        </h2>
+                        <p>
+                           Work with a Stripe consulting partner that can integrate and deploy Stripe solutions for you.
+                        </p>
+                        <a href="#" class="learn-btn">
+                           <span>
+                              View partners  </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="build-card">
+                     <div class="build-card-image">
+                        <img src="images/build_with_stripe.png">
+                        <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="ProductFeatureCard__gradientSvg">
+                           <ellipse class="ProductFeatureCard__ellipse--one" opacity="0.5" cx="305.095" cy="294.189" rx="292.729" ry="272.493" transform="rotate(-41.7514 305.095 294.189)" fill="url(#product-card-paint-one-atlas"></ellipse>
+                           <ellipse class="ProductFeatureCard__ellipse--two" opacity="0.6" cx="314.947" cy="283.229" rx="314.947" ry="283.229" transform="matrix(0.8571 -0.51515 -0.51515 -0.8571 373.81 726)" fill="url(#product-card-paint-two-atlas)"></ellipse>
+                           <defs>
+                             <radialGradient id="product-card-paint-one-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(319.628 260.311) rotate(88.8263) scale(253.398 377.821)">
+                               <stop offset="0.25" stop-color="#FFA500"></stop>
+                               <stop offset="0.744792" stop-color="#FFA500" stop-opacity="0"></stop>
+                             </radialGradient>
+                             <radialGradient id="product-card-paint-two-atlas" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330.582 248.016) rotate(89.4327) scale(234.804 286.235)">
+                               <stop stop-color="#FFD848"></stop>
+                               <stop offset="1" stop-color="#FFD848" stop-opacity="0"></stop>
+                             </radialGradient>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div class="build-card-information">
+                        <div class="build-flex">
+                           <svg class="ProductIcon ProductIcon--Atlas ProductBadge__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <title>Atlas</title>
+                            <g clip-path="url(#product-icon-atlas--a)"><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42 8.65 17.31a2.64 2.64 0 0 1-1.65 3.73l-.17.04c-.12.03-.24.04-.36.05h-.18L20.5 35.99 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.52.3z" fill="#FB0"></path><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 3.65 39.33a2.64 2.64 0 0 1-2.37-3.83l8.66-17.3 8.2-16.43A2.64 2.64 0 0 1 20.52.3z" fill="url(#product-icon-atlas--b)"></path><path d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.34.3h.18z" fill="url(#product-icon-atlas--c)"></path></g><defs><linearGradient id="product-icon-atlas--b" x1="16.03" y1="18.01" x2="15.94" y2="39.33" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD748"></stop><stop offset=".54" stop-color="#FFCD48"></stop><stop offset="1" stop-color="#FFCB48"></stop></linearGradient><linearGradient id="product-icon-atlas--c" x1="20.51" y1="34.72" x2="20.51" y2="15.01" gradientUnits="userSpaceOnUse"><stop stop-color="#FFAD00"></stop><stop offset="1" stop-color="#FF7600"></stop></linearGradient><clipPath id="product-icon-atlas--a"><path fill="#fff" d="M0 0h40v40H0z"></path></clipPath></defs>
+                          </svg>
+                           <span>Atlas</span>
+                        </div>
+                        <h2>
+                           Try our no-code products
+                        </h2>
+                        <p>
+                           Create an invoice, accept an in-person payment with your phone, or share a payment link directly from your Dashboard to start generating revenue in minutes—no code required.
+                        </p>
+                        <a href="#" class="learn-btn">
+                           <span>Explore no-code </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"></path></svg>
+                        </a>
+                     </div>
+                  </div>
+                 
+               </div>
+             
+            </div>
+
+         </div>
+      </div>
+ 
+      <!-- ========== End low code componant ========== -->
+
+      <!-- ========== Start ready block componant ========== -->
+      
+      <div class="ready-component"> 
+         <div class="container-fluid custom-spacer-col">
+            <div class="ready-grid">
+                  <div class="ready-left-section"> 
+                     <h2>
+                        Ready to get started?
+                     </h2>
+                     <p>
+                        Create an account instantly to get started or contact us to design a custom package for your business.
+                     </p>
+                     <div class="ready-button">
+                        <a href="#" class="contact-button">
+                           <span>Start now</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/></svg>
+                        </a>
+
+                        <a href="#" class="contact-button">
+                           <span>Contact sales </span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/></svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="ready-middle-section">
+                     <svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="PricingIcon">
+                        <defs>
+                        <path id="pricingIconTag" d="M41.4 30.38l8.4 8.27A4 4 0 0 1 51 41.5V62a3 3 0 0 1-3 3H32a3 3 0 0 1-3-3V41.5a4 4 0 0 1 1.2-2.85l8.4-8.27a2 2 0 0 1 2.8 0zM40 36a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+                        <clipPath id="pricingClipPath">
+                          <use href="#pricingIconTag" style="transform-origin: 40px 39px; transform: rotate(45deg)" data-js-target-list="PricingIcon.tagBacks"></use>
+                        </clipPath>
+                      </defs>
+                  
+                      <use href="#pricingIconTag" fill="#80e9ff" style="transform-origin: 40px 39px; transform: rotate(45deg)" data-js-target-list="PricingIcon.tagBacks"></use>
+                      <use class="PricingIcon__tag" href="#pricingIconTag" fill="#7a73ff " style="transform-origin: 40px 39px;" data-js-target-list="PricingIcon.tagFronts"></use>
+                      <g clip-path="url(#pricingClipPath)">
+                        <use class="PricingIcon__tag" href="#pricingIconTag" fill="#0048e5" style="transform-origin: 40px 39px;" data-js-target-list="PricingIcon.tagFronts"></use>
+                      </g>
+                     </svg>
+                     <h1>
+                        Always know what you pay
+                     </h1>
+                     <p>
+                        Integrated per-transaction pricing with no hidden fees.
+                     </p>
+                     <a href="#" class="api-btn">
+                        <span>Pricing details  </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/></svg>
+                     </a>
+                  </div>
+
+
+                  <div class="ready-middle-section">
+                     <svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="CodeFilesIcon">
+                        <defs>
+                        <path id="codeFilesIconBack" d="M21.13 28h16.74c1.79 0 2.43.19 3.08.53.66.35 1.17.86 1.52 1.52.34.65.53 1.3.53 3.08v24.74c0 1.79-.19 2.43-.53 3.08a3.63 3.63 0 0 1-1.52 1.52c-.65.34-1.3.53-3.08.53H21.13c-1.79 0-2.43-.19-3.08-.53a3.63 3.63 0 0 1-1.52-1.52c-.34-.65-.53-1.3-.53-3.08V33.13c0-1.79.19-2.43.53-3.08.35-.66.86-1.17 1.52-1.52.65-.34 1.3-.53 3.08-.53z"></path>
+                        <path id="codeFilesIconFront" d="M45.9536914,33.5342654 C46.6055433,33.8828796 47.1171204,34.3944567 47.4657346,35.0463086 C47.8143488,35.6981604 48,36.3447329 48,38.1277704 L48,62.8722296 C48,64.6552671 47.8143488,65.3018396 47.4657346,65.9536914 C47.1171204,66.6055433 46.6055433,67.1171204 45.9536914,67.4657346 C45.3018396,67.8143488 44.6552671,68 42.8722296,68 L26.1277704,68 C24.3447329,68 23.6981604,67.8143488 23.0463086,67.4657346 C22.3944567,67.1171204 21.8828796,66.6055433 21.5342654,65.9536914 C21.1856512,65.3018396 21,64.6552671 21,62.8722296 C21,52.9574099 21,48 21,48 C21,45 20,41 30,42C30,40 29,33 34.5,33 C34.5,33 37.3333333,33 43,33 C44.7830375,33 45.3018396,33.1856512 45.9536914,33.5342654 " data-js-target-list="CodeFilesIcon.fileFrontPaths" mask="url(#codeFilesCaretMask)"></path>
+                        <path id="codeFilesIconCarets" d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z"></path>
+                        <clipPath id="codeFilesClipPath">
+                          <use href="#codeFilesIconBack" data-js-target-list="CodeFilesIcon.fileBacks"></use>
+                        </clipPath>
+                        <mask id="codeFilesCaretMask">
+                          <path d="M45.9536914,33.5342654 C46.6055433,33.8828796 47.1171204,34.3944567 47.4657346,35.0463086 C47.8143488,35.6981604 48,36.3447329 48,38.1277704 L48,62.8722296 C48,64.6552671 47.8143488,65.3018396 47.4657346,65.9536914 C47.1171204,66.6055433 46.6055433,67.1171204 45.9536914,67.4657346 C45.3018396,67.8143488 44.6552671,68 42.8722296,68 L26.1277704,68 C24.3447329,68 23.6981604,67.8143488 23.0463086,67.4657346 C22.3944567,67.1171204 21.8828796,66.6055433 21.5342654,65.9536914 C21.1856512,65.3018396 21,64.6552671 21,62.8722296 C21,52.9574099 21,48 21,48 C21,45 20,41 30,42C30,40 29,33 34.5,33 C34.5,33 37.3333333,33 43,33 C44.7830375,33 45.3018396,33.1856512 45.9536914,33.5342654 " data-js-target-list="CodeFilesIcon.fileFrontPaths" fill="white"></path>
+                          <path d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z" fill="#000" x="-27" data-js-target-list="CodeFilesIcon.carets"></path>
+                          <path d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z" fill="#000" data-js-target-list="CodeFilesIcon.carets"></path>
+                        </mask>
+                      </defs>
+                  
+                      <use href="#codeFilesIconBack" fill="#80e9ff" data-js-target-list="CodeFilesIcon.fileBacks"></use>
+                      <use href="#codeFilesIconFront" fill="#7a73ff" data-js-target-list="CodeFilesIcon.fileFronts"></use>
+                      <g clip-path="url(#codeFilesClipPath)">
+                        <use href="#codeFilesIconFront" fill="#0048e5" data-js-target-list="CodeFilesIcon.fileFronts"></use>
+                      </g>
+                      </svg>
+                     <h1>
+                        Start your integration
+                     </h1>
+                     <p>
+                        Get up and running with Stripe in as little as 10 minutes.
+                     </p>
+                     <a href="#" class="api-btn">
+                        <span>API reference   </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"/></svg>
+                     </a>
+                  </div>
+            </div>
+         </div>
+      </div>
+    <!-- ========== End ready block componant ========== -->
+
+   </main>
+
+ 
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="footer-component">
+         <div class="container-fluid custom-spacer-col">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="footer-left-main">
+                     <div class="footer-logo">
+                        <a href="index.html">
+                           <img src="./images/footer-logo.png" alt="stripe">
+                        </a>
+                     </div>
+                     <div class="footer-left">
+                        <a href="#">
+                           <svg class="LocaleControl__triggerIcon" width="16" height="16" viewBox="0 0 16 16">
+                              <path
+                                 d="M3.54 8.04h4.42v4.43c0 .57.76.75 1.01.24l4.96-9.93a.54.54 0 0 0-.72-.72L3.3 7.03c-.5.25-.33 1.01.24 1.01"
+                                 fill="#0A2540" fill-rule="evenodd"></path>
+                           </svg>
+                           <span>India (English)</span>
+                        </a>
+                     </div>
+                  </div>
+   
+               </div>
+               <div class="col-md-9">
+                  <div class="footer-links-wrap">
+                     <div class="footer-links-list">
+                        <div class="footer-list-inner">
+                           <h6>Products & pricing</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Pricing</a></li>
+                              <li class="nav-item"><a href="#">Atlas</a></li>
+                              <li class="nav-item"><a href="#">Billing</a></li>
+                              <li class="nav-item"><a href="#">Capital</a></li>
+                              <li class="nav-item"><a href="#">Checkout</a></li>
+                              <li class="nav-item"><a href="#">Climate</a></li>
+                              <li class="nav-item"><a href="#">Connect</a></li>
+                              <li class="nav-item"><a href="#">Data Pipeline</a></li>
+                              <li class="nav-item"><a href="#">Elements</a></li>
+                              <li class="nav-item"><a href="#">Financial Connections</a></li>
+                              <li class="nav-item"><a href="#">Identity</a></li>
+                              <li class="nav-item"><a href="#">Invoicing</a></li>
+                              <li class="nav-item"><a href="#">Issuing</a></li>
+                              <li class="nav-item"><a href="#">Link</a></li>
+                              <li class="nav-item"><a href="#">Payments</a></li>
+                              <li class="nav-item"><a href="#">Payment Links</a></li>
+                              <li class="nav-item"><a href="#">Payouts</a></li>
+                              <li class="nav-item"><a href="#">Radar</a></li>
+                              <li class="nav-item"><a href="#">Revenue Recognition</a></li>
+                              <li class="nav-item"><a href="#">Tax</a></li>
+                              <li class="nav-item"><a href="#">Terminal</a></li>
+                              <li class="nav-item"><a href="#">Treasury</a></li>
+                           </ul>
+                        </div>
+   
+   
+                     </div>
+                     <div class="footer-links-list">
+                        <div class="footer-list-inner">
+                           <h6>Solutions</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Startups</a></li>
+                              <li class="nav-item"><a href="#">Enterprises</a></li>
+                              <li class="nav-item"><a href="#">SaaS</a></li>
+                              <li class="nav-item"><a href="#">Retail</a></li>
+                              <li class="nav-item"><a href="#">Platforms</a></li>
+                              <li class="nav-item"><a href="#">E-Commerce</a></li>
+                              <li class="nav-item"><a href="#">Marketplaces</a></li>
+                              <li class="nav-item"><a href="#">Crypto</a></li>
+                              <li class="nav-item"><a href="#">Creator economy</a></li>
+                              <li class="nav-item"><a href="#">Embedded finance</a></li>
+                              <li class="nav-item"><a href="#">Global businesses</a></li>
+                              <li class="nav-item"><a href="#">Finance automation</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-list-inner">
+                           <h6>Integrations & custom solutions</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Stripe App Marketplace</a></li>
+   
+                              <li class="nav-item"><a href="#">Partner ecosystem</a></li>
+                              <li class="nav-item"><a href="#">Professional services</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-list-inner">
+                           <h6>Developers</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Documentation</a></li>
+                              <li class="nav-item"><a href="#">API reference</a></li>
+                              <li class="nav-item"><a href="#">API status</a></li>
+                              <li class="nav-item"><a href="#">API changelog</a></li>
+                              <li class="nav-item"><a href="#">Stripe Apps</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="footer-links-list">
+                        <div class="footer-list-inner">
+                           <h6>Resources</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Guides</a></li>
+                              <li class="nav-item"><a href="#">Customer stories</a></li>
+                              <li class="nav-item"><a href="#">Blog</a></li>
+                              <li class="nav-item"><a href="#">Annual conference</a></li>
+                              <li class="nav-item"><a href="#">Privacy & terms</a></li>
+                              <li class="nav-item"><a href="#">Prohibited & restricted businesses</a></li>
+                              <li class="nav-item"><a href="#">Licences</a></li>
+                              <li class="nav-item"><a href="#">Sitemap</a></li>
+                              <li class="nav-item"><a href="#">Cookie settings</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-list-inner">
+                           <h6>Company</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Jobs</a></li>
+                              <li class="nav-item"><a href="#">Newsroom</a></li>
+                              <li class="nav-item"><a href="#">Stripe Press</a></li>
+                           </ul>
+                        </div>
+                        <div class="footer-list-inner">
+                           <h6>Support</h6>
+                           <ul class="nav">
+                              <li class="nav-item"><a href="#">Contact sales</a></li>
+                              <li class="nav-item"><a href="#">Support centre</a></li>
+                              <li class="nav-item"><a href="#">Support plans</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="footer-copyright">
+               <p>© 2025 Stripe, Inc</p>
+            </div>
+   
+         </div>
+      </div>
+   </footer>
+
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/Gradient.js" ></script>
+   <script src="js/custom.js"></script>
+   <script src="js/imt-9ef8ede5feb648b8531fbd45b5ee48ac.js"></script>
+   <script src="js/Bootstrapper-4KKN7RDD.js"></script>
+   
+
+   
+    <script defer="" src="js/imt-9ef8ede5feb648b8531fbd45b5ee48ac.js"></script>
+   
+    <script type="application/json" data-js-script-registry="">
+      [{
+        "critical": false,
+        "path": "https://b.stripecdn.com/mkt-statics-srv/assets/BackgroundGlobe-2QMECMMJ.js"
+      }]
+    </script>
+    <script type="module" src="https://b.stripecdn.com/mkt-statics-srv/assets/Bootstrapper-4KKN7RDD.js"></script>
+</body>
+
+</html>
