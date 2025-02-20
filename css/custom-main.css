@@ -1842,13 +1842,13 @@
   display: flex;
   gap: 6px;
   background-color: #0a2540;
-  padding: 3px 16px 6px 16px;
+  padding: 7px 15px;
   border-radius: 100px;
   align-items: center;
   }
   
   .banner-section .banner-left .banner-input .learn-btn a {
-  font-size: 14px;
+  font-size: 13px;
   text-transform: capitalize;
   color: white;
   line-height: inherit;
@@ -3303,6 +3303,9 @@
   .ready-component .ready-grid .ready-left-section .ready-button .contact-button:last-child:hover span {
   color: #0a2540;
   }
+  .ready-component .ready-grid .ready-left-section .ready-button .contact-button:hover{
+    color: #0a2540;
+    }
   
   .ready-component .ready-grid .ready-left-section .ready-button .contact-button:hover {
   background-color: #0a2540;
@@ -3422,7 +3425,7 @@
   
   .enterprise-section .enterprise-top .enterprise-title .enterprise-btn .contact-button {
   border-radius: 100px;
-  padding: 3px 16px 6px;
+  padding: 8px 16px;
   background-color: #635bff;
   display: flex;
   width: -moz-fit-content;
@@ -3444,15 +3447,9 @@
   }
   
   .enterprise-section .enterprise-top .enterprise-title .enterprise-btn .contact-button svg {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 16px;
   color: #fff;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 2px;
   }
   
   .enterprise-section .enetrprise-middle .enterprise-slider .enterprise-box .tab-description .col-lg-3 {
@@ -3807,7 +3804,7 @@
   
   .module-solution-section .module-inner .module-section .module-left .module-top .see-all-btn .contact-button {
   border-radius: 100px;
-  padding: 4px 16px 6px;
+  padding: 8px 16px;
   background-color: #635bff;
   display: flex;
   width: -moz-fit-content;
@@ -3829,15 +3826,9 @@
   }
   
   .module-solution-section .module-inner .module-section .module-left .module-top .see-all-btn .contact-button svg {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 16px;
   color: #fff;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 2px;
   }
   
   .module-solution-section .module-inner .module-section .module-left .module-top .see-all-btn .module-list h1 {
@@ -4320,12 +4311,9 @@
   }
   
   .stripe-section .stripe-middle .stripe-slider .stripe-box .stripe-tab-inner .img-content .inner-content .stripe-info .stripe-left .stripe-btn .contact-button svg {
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 14px;
+  height: 16px;
+  
   position: relative;
   top: 2px;
   }
@@ -4576,12 +4564,9 @@
   }
   
   .stripe-section .main .stripe-tab-inner .img-content .inner-content .stripe-info .stripe-left .stripe-btn .contact-button svg {
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 14px;
+  height: 16px;
+
   position: relative;
   top: 2px;
   }
