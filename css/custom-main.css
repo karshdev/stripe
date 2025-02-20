@@ -6148,7 +6148,7 @@
   transition: all 0.3s ease;
 }
 
-/* Container for the icons */
+
 .hover-swap-link .icon-swap-hover {
   display: inline-flex;
   align-items: center;
@@ -6158,7 +6158,7 @@
   transition: transform 0.3s ease;
 }
 
-/* Default icon state */
+
 .hover-swap-link .icon-swap-hover svg:not(.hover-icon) {
   display: block;
   opacity: 1;
@@ -6166,7 +6166,7 @@
   position: absolute;
 }
 
-/* Hover icon initial state */
+
 .hover-swap-link .icon-swap-hover .hover-icon {
   display: block;
   opacity: 0;
@@ -6174,12 +6174,12 @@
   transition: all 0.3s ease;
 }
 
-/* When hovering the link, animate the icon container */
+
 .hover-swap-link:hover .icon-swap-hover {
   transform: translateX(4px);
 }
 
-/* When hovering the link, swap icon visibility */
+
 .hover-swap-link:hover .icon-swap-hover svg:not(.hover-icon) {
   opacity: 0;
 }
@@ -6191,8 +6191,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200%;  /* Increased size to ensure coverage */
-  height: 200%; /* Increased size to ensure coverage */
+  width: 200%; 
+  height: 200%; 
   transform: translate(-60%, -50%);
   z-index: 0;
   opacity: 0;
@@ -6206,7 +6206,7 @@
 }
 
 .build-card:hover .ProductFeatureCard__gradientSvg {
-  opacity: 0.65; /* Increased opacity for better visibility */
+  opacity: 0.65; 
 }
 
 @keyframes ProductFeatureCardRotateOne {
@@ -6241,19 +6241,18 @@
 
 .ProductFeatureCard__ellipse--one {
   transform-origin: center;
-  animation: ProductFeatureCardRotateOne 8s ease-in-out infinite; /* Reduced from 25s to 8s */
+  animation: ProductFeatureCardRotateOne 8s ease-in-out infinite; 
   transform: scale(1.65);
-  filter: blur(9px); /* Added subtle blur for more fluid appearance */
+  filter: blur(9px);
 }
 
 .ProductFeatureCard__ellipse--two {
   transform-origin: center;
-  animation: ProductFeatureCardRotateTwo 10s ease-in-out infinite; /* Reduced from 25s to 10s */
+  animation: ProductFeatureCardRotateTwo 10s ease-in-out infinite; 
   transform: scale(1.65);
-  filter: blur(13px); /* Added subtle blur for more fluid appearance */
+  filter: blur(13px); 
 }
 
-/* Add pulsing effect for enhanced visual appeal */
 @keyframes pulse {
   0% { opacity: 0.4; }
   50% { opacity: 0.7; }
@@ -6262,5 +6261,97 @@
 
 .ProductFeatureCard__ellipse--one,
 .ProductFeatureCard__ellipse--two {
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smoother easing */
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.payment-image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-origin: center;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.payment-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.payment-image:hover {
+  transform: translateY(-6px) scale(2.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.payment-image:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+.payment-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.8s ease;
+  pointer-events: none;
+}
+
+.payment-image:hover::before {
+  left: 150%;
+  transition: left 0.8s ease;
 }
